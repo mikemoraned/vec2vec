@@ -18,10 +18,21 @@ struct GridPoint {
 
 impl GridPoint {
     fn distance(&self, other: &GridPoint) -> f32 {
+        (self.x_distance(other).pow(2) as f32 + self.y_distance(other).pow(2) as f32).sqrt()
+    }
+
+    fn x_distance(&self, other: &GridPoint) -> u8 {
         use std::cmp::{max, min};
-        let x_dist = (max(self.x, other.x) - min(self.x, other.x)) as f32;
-        let y_dist = (max(self.y, other.y) - min(self.y, other.y)) as f32;
-        (x_dist.powf(2.0) + y_dist.powf(2.0)).sqrt()
+        max(self.x, other.x) - min(self.x, other.x)
+    }
+
+    fn y_distance(&self, other: &GridPoint) -> u8 {
+        use std::cmp::{max, min};
+        max(self.y, other.y) - min(self.y, other.y)
+    }
+
+    fn is_neighbour(&self, other: &GridPoint) -> bool {
+        self.x_distance(other) == 1 && self.y_distance(other) == 1
     }
 }
 
@@ -53,27 +64,37 @@ fn main() {
 
     let model_path = matches.value_of("model").unwrap();
 
-    println!("model: {}", model_path);
-
     let mut reader = BufReader::new(File::open(model_path).unwrap());
 
     let embeddings = Embeddings::read_word2vec_binary(&mut reader).unwrap();
 
     let mut distances = vec![];
+    let mut occupancy = vec![];
+    let max_neighbours = 8;
     for word in embeddings.vocab().words() {
         let from_point = GridPoint::from_str(word).unwrap();
-        match embeddings.similarity(word, 8) {
+        match embeddings.similarity(word, max_neighbours) {
             None => println!("nothing similar found"),
             Some(sims) => {
+                let mut neighbours = 0;
                 for word_sim in sims {
                     let to_point = GridPoint::from_str(word_sim.word).unwrap();
                     distances.push(to_point.distance(&from_point));
+                    if from_point.is_neighbour(&to_point) {
+                        neighbours += 1;
+                    }
                 }
+                occupancy.push(neighbours as f32 / max_neighbours as f32);
             }
         }
     }
 
-    let mean = mean(&distances);
-    let stddev = standard_deviation(&distances, Some(mean));
-    println!("mean: {}, stddev: {}", mean, stddev);
+    let distance_mean = mean(&distances);
+    let distance_stddev = standard_deviation(&distances, Some(distance_mean));
+    let occupancy_mean = mean(&occupancy);
+    let occupancy_stddev = standard_deviation(&occupancy, Some(occupancy_mean));
+    println!(
+        "{}: distance: mean: {}, stddev: {}, occupancy: mean: {}, stddev: {}, ",
+        model_path, distance_mean, distance_stddev, occupancy_mean, occupancy_stddev
+    );
 }
