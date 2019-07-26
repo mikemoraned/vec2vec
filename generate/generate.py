@@ -57,3 +57,7 @@ for limit in range(1, len(paths) + 1):
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
     model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
     logging.debug(model.wv.most_similar("0,0"))
+    model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
+        data_directory, width, height, seed, limit
+    )
+    model.wv.save_word2vec_format(model_path, binary=True)
