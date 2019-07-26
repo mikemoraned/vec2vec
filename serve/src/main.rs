@@ -9,10 +9,12 @@ use finalfusion::prelude::*;
 use finalfusion::similarity::Similarity;
 use serde::{Deserialize, Serialize};
 use statistical::{mean, standard_deviation};
+use std::collections::HashSet;
+use std::fmt;
 use std::num::ParseIntError;
 use std::str::FromStr;
 
-#[derive(Debug)]
+#[derive(Hash, Eq, PartialEq, Debug)]
 struct GridPoint {
     x: u8,
     y: u8,
@@ -51,6 +53,12 @@ impl FromStr for GridPoint {
     }
 }
 
+impl fmt::Display for GridPoint {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "{},{}", self.x, self.y)
+    }
+}
+
 #[derive(Serialize, Deserialize)]
 struct Layout {
     nodes: Vec<Node>,
@@ -66,7 +74,7 @@ struct Node {
 struct Link {
     source: String,
     target: String,
-    value: u8
+    value: u8,
 }
 
 fn main() {
@@ -126,20 +134,34 @@ fn main() {
 
     if let Some(layout_path) = matches.value_of("layout") {
         println!("layout path: {}", layout_path);
+        let mut point_set = HashSet::new();
+        for word in embeddings.vocab().words() {
+            let point = GridPoint::from_str(word).unwrap();
+            point_set.insert(point);
+        }
         let mut nodes = vec![];
-        nodes.push(Node {
-            id: "foop".to_string(),
-        });
-        nodes.push(Node {
-            id: "feep".to_string(),
-        });
+        for point in &point_set {
+            nodes.push(Node {
+                id: point.to_string(),
+            });
+        }
         let mut links = vec![];
-        links.push(Link {
-            source: "foop".to_string(),
-            target: "feep".to_string(),
-            value: 1
-        });
-        
+        for word in embeddings.vocab().words() {
+            let from_point = GridPoint::from_str(word).unwrap();
+            match embeddings.similarity(word, max_neighbours) {
+                None => println!("nothing similar found"),
+                Some(sims) => {
+                    for word_sim in sims {
+                        let to_point = GridPoint::from_str(word_sim.word).unwrap();
+                        links.push(Link {
+                            source: from_point.to_string(),
+                            target: to_point.to_string(),
+                            value: 1,
+                        });
+                    }
+                }
+            }
+        }
         let layout = Layout { nodes, links };
 
         let writer = BufWriter::new(File::create(layout_path).unwrap());
