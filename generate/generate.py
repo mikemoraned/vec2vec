@@ -53,21 +53,42 @@ def generate_paths():
         x_diff = x_max - x_min
         y_diff = y_max - y_min
         if x_diff > 1 or y_diff > 1:
-            x_mid = random.randrange(x_min, x_max) if x_max - x_min > 0 else x_min
-            y_mid = random.randrange(y_min, y_max) if y_max - y_min > 0 else y_min
-            start = "{},{}".format(x_min, y_min)
-            mid = "{},{}".format(x_mid, y_mid)
-            end = "{},{}".format(x_max, y_max)
-            yield [start, mid, end]
+            x_mid = random.randrange(x_min, x_max + 1) if x_max - x_min > 0 else x_min
+            y_mid = random.randrange(y_min, y_max + 1) if y_max - y_min > 0 else y_min
+            start = (x_min, y_min)
+            mid = (x_mid, y_mid)
+            end = (x_max, y_max)
+            if start != mid and mid != end:
+                yield [start, mid, end]
 
+def filter_length(max_length):
+    def filter(path):
+        [start, _, end] = path
+        x_start, y_start = start
+        x_end, y_end = end
+        x_diff = x_end - x_start
+        y_diff = y_end - y_start
+        return x_diff <= max_length and y_diff <= max_length
 
-paths = list(itertools.islice(generate_paths(), args.num_paths))
+    return filter
+
+filtered = filter(filter_length(3), generate_paths())
+paths = list(itertools.islice(filtered, args.num_paths))
 
 logging.debug("generated {} paths".format(len(paths)))
+# logging.debug(paths)
+
+def format_point(point):
+    x, y = point
+    return "{},{}".format(x, y)
+
+formatted_paths = []
+for path in paths:
+    formatted_paths.append(list(map(format_point, path)))
 
 logging.info("generating word2vec models")
 for limit in range(1, len(paths) + 1):
-    limited_paths = paths[slice(limit)]
+    limited_paths = formatted_paths[slice(limit)]
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
     model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
     model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
