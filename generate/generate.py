@@ -2,6 +2,9 @@ import argparse
 import logging
 import gensim
 from gensim import corpora
+from gensim.models.word2vec import Word2Vec
+from multiprocessing import cpu_count
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--width", type=int, help="width of grid square", default=10)
@@ -28,12 +31,10 @@ logging.info(
 )
 
 logging.info("generating paths")
-# locations = ["0,0", "{},{}".format(width - 1, height - 1)]
-paths = ["0,0 {},{}".format(width - 1, height - 1)]
+paths = [["0,0", "{},{}".format(width - 1, height - 1)]]
 logging.debug(paths)
 
-logging.info("generating dictionary")
-dictionary = corpora.Dictionary(
-    [[location for location in path.split()] for path in paths]
-)
-logging.debug(dictionary)
+logging.info("generating word2vec model")
+model = Word2Vec(paths, min_count=0, workers=cpu_count())
+logging.debug(model["0,0"])
+logging.debug(model.wv.most_similar("0,0"))
