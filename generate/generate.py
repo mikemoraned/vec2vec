@@ -4,6 +4,7 @@ import gensim
 from gensim import corpora
 from gensim.models.word2vec import Word2Vec
 from multiprocessing import cpu_count
+import random
 
 
 parser = argparse.ArgumentParser()
@@ -30,11 +31,27 @@ logging.info(
     "using %d x %d grid, seed of %d, saving in %s", width, height, seed, data_directory
 )
 
+random.seed(seed)
+
 logging.info("generating paths")
-paths = [["0,0", "{},{}".format(width - 1, height - 1)]]
-logging.debug(paths)
+paths = []
+for x_start in range(0, width):
+    for y_start in range(0, height):
+        start = "{},{}".format(x_start, y_start)
+        for x_end in range(0, width):
+            x_diff = x_end - x_start
+            if x_diff > 1:
+                x_mid = x_start + random.randrange(x_diff)
+                for y_end in range(0, height):
+                    y_diff = y_end - y_start
+                    if y_diff > 1:
+                        y_mid = y_start + random.randrange(y_diff)
+                        mid = "{},{}".format(x_mid, y_mid)
+                        end = "{},{}".format(x_end, y_end)
+                        paths.append([start, mid, end])
+logging.debug("generated {} paths".format(len(paths)))
+
 
 logging.info("generating word2vec model")
 model = Word2Vec(paths, min_count=0, workers=cpu_count())
-logging.debug(model["0,0"])
 logging.debug(model.wv.most_similar("0,0"))
