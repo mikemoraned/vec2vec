@@ -51,7 +51,9 @@ for x_start in range(0, width):
                         paths.append([start, mid, end])
 logging.debug("generated {} paths".format(len(paths)))
 
-
-logging.info("generating word2vec model")
-model = Word2Vec(paths, min_count=0, workers=cpu_count())
-logging.debug(model.wv.most_similar("0,0"))
+logging.info("generating word2vec models")
+for limit in range(1, len(paths) + 1):
+    limited_paths = paths[slice(limit)]
+    logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
+    model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
+    logging.debug(model.wv.most_similar("0,0"))
