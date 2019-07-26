@@ -5,10 +5,14 @@ from gensim import corpora
 from gensim.models.word2vec import Word2Vec
 from multiprocessing import cpu_count
 import random
+import itertools
 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--width", type=int, help="width of grid square", default=10)
+parser.add_argument(
+    "--num_paths", type=int, help="number of paths to create", default=1000
+)
 parser.add_argument("--seed", type=int, help="seed for randomisation", default=1)
 parser.add_argument(
     "--log", help="log level", choices=["info", "debug"], default="info"
@@ -34,29 +38,59 @@ logging.info(
 random.seed(seed)
 
 logging.info("generating paths")
-paths = []
-for x_start in range(0, width):
-    for y_start in range(0, height):
-        start = "{},{}".format(x_start, y_start)
-        for x_end in range(0, width):
-            x_diff = x_end - x_start
-            if x_diff > 1:
-                x_mid = x_start + random.randrange(x_diff)
-                for y_end in range(0, height):
-                    y_diff = y_end - y_start
-                    if y_diff > 1:
-                        y_mid = y_start + random.randrange(y_diff)
-                        mid = "{},{}".format(x_mid, y_mid)
-                        end = "{},{}".format(x_end, y_end)
-                        paths.append([start, mid, end])
+
+
+def random_ordered_pair(limit):
+    r1 = random.randrange(0, limit)
+    r2 = random.randrange(0, limit)
+    return min(r1, r2), max(r1, r2)
+
+
+def generate_paths():
+    while True:
+        x_min, x_max = random_ordered_pair(width)
+        y_min, y_max = random_ordered_pair(height)
+        x_diff = x_max - x_min
+        y_diff = y_max - y_min
+        if x_diff > 1 or y_diff > 1:
+            x_mid = random.randrange(x_min, x_max + 1) if x_max - x_min > 0 else x_min
+            y_mid = random.randrange(y_min, y_max + 1) if y_max - y_min > 0 else y_min
+            start = (x_min, y_min)
+            mid = (x_mid, y_mid)
+            end = (x_max, y_max)
+            if start != mid and mid != end:
+                yield [start, mid, end]
+
+def filter_length(max_length):
+    def filter(path):
+        [start, _, end] = path
+        x_start, y_start = start
+        x_end, y_end = end
+        x_diff = x_end - x_start
+        y_diff = y_end - y_start
+        return x_diff <= max_length and y_diff <= max_length
+
+    return filter
+
+filtered = filter(filter_length(3), generate_paths())
+paths = list(itertools.islice(filtered, args.num_paths))
+
 logging.debug("generated {} paths".format(len(paths)))
+# logging.debug(paths)
+
+def format_point(point):
+    x, y = point
+    return "{},{}".format(x, y)
+
+formatted_paths = []
+for path in paths:
+    formatted_paths.append(list(map(format_point, path)))
 
 logging.info("generating word2vec models")
 for limit in range(1, len(paths) + 1):
-    limited_paths = paths[slice(limit)]
+    limited_paths = formatted_paths[slice(limit)]
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
     model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
-    logging.debug(model.wv.most_similar("0,0"))
     model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
         data_directory, width, height, seed, limit
     )
