@@ -3,9 +3,11 @@ use clap::{App, Arg};
 
 use std::fs::File;
 use std::io::BufReader;
+use std::io::BufWriter;
 
 use finalfusion::prelude::*;
 use finalfusion::similarity::Similarity;
+use serde::{Deserialize, Serialize};
 use statistical::{mean, standard_deviation};
 use std::num::ParseIntError;
 use std::str::FromStr;
@@ -49,6 +51,24 @@ impl FromStr for GridPoint {
     }
 }
 
+#[derive(Serialize, Deserialize)]
+struct Layout {
+    nodes: Vec<Node>,
+    links: Vec<Link>,
+}
+
+#[derive(Serialize, Deserialize)]
+struct Node {
+    id: String,
+}
+
+#[derive(Serialize, Deserialize)]
+struct Link {
+    source: String,
+    target: String,
+    value: u8
+}
+
 fn main() {
     let matches = App::new("vec2vec reader")
         .version("0.1.0")
@@ -58,6 +78,12 @@ fn main() {
                 .long("model")
                 .required(true)
                 .help("path to word2vec model file")
+                .takes_value(true),
+        )
+        .arg(
+            Arg::with_name("layout")
+                .long("layout")
+                .help("path to where to output layout as json")
                 .takes_value(true),
         )
         .get_matches();
@@ -97,4 +123,27 @@ fn main() {
         "{}: distance: mean: {}, stddev: {}, occupancy: mean: {}, stddev: {}, ",
         model_path, distance_mean, distance_stddev, occupancy_mean, occupancy_stddev
     );
+
+    if let Some(layout_path) = matches.value_of("layout") {
+        println!("layout path: {}", layout_path);
+        let mut nodes = vec![];
+        nodes.push(Node {
+            id: "foop".to_string(),
+        });
+        nodes.push(Node {
+            id: "feep".to_string(),
+        });
+        let mut links = vec![];
+        links.push(Link {
+            source: "foop".to_string(),
+            target: "feep".to_string(),
+            value: 1
+        });
+        
+        let layout = Layout { nodes, links };
+
+        let writer = BufWriter::new(File::create(layout_path).unwrap());
+        let result = serde_json::to_writer_pretty(writer, &layout);
+        println!("{:?}", result);
+    }
 }
