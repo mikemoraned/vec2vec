@@ -9,6 +9,7 @@ import random
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--width", type=int, help="width of grid square", default=10)
+parser.add_argument("--num_paths", type=int, help="number of paths to create", default=1000)
 parser.add_argument("--seed", type=int, help="seed for randomisation", default=1)
 parser.add_argument(
     "--log", help="log level", choices=["info", "debug"], default="info"
@@ -35,20 +36,23 @@ random.seed(seed)
 
 logging.info("generating paths")
 paths = []
-for x_start in range(0, width):
-    for y_start in range(0, height):
-        start = "{},{}".format(x_start, y_start)
-        for x_end in range(0, width):
-            x_diff = x_end - x_start
-            if x_diff > 1:
-                x_mid = x_start + random.randrange(x_diff)
-                for y_end in range(0, height):
-                    y_diff = y_end - y_start
-                    if y_diff > 1:
-                        y_mid = y_start + random.randrange(y_diff)
-                        mid = "{},{}".format(x_mid, y_mid)
-                        end = "{},{}".format(x_end, y_end)
-                        paths.append([start, mid, end])
+
+for path_num in range(0, args.num_paths):
+    x1 = random.randrange(0, width)
+    x2 = random.randrange(0, width)
+    x_min = min(x1, x2)
+    x_max = max(x2, x2)
+    y1 = random.randrange(0, height)
+    y2 = random.randrange(0, height)
+    y_min = min(y1, y2)
+    y_max = max(y2, y2)
+    x_mid = random.randrange(x_min, x_max) if x_max - x_min > 0 else x_min
+    y_mid = random.randrange(y_min, y_max) if y_max - y_min > 0 else y_min
+    start = "{},{}".format(x_min, y_min)
+    mid = "{},{}".format(x_mid, y_mid)
+    end = "{},{}".format(x_max, y_max)
+    paths.append([start, mid, end])
+
 logging.debug("generated {} paths".format(len(paths)))
 
 logging.info("generating word2vec models")
@@ -56,7 +60,6 @@ for limit in range(1, len(paths) + 1):
     limited_paths = paths[slice(limit)]
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
     model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
-    logging.debug(model.wv.most_similar("0,0"))
     model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
         data_directory, width, height, seed, limit
     )
