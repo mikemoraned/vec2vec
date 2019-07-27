@@ -14,7 +14,7 @@ use std::fmt;
 use std::num::ParseIntError;
 use std::str::FromStr;
 
-#[derive(Hash, Eq, PartialEq, Debug)]
+#[derive(Hash, Eq, PartialEq, Debug, Serialize, Deserialize, Clone)]
 struct GridPoint {
     x: u8,
     y: u8,
@@ -68,13 +68,14 @@ struct Layout {
 #[derive(Serialize, Deserialize)]
 struct Node {
     id: String,
+    point: GridPoint,
 }
 
 #[derive(Serialize, Deserialize)]
 struct Link {
     source: String,
     target: String,
-    value: u8,
+    value: f32,
 }
 
 fn main() {
@@ -143,6 +144,7 @@ fn main() {
         for point in &point_set {
             nodes.push(Node {
                 id: point.to_string(),
+                point: point.clone()
             });
         }
         let mut links = vec![];
@@ -156,7 +158,7 @@ fn main() {
                         links.push(Link {
                             source: from_point.to_string(),
                             target: to_point.to_string(),
-                            value: 1,
+                            value: word_sim.similarity.into_inner(),
                         });
                     }
                 }

@@ -1,4306 +1,4706 @@
 {
   "nodes": [
     {
-      "id": "8,6"
+      "id": "2,8",
+      "point": {
+        "x": 2,
+        "y": 8
+      }
     },
     {
-      "id": "5,9"
+      "id": "3,9",
+      "point": {
+        "x": 3,
+        "y": 9
+      }
     },
     {
-      "id": "2,9"
+      "id": "6,0",
+      "point": {
+        "x": 6,
+        "y": 0
+      }
     },
     {
-      "id": "6,4"
+      "id": "8,3",
+      "point": {
+        "x": 8,
+        "y": 3
+      }
     },
     {
-      "id": "8,5"
+      "id": "7,5",
+      "point": {
+        "x": 7,
+        "y": 5
+      }
     },
     {
-      "id": "6,3"
+      "id": "9,2",
+      "point": {
+        "x": 9,
+        "y": 2
+      }
     },
     {
-      "id": "5,0"
+      "id": "4,0",
+      "point": {
+        "x": 4,
+        "y": 0
+      }
     },
     {
-      "id": "7,8"
+      "id": "5,6",
+      "point": {
+        "x": 5,
+        "y": 6
+      }
     },
     {
-      "id": "9,5"
+      "id": "7,3",
+      "point": {
+        "x": 7,
+        "y": 3
+      }
     },
     {
-      "id": "9,1"
+      "id": "0,4",
+      "point": {
+        "x": 0,
+        "y": 4
+      }
     },
     {
-      "id": "9,3"
+      "id": "8,2",
+      "point": {
+        "x": 8,
+        "y": 2
+      }
     },
     {
-      "id": "7,4"
+      "id": "0,6",
+      "point": {
+        "x": 0,
+        "y": 6
+      }
     },
     {
-      "id": "1,8"
+      "id": "7,2",
+      "point": {
+        "x": 7,
+        "y": 2
+      }
     },
     {
-      "id": "4,9"
+      "id": "0,7",
+      "point": {
+        "x": 0,
+        "y": 7
+      }
     },
     {
-      "id": "9,6"
+      "id": "6,5",
+      "point": {
+        "x": 6,
+        "y": 5
+      }
     },
     {
-      "id": "4,6"
+      "id": "6,1",
+      "point": {
+        "x": 6,
+        "y": 1
+      }
     },
     {
-      "id": "8,0"
+      "id": "9,6",
+      "point": {
+        "x": 9,
+        "y": 6
+      }
     },
     {
-      "id": "5,4"
+      "id": "5,7",
+      "point": {
+        "x": 5,
+        "y": 7
+      }
     },
     {
-      "id": "5,6"
+      "id": "1,7",
+      "point": {
+        "x": 1,
+        "y": 7
+      }
     },
     {
-      "id": "5,1"
+      "id": "2,7",
+      "point": {
+        "x": 2,
+        "y": 7
+      }
     },
     {
-      "id": "0,5"
+      "id": "5,5",
+      "point": {
+        "x": 5,
+        "y": 5
+      }
     },
     {
-      "id": "2,1"
+      "id": "6,9",
+      "point": {
+        "x": 6,
+        "y": 9
+      }
     },
     {
-      "id": "7,3"
+      "id": "7,7",
+      "point": {
+        "x": 7,
+        "y": 7
+      }
     },
     {
-      "id": "5,2"
+      "id": "7,4",
+      "point": {
+        "x": 7,
+        "y": 4
+      }
     },
     {
-      "id": "2,5"
+      "id": "9,7",
+      "point": {
+        "x": 9,
+        "y": 7
+      }
     },
     {
-      "id": "2,4"
+      "id": "7,0",
+      "point": {
+        "x": 7,
+        "y": 0
+      }
     },
     {
-      "id": "2,2"
+      "id": "6,4",
+      "point": {
+        "x": 6,
+        "y": 4
+      }
     },
     {
-      "id": "1,4"
+      "id": "5,4",
+      "point": {
+        "x": 5,
+        "y": 4
+      }
     },
     {
-      "id": "1,1"
+      "id": "1,0",
+      "point": {
+        "x": 1,
+        "y": 0
+      }
     },
     {
-      "id": "0,4"
+      "id": "4,4",
+      "point": {
+        "x": 4,
+        "y": 4
+      }
     },
     {
-      "id": "0,3"
+      "id": "6,6",
+      "point": {
+        "x": 6,
+        "y": 6
+      }
     },
     {
-      "id": "7,0"
+      "id": "3,5",
+      "point": {
+        "x": 3,
+        "y": 5
+      }
     },
     {
-      "id": "8,1"
+      "id": "4,1",
+      "point": {
+        "x": 4,
+        "y": 1
+      }
     },
     {
-      "id": "4,2"
+      "id": "3,4",
+      "point": {
+        "x": 3,
+        "y": 4
+      }
     },
     {
-      "id": "4,7"
+      "id": "4,5",
+      "point": {
+        "x": 4,
+        "y": 5
+      }
     },
     {
-      "id": "5,3"
+      "id": "2,5",
+      "point": {
+        "x": 2,
+        "y": 5
+      }
     },
     {
-      "id": "6,8"
+      "id": "0,0",
+      "point": {
+        "x": 0,
+        "y": 0
+      }
     },
     {
-      "id": "0,6"
+      "id": "2,2",
+      "point": {
+        "x": 2,
+        "y": 2
+      }
     },
     {
-      "id": "0,0"
+      "id": "4,6",
+      "point": {
+        "x": 4,
+        "y": 6
+      }
     },
     {
-      "id": "3,6"
+      "id": "1,9",
+      "point": {
+        "x": 1,
+        "y": 9
+      }
     },
     {
-      "id": "4,3"
+      "id": "3,3",
+      "point": {
+        "x": 3,
+        "y": 3
+      }
     },
     {
-      "id": "2,0"
+      "id": "8,8",
+      "point": {
+        "x": 8,
+        "y": 8
+      }
     },
     {
-      "id": "6,9"
+      "id": "8,4",
+      "point": {
+        "x": 8,
+        "y": 4
+      }
     },
     {
-      "id": "7,1"
+      "id": "9,8",
+      "point": {
+        "x": 9,
+        "y": 8
+      }
     },
     {
-      "id": "1,3"
+      "id": "2,9",
+      "point": {
+        "x": 2,
+        "y": 9
+      }
     },
     {
-      "id": "8,2"
+      "id": "2,3",
+      "point": {
+        "x": 2,
+        "y": 3
+      }
     },
     {
-      "id": "4,1"
+      "id": "3,6",
+      "point": {
+        "x": 3,
+        "y": 6
+      }
     },
     {
-      "id": "6,1"
+      "id": "4,7",
+      "point": {
+        "x": 4,
+        "y": 7
+      }
     },
     {
-      "id": "6,6"
+      "id": "4,8",
+      "point": {
+        "x": 4,
+        "y": 8
+      }
     },
     {
-      "id": "6,2"
+      "id": "5,3",
+      "point": {
+        "x": 5,
+        "y": 3
+      }
     },
     {
-      "id": "8,3"
+      "id": "4,3",
+      "point": {
+        "x": 4,
+        "y": 3
+      }
     },
     {
-      "id": "7,2"
+      "id": "3,2",
+      "point": {
+        "x": 3,
+        "y": 2
+      }
     },
     {
-      "id": "8,7"
+      "id": "1,4",
+      "point": {
+        "x": 1,
+        "y": 4
+      }
     },
     {
-      "id": "5,7"
+      "id": "0,3",
+      "point": {
+        "x": 0,
+        "y": 3
+      }
     },
     {
-      "id": "7,9"
+      "id": "1,5",
+      "point": {
+        "x": 1,
+        "y": 5
+      }
     },
     {
-      "id": "7,5"
+      "id": "0,8",
+      "point": {
+        "x": 0,
+        "y": 8
+      }
     },
     {
-      "id": "9,8"
+      "id": "2,4",
+      "point": {
+        "x": 2,
+        "y": 4
+      }
     },
     {
-      "id": "1,2"
+      "id": "0,9",
+      "point": {
+        "x": 0,
+        "y": 9
+      }
     },
     {
-      "id": "9,2"
+      "id": "8,9",
+      "point": {
+        "x": 8,
+        "y": 9
+      }
     },
     {
-      "id": "9,7"
+      "id": "3,8",
+      "point": {
+        "x": 3,
+        "y": 8
+      }
     },
     {
-      "id": "1,0"
+      "id": "7,9",
+      "point": {
+        "x": 7,
+        "y": 9
+      }
     },
     {
-      "id": "9,4"
+      "id": "4,9",
+      "point": {
+        "x": 4,
+        "y": 9
+      }
     },
     {
-      "id": "3,0"
+      "id": "3,1",
+      "point": {
+        "x": 3,
+        "y": 1
+      }
     },
     {
-      "id": "2,7"
+      "id": "5,2",
+      "point": {
+        "x": 5,
+        "y": 2
+      }
     },
     {
-      "id": "3,7"
+      "id": "2,6",
+      "point": {
+        "x": 2,
+        "y": 6
+      }
     },
     {
-      "id": "2,8"
+      "id": "1,3",
+      "point": {
+        "x": 1,
+        "y": 3
+      }
     },
     {
-      "id": "1,5"
+      "id": "1,2",
+      "point": {
+        "x": 1,
+        "y": 2
+      }
     },
     {
-      "id": "0,7"
+      "id": "2,1",
+      "point": {
+        "x": 2,
+        "y": 1
+      }
     },
     {
-      "id": "3,2"
+      "id": "3,0",
+      "point": {
+        "x": 3,
+        "y": 0
+      }
     },
     {
-      "id": "3,4"
+      "id": "8,0",
+      "point": {
+        "x": 8,
+        "y": 0
+      }
     },
     {
-      "id": "8,4"
+      "id": "8,6",
+      "point": {
+        "x": 8,
+        "y": 6
+      }
     },
     {
-      "id": "9,0"
+      "id": "3,7",
+      "point": {
+        "x": 3,
+        "y": 7
+      }
     },
     {
-      "id": "0,8"
+      "id": "9,4",
+      "point": {
+        "x": 9,
+        "y": 4
+      }
     },
     {
-      "id": "2,6"
+      "id": "7,8",
+      "point": {
+        "x": 7,
+        "y": 8
+      }
     },
     {
-      "id": "4,0"
+      "id": "5,0",
+      "point": {
+        "x": 5,
+        "y": 0
+      }
     },
     {
-      "id": "8,9"
+      "id": "9,3",
+      "point": {
+        "x": 9,
+        "y": 3
+      }
     },
     {
-      "id": "2,3"
+      "id": "7,6",
+      "point": {
+        "x": 7,
+        "y": 6
+      }
     },
     {
-      "id": "3,9"
+      "id": "6,7",
+      "point": {
+        "x": 6,
+        "y": 7
+      }
     },
     {
-      "id": "3,5"
+      "id": "5,1",
+      "point": {
+        "x": 5,
+        "y": 1
+      }
     },
     {
-      "id": "4,8"
+      "id": "7,1",
+      "point": {
+        "x": 7,
+        "y": 1
+      }
     },
     {
-      "id": "1,9"
+      "id": "5,8",
+      "point": {
+        "x": 5,
+        "y": 8
+      }
     },
     {
-      "id": "6,7"
+      "id": "1,8",
+      "point": {
+        "x": 1,
+        "y": 8
+      }
     },
     {
-      "id": "3,8"
+      "id": "9,9",
+      "point": {
+        "x": 9,
+        "y": 9
+      }
     },
     {
-      "id": "4,5"
+      "id": "5,9",
+      "point": {
+        "x": 5,
+        "y": 9
+      }
     },
     {
-      "id": "0,2"
+      "id": "0,5",
+      "point": {
+        "x": 0,
+        "y": 5
+      }
     },
     {
-      "id": "6,5"
+      "id": "9,5",
+      "point": {
+        "x": 9,
+        "y": 5
+      }
     },
     {
-      "id": "8,8"
+      "id": "8,7",
+      "point": {
+        "x": 8,
+        "y": 7
+      }
     },
     {
-      "id": "6,0"
+      "id": "0,2",
+      "point": {
+        "x": 0,
+        "y": 2
+      }
     },
     {
-      "id": "0,9"
+      "id": "2,0",
+      "point": {
+        "x": 2,
+        "y": 0
+      }
     },
     {
-      "id": "4,4"
+      "id": "9,1",
+      "point": {
+        "x": 9,
+        "y": 1
+      }
     },
     {
-      "id": "7,6"
+      "id": "9,0",
+      "point": {
+        "x": 9,
+        "y": 0
+      }
     },
     {
-      "id": "5,8"
+      "id": "8,1",
+      "point": {
+        "x": 8,
+        "y": 1
+      }
     },
     {
-      "id": "1,7"
+      "id": "6,2",
+      "point": {
+        "x": 6,
+        "y": 2
+      }
     },
     {
-      "id": "5,5"
+      "id": "6,3",
+      "point": {
+        "x": 6,
+        "y": 3
+      }
     },
     {
-      "id": "0,1"
+      "id": "1,1",
+      "point": {
+        "x": 1,
+        "y": 1
+      }
     },
     {
-      "id": "3,3"
+      "id": "0,1",
+      "point": {
+        "x": 0,
+        "y": 1
+      }
     },
     {
-      "id": "9,9"
+      "id": "4,2",
+      "point": {
+        "x": 4,
+        "y": 2
+      }
     },
     {
-      "id": "7,7"
+      "id": "6,8",
+      "point": {
+        "x": 6,
+        "y": 8
+      }
     },
     {
-      "id": "3,1"
+      "id": "1,6",
+      "point": {
+        "x": 1,
+        "y": 6
+      }
     },
     {
-      "id": "1,6"
+      "id": "8,5",
+      "point": {
+        "x": 8,
+        "y": 5
+      }
     }
   ],
   "links": [
     {
       "source": "5,2",
       "target": "3,3",
-      "value": 1
+      "value": 0.2901641
     },
     {
       "source": "5,2",
       "target": "8,6",
-      "value": 1
+      "value": 0.24542034
     },
     {
       "source": "5,2",
       "target": "3,7",
-      "value": 1
+      "value": 0.2111789
     },
     {
       "source": "5,2",
       "target": "8,1",
-      "value": 1
+      "value": 0.18120198
     },
     {
       "source": "5,2",
       "target": "7,8",
-      "value": 1
+      "value": 0.17444655
     },
     {
       "source": "5,2",
       "target": "0,4",
-      "value": 1
+      "value": 0.1670734
     },
     {
       "source": "5,2",
       "target": "0,6",
-      "value": 1
+      "value": 0.16651003
     },
     {
       "source": "5,2",
       "target": "3,9",
-      "value": 1
+      "value": 0.16432707
     },
     {
       "source": "3,6",
       "target": "2,4",
-      "value": 1
+      "value": 0.23812576
     },
     {
       "source": "3,6",
       "target": "7,0",
-      "value": 1
+      "value": 0.23563533
     },
     {
       "source": "3,6",
       "target": "5,9",
-      "value": 1
+      "value": 0.2322198
     },
     {
       "source": "3,6",
       "target": "7,2",
-      "value": 1
+      "value": 0.21193819
     },
     {
       "source": "3,6",
       "target": "5,4",
-      "value": 1
+      "value": 0.20596507
     },
     {
       "source": "3,6",
       "target": "0,2",
-      "value": 1
+      "value": 0.20080721
     },
     {
       "source": "3,6",
       "target": "7,1",
-      "value": 1
+      "value": 0.18889228
     },
     {
       "source": "3,6",
       "target": "9,1",
-      "value": 1
+      "value": 0.18442753
     },
     {
       "source": "3,4",
       "target": "6,3",
-      "value": 1
+      "value": 0.26881918
     },
     {
       "source": "3,4",
       "target": "7,0",
-      "value": 1
+      "value": 0.26064157
     },
     {
       "source": "3,4",
       "target": "6,1",
-      "value": 1
+      "value": 0.2433971
     },
     {
       "source": "3,4",
       "target": "3,8",
-      "value": 1
+      "value": 0.23810735
     },
     {
       "source": "3,4",
       "target": "9,9",
-      "value": 1
+      "value": 0.20577559
     },
     {
       "source": "3,4",
       "target": "9,6",
-      "value": 1
+      "value": 0.2055856
     },
     {
       "source": "3,4",
       "target": "0,7",
-      "value": 1
+      "value": 0.20248047
     },
     {
       "source": "3,4",
       "target": "6,4",
-      "value": 1
+      "value": 0.19308475
     },
     {
       "source": "4,6",
       "target": "0,0",
-      "value": 1
+      "value": 0.29472598
     },
     {
       "source": "4,6",
       "target": "3,5",
-      "value": 1
+      "value": 0.24469966
     },
     {
       "source": "4,6",
       "target": "9,9",
-      "value": 1
+      "value": 0.22056347
     },
     {
       "source": "4,6",
       "target": "6,9",
-      "value": 1
+      "value": 0.20453823
     },
     {
       "source": "4,6",
       "target": "9,2",
-      "value": 1
+      "value": 0.18489224
     },
     {
       "source": "4,6",
       "target": "2,0",
-      "value": 1
+      "value": 0.17939828
     },
     {
       "source": "4,6",
       "target": "2,8",
-      "value": 1
+      "value": 0.16263352
     },
     {
       "source": "4,6",
       "target": "0,1",
-      "value": 1
+      "value": 0.1540819
     },
     {
       "source": "6,3",
       "target": "3,4",
-      "value": 1
+      "value": 0.26881918
     },
     {
       "source": "6,3",
       "target": "7,0",
-      "value": 1
+      "value": 0.20889546
     },
     {
       "source": "6,3",
       "target": "1,9",
-      "value": 1
+      "value": 0.20744473
     },
     {
       "source": "6,3",
       "target": "7,3",
-      "value": 1
+      "value": 0.20514059
     },
     {
       "source": "6,3",
       "target": "0,9",
-      "value": 1
+      "value": 0.19085243
     },
     {
       "source": "6,3",
       "target": "3,5",
-      "value": 1
+      "value": 0.18672855
     },
     {
       "source": "6,3",
       "target": "8,3",
-      "value": 1
+      "value": 0.1837148
     },
     {
       "source": "6,3",
       "target": "8,5",
-      "value": 1
+      "value": 0.18181618
     },
     {
       "source": "5,5",
       "target": "2,8",
-      "value": 1
+      "value": 0.23418091
     },
     {
       "source": "5,5",
       "target": "1,5",
-      "value": 1
+      "value": 0.21650329
     },
     {
       "source": "5,5",
       "target": "5,8",
-      "value": 1
+      "value": 0.2091085
     },
     {
       "source": "5,5",
       "target": "9,6",
-      "value": 1
+      "value": 0.19053845
     },
     {
       "source": "5,5",
       "target": "0,3",
-      "value": 1
+      "value": 0.1757245
     },
     {
       "source": "5,5",
       "target": "8,1",
-      "value": 1
+      "value": 0.17551576
     },
     {
       "source": "5,5",
       "target": "4,7",
-      "value": 1
+      "value": 0.1637817
     },
     {
       "source": "5,5",
       "target": "8,4",
-      "value": 1
+      "value": 0.1614687
     },
     {
       "source": "7,7",
       "target": "2,0",
-      "value": 1
+      "value": 0.30238765
     },
     {
       "source": "7,7",
       "target": "7,6",
-      "value": 1
+      "value": 0.23775546
     },
     {
       "source": "7,7",
       "target": "4,9",
-      "value": 1
+      "value": 0.1633882
     },
     {
       "source": "7,7",
       "target": "2,2",
-      "value": 1
+      "value": 0.16085462
     },
     {
       "source": "7,7",
       "target": "6,4",
-      "value": 1
+      "value": 0.15842725
     },
     {
       "source": "7,7",
       "target": "5,1",
-      "value": 1
+      "value": 0.15306084
     },
     {
       "source": "7,7",
       "target": "8,1",
-      "value": 1
+      "value": 0.15226768
     },
     {
       "source": "7,7",
       "target": "1,3",
-      "value": 1
+      "value": 0.15156908
     },
     {
       "source": "5,3",
       "target": "5,0",
-      "value": 1
+      "value": 0.2265155
     },
     {
       "source": "5,3",
       "target": "7,5",
-      "value": 1
+      "value": 0.22380011
     },
     {
       "source": "5,3",
       "target": "9,0",
-      "value": 1
+      "value": 0.1727179
     },
     {
       "source": "5,3",
       "target": "9,1",
-      "value": 1
+      "value": 0.15256353
     },
     {
       "source": "5,3",
       "target": "4,4",
-      "value": 1
+      "value": 0.15148552
     },
     {
       "source": "5,3",
       "target": "4,9",
-      "value": 1
+      "value": 0.14633197
     },
     {
       "source": "5,3",
       "target": "6,8",
-      "value": 1
+      "value": 0.13207944
     },
     {
       "source": "5,3",
       "target": "6,4",
-      "value": 1
+      "value": 0.12559743
     },
     {
       "source": "3,5",
       "target": "4,6",
-      "value": 1
+      "value": 0.24469966
     },
     {
       "source": "3,5",
       "target": "6,9",
-      "value": 1
+      "value": 0.2418948
     },
     {
       "source": "3,5",
       "target": "6,1",
-      "value": 1
+      "value": 0.20766832
     },
     {
       "source": "3,5",
       "target": "0,2",
-      "value": 1
+      "value": 0.20537193
     },
     {
       "source": "3,5",
       "target": "0,7",
-      "value": 1
+      "value": 0.19274338
     },
     {
       "source": "3,5",
       "target": "1,7",
-      "value": 1
+      "value": 0.18842813
     },
     {
       "source": "3,5",
       "target": "6,3",
-      "value": 1
+      "value": 0.18672855
     },
     {
       "source": "3,5",
       "target": "1,3",
-      "value": 1
+      "value": 0.18176536
     },
     {
       "source": "6,4",
       "target": "3,1",
-      "value": 1
+      "value": 0.24744962
     },
     {
       "source": "6,4",
       "target": "5,0",
-      "value": 1
+      "value": 0.23221876
     },
     {
       "source": "6,4",
       "target": "1,1",
-      "value": 1
+      "value": 0.21906109
     },
     {
       "source": "6,4",
       "target": "5,1",
-      "value": 1
+      "value": 0.21154669
     },
     {
       "source": "6,4",
       "target": "3,4",
-      "value": 1
+      "value": 0.19308475
     },
     {
       "source": "6,4",
       "target": "7,4",
-      "value": 1
+      "value": 0.19248593
     },
     {
       "source": "6,4",
       "target": "3,2",
-      "value": 1
+      "value": 0.18972097
     },
     {
       "source": "6,4",
       "target": "7,8",
-      "value": 1
+      "value": 0.1894496
     },
     {
       "source": "6,5",
       "target": "9,4",
-      "value": 1
+      "value": 0.28443873
     },
     {
       "source": "6,5",
       "target": "3,9",
-      "value": 1
+      "value": 0.24527858
     },
     {
       "source": "6,5",
       "target": "6,8",
-      "value": 1
+      "value": 0.20300299
     },
     {
       "source": "6,5",
       "target": "0,0",
-      "value": 1
+      "value": 0.17951824
     },
     {
       "source": "6,5",
       "target": "7,1",
-      "value": 1
+      "value": 0.16945252
     },
     {
       "source": "6,5",
       "target": "2,7",
-      "value": 1
+      "value": 0.16346768
     },
     {
       "source": "6,5",
       "target": "7,2",
-      "value": 1
+      "value": 0.15222731
     },
     {
       "source": "6,5",
       "target": "7,8",
-      "value": 1
+      "value": 0.14305998
     },
     {
       "source": "4,4",
       "target": "4,2",
-      "value": 1
+      "value": 0.24546878
     },
     {
       "source": "4,4",
       "target": "1,3",
-      "value": 1
+      "value": 0.19527796
     },
     {
       "source": "4,4",
       "target": "0,4",
-      "value": 1
+      "value": 0.19241866
     },
     {
       "source": "4,4",
       "target": "9,9",
-      "value": 1
+      "value": 0.17629488
     },
     {
       "source": "4,4",
       "target": "3,9",
-      "value": 1
+      "value": 0.1719857
     },
     {
       "source": "4,4",
       "target": "5,4",
-      "value": 1
+      "value": 0.16626444
     },
     {
       "source": "4,4",
       "target": "1,2",
-      "value": 1
+      "value": 0.16564159
     },
     {
       "source": "4,4",
       "target": "5,3",
-      "value": 1
+      "value": 0.15148552
     },
     {
       "source": "3,3",
       "target": "5,2",
-      "value": 1
+      "value": 0.2901641
     },
     {
       "source": "3,3",
       "target": "6,8",
-      "value": 1
+      "value": 0.25332683
     },
     {
       "source": "3,3",
       "target": "7,3",
-      "value": 1
+      "value": 0.24963513
     },
     {
       "source": "3,3",
       "target": "9,8",
-      "value": 1
+      "value": 0.24252984
     },
     {
       "source": "3,3",
       "target": "9,2",
-      "value": 1
+      "value": 0.2273543
     },
     {
       "source": "3,3",
       "target": "6,2",
-      "value": 1
+      "value": 0.21942808
     },
     {
       "source": "3,3",
       "target": "3,0",
-      "value": 1
+      "value": 0.19434988
     },
     {
       "source": "3,3",
       "target": "3,7",
-      "value": 1
+      "value": 0.1930262
     },
     {
       "source": "4,5",
       "target": "6,7",
-      "value": 1
+      "value": 0.26487967
     },
     {
       "source": "4,5",
       "target": "5,0",
-      "value": 1
+      "value": 0.25403395
     },
     {
       "source": "4,5",
       "target": "7,9",
-      "value": 1
+      "value": 0.24201499
     },
     {
       "source": "4,5",
       "target": "1,0",
-      "value": 1
+      "value": 0.2084692
     },
     {
       "source": "4,5",
       "target": "5,1",
-      "value": 1
+      "value": 0.1906456
     },
     {
       "source": "4,5",
       "target": "5,9",
-      "value": 1
+      "value": 0.18188357
     },
     {
       "source": "4,5",
       "target": "4,7",
-      "value": 1
+      "value": 0.17853628
     },
     {
       "source": "4,5",
       "target": "3,6",
-      "value": 1
+      "value": 0.15479833
     },
     {
       "source": "7,3",
       "target": "1,9",
-      "value": 1
+      "value": 0.30732974
     },
     {
       "source": "7,3",
       "target": "1,2",
-      "value": 1
+      "value": 0.2808758
     },
     {
       "source": "7,3",
       "target": "2,6",
-      "value": 1
+      "value": 0.260843
     },
     {
       "source": "7,3",
       "target": "3,3",
-      "value": 1
+      "value": 0.24963513
     },
     {
       "source": "7,3",
       "target": "4,2",
-      "value": 1
+      "value": 0.23707117
     },
     {
       "source": "7,3",
       "target": "6,3",
-      "value": 1
+      "value": 0.20514059
     },
     {
       "source": "7,3",
       "target": "6,8",
-      "value": 1
+      "value": 0.20397258
     },
     {
       "source": "7,3",
       "target": "1,7",
-      "value": 1
+      "value": 0.20390116
     },
     {
       "source": "5,6",
       "target": "2,3",
-      "value": 1
+      "value": 0.25233006
     },
     {
       "source": "5,6",
       "target": "0,8",
-      "value": 1
+      "value": 0.19004329
     },
     {
       "source": "5,6",
       "target": "3,0",
-      "value": 1
+      "value": 0.18339641
     },
     {
       "source": "5,6",
       "target": "3,6",
-      "value": 1
+      "value": 0.16925117
     },
     {
       "source": "5,6",
       "target": "6,7",
-      "value": 1
+      "value": 0.1660637
     },
     {
       "source": "5,6",
       "target": "3,5",
-      "value": 1
+      "value": 0.1588138
     },
     {
       "source": "5,6",
       "target": "9,6",
-      "value": 1
+      "value": 0.15658332
     },
     {
       "source": "5,6",
       "target": "8,7",
-      "value": 1
+      "value": 0.15457982
     },
     {
       "source": "2,6",
       "target": "7,3",
-      "value": 1
+      "value": 0.260843
     },
     {
       "source": "2,6",
       "target": "1,6",
-      "value": 1
+      "value": 0.24622443
     },
     {
       "source": "2,6",
       "target": "5,4",
-      "value": 1
+      "value": 0.2033709
     },
     {
       "source": "2,6",
       "target": "7,9",
-      "value": 1
+      "value": 0.19697866
     },
     {
       "source": "2,6",
       "target": "1,9",
-      "value": 1
+      "value": 0.15831089
     },
     {
       "source": "2,6",
       "target": "4,1",
-      "value": 1
+      "value": 0.14771901
     },
     {
       "source": "2,6",
       "target": "5,7",
-      "value": 1
+      "value": 0.14280233
     },
     {
       "source": "2,6",
       "target": "0,8",
-      "value": 1
+      "value": 0.13462643
     },
     {
       "source": "7,5",
       "target": "2,3",
-      "value": 1
+      "value": 0.22495033
     },
     {
       "source": "7,5",
       "target": "5,3",
-      "value": 1
+      "value": 0.22380011
     },
     {
       "source": "7,5",
       "target": "9,7",
-      "value": 1
+      "value": 0.21842557
     },
     {
       "source": "7,5",
       "target": "2,7",
-      "value": 1
+      "value": 0.21689473
     },
     {
       "source": "7,5",
       "target": "9,2",
-      "value": 1
+      "value": 0.1908505
     },
     {
       "source": "7,5",
       "target": "3,6",
-      "value": 1
+      "value": 0.1746895
     },
     {
       "source": "7,5",
       "target": "1,0",
-      "value": 1
+      "value": 0.17087802
     },
     {
       "source": "7,5",
       "target": "2,9",
-      "value": 1
+      "value": 0.16714488
     },
     {
       "source": "2,5",
       "target": "3,2",
-      "value": 1
+      "value": 0.31865653
     },
     {
       "source": "2,5",
       "target": "1,5",
-      "value": 1
+      "value": 0.2919046
     },
     {
       "source": "2,5",
       "target": "0,3",
-      "value": 1
+      "value": 0.2740812
     },
     {
       "source": "2,5",
       "target": "8,6",
-      "value": 1
+      "value": 0.2671839
     },
     {
       "source": "2,5",
       "target": "2,2",
-      "value": 1
+      "value": 0.2612368
     },
     {
       "source": "2,5",
       "target": "1,8",
-      "value": 1
+      "value": 0.2565141
     },
     {
       "source": "2,5",
       "target": "2,0",
-      "value": 1
+      "value": 0.21237211
     },
     {
       "source": "2,5",
       "target": "0,2",
-      "value": 1
+      "value": 0.20057772
     },
     {
       "source": "6,6",
       "target": "0,5",
-      "value": 1
+      "value": 0.26148564
     },
     {
       "source": "6,6",
       "target": "2,2",
-      "value": 1
+      "value": 0.23892547
     },
     {
       "source": "6,6",
       "target": "9,3",
-      "value": 1
+      "value": 0.23221272
     },
     {
       "source": "6,6",
       "target": "5,7",
-      "value": 1
+      "value": 0.22133431
     },
     {
       "source": "6,6",
       "target": "6,2",
-      "value": 1
+      "value": 0.20145836
     },
     {
       "source": "6,6",
       "target": "2,0",
-      "value": 1
+      "value": 0.19992478
     },
     {
       "source": "6,6",
       "target": "8,8",
-      "value": 1
+      "value": 0.19668512
     },
     {
       "source": "6,6",
       "target": "1,1",
-      "value": 1
+      "value": 0.19320934
     },
     {
       "source": "7,4",
       "target": "4,0",
-      "value": 1
+      "value": 0.24454702
     },
     {
       "source": "7,4",
       "target": "8,7",
-      "value": 1
+      "value": 0.24116442
     },
     {
       "source": "7,4",
       "target": "8,0",
-      "value": 1
+      "value": 0.23161462
     },
     {
       "source": "7,4",
       "target": "2,3",
-      "value": 1
+      "value": 0.2140927
     },
     {
       "source": "7,4",
       "target": "7,0",
-      "value": 1
+      "value": 0.2060445
     },
     {
       "source": "7,4",
       "target": "4,1",
-      "value": 1
+      "value": 0.2037644
     },
     {
       "source": "7,4",
       "target": "6,4",
-      "value": 1
+      "value": 0.19248593
     },
     {
       "source": "7,4",
       "target": "1,9",
-      "value": 1
+      "value": 0.18422598
     },
     {
       "source": "6,7",
       "target": "5,1",
-      "value": 1
+      "value": 0.27613932
     },
     {
       "source": "6,7",
       "target": "4,5",
-      "value": 1
+      "value": 0.26487967
     },
     {
       "source": "6,7",
       "target": "3,9",
-      "value": 1
+      "value": 0.26241297
     },
     {
       "source": "6,7",
       "target": "7,9",
-      "value": 1
+      "value": 0.25194874
     },
     {
       "source": "6,7",
       "target": "8,1",
-      "value": 1
+      "value": 0.23715052
     },
     {
       "source": "6,7",
       "target": "3,2",
-      "value": 1
+      "value": 0.23329292
     },
     {
       "source": "6,7",
       "target": "2,7",
-      "value": 1
+      "value": 0.2302159
     },
     {
       "source": "6,7",
       "target": "0,6",
-      "value": 1
+      "value": 0.21774788
     },
     {
       "source": "5,7",
       "target": "2,2",
-      "value": 1
+      "value": 0.39301616
     },
     {
       "source": "5,7",
       "target": "7,9",
-      "value": 1
+      "value": 0.23431472
     },
     {
       "source": "5,7",
       "target": "2,0",
-      "value": 1
+      "value": 0.23134606
     },
     {
       "source": "5,7",
       "target": "6,6",
-      "value": 1
+      "value": 0.22133431
     },
     {
       "source": "5,7",
       "target": "6,2",
-      "value": 1
+      "value": 0.22086534
     },
     {
       "source": "5,7",
       "target": "7,6",
-      "value": 1
+      "value": 0.21050261
     },
     {
       "source": "5,7",
       "target": "9,1",
-      "value": 1
+      "value": 0.18949193
     },
     {
       "source": "5,7",
       "target": "0,6",
-      "value": 1
+      "value": 0.18328229
     },
     {
       "source": "6,1",
       "target": "0,2",
-      "value": 1
+      "value": 0.28679538
     },
     {
       "source": "6,1",
       "target": "8,3",
-      "value": 1
+      "value": 0.24923633
     },
     {
       "source": "6,1",
       "target": "3,4",
-      "value": 1
+      "value": 0.2433971
     },
     {
       "source": "6,1",
       "target": "1,5",
-      "value": 1
+      "value": 0.22780316
     },
     {
       "source": "6,1",
       "target": "1,3",
-      "value": 1
+      "value": 0.22162564
     },
     {
       "source": "6,1",
       "target": "3,5",
-      "value": 1
+      "value": 0.20766832
     },
     {
       "source": "6,1",
       "target": "8,6",
-      "value": 1
+      "value": 0.20358804
     },
     {
       "source": "6,1",
       "target": "8,0",
-      "value": 1
+      "value": 0.19175129
     },
     {
       "source": "4,7",
       "target": "9,3",
-      "value": 1
+      "value": 0.29738137
     },
     {
       "source": "4,7",
       "target": "3,9",
-      "value": 1
+      "value": 0.25243294
     },
     {
       "source": "4,7",
       "target": "9,4",
-      "value": 1
+      "value": 0.22442065
     },
     {
       "source": "4,7",
       "target": "7,0",
-      "value": 1
+      "value": 0.21288766
     },
     {
       "source": "4,7",
       "target": "2,5",
-      "value": 1
+      "value": 0.18919127
     },
     {
       "source": "4,7",
       "target": "3,2",
-      "value": 1
+      "value": 0.18323708
     },
     {
       "source": "4,7",
       "target": "4,5",
-      "value": 1
+      "value": 0.17853628
     },
     {
       "source": "4,7",
       "target": "0,2",
-      "value": 1
+      "value": 0.17418648
     },
     {
       "source": "2,4",
       "target": "3,6",
-      "value": 1
+      "value": 0.23812576
     },
     {
       "source": "2,4",
       "target": "8,6",
-      "value": 1
+      "value": 0.20220436
     },
     {
       "source": "2,4",
       "target": "7,9",
-      "value": 1
+      "value": 0.1968033
     },
     {
       "source": "2,4",
       "target": "2,2",
-      "value": 1
+      "value": 0.19678415
     },
     {
       "source": "2,4",
       "target": "2,5",
-      "value": 1
+      "value": 0.19270518
     },
     {
       "source": "2,4",
       "target": "9,4",
-      "value": 1
+      "value": 0.18619138
     },
     {
       "source": "2,4",
       "target": "1,8",
-      "value": 1
+      "value": 0.18374728
     },
     {
       "source": "2,4",
       "target": "9,3",
-      "value": 1
+      "value": 0.17889078
     },
     {
       "source": "1,5",
       "target": "2,5",
-      "value": 1
+      "value": 0.2919046
     },
     {
       "source": "1,5",
       "target": "2,3",
-      "value": 1
+      "value": 0.28576556
     },
     {
       "source": "1,5",
       "target": "6,9",
-      "value": 1
+      "value": 0.25939593
     },
     {
       "source": "1,5",
       "target": "3,2",
-      "value": 1
+      "value": 0.23961847
     },
     {
       "source": "1,5",
       "target": "6,1",
-      "value": 1
+      "value": 0.22780316
     },
     {
       "source": "1,5",
       "target": "3,9",
-      "value": 1
+      "value": 0.2273391
     },
     {
       "source": "1,5",
       "target": "8,1",
-      "value": 1
+      "value": 0.2180162
     },
     {
       "source": "1,5",
       "target": "5,5",
-      "value": 1
+      "value": 0.21650329
     },
     {
       "source": "3,1",
       "target": "7,8",
-      "value": 1
+      "value": 0.2617068
     },
     {
       "source": "3,1",
       "target": "6,4",
-      "value": 1
+      "value": 0.24744962
     },
     {
       "source": "3,1",
       "target": "9,0",
-      "value": 1
+      "value": 0.23796077
     },
     {
       "source": "3,1",
       "target": "8,3",
-      "value": 1
+      "value": 0.22734688
     },
     {
       "source": "3,1",
       "target": "0,7",
-      "value": 1
+      "value": 0.21279371
     },
     {
       "source": "3,1",
       "target": "5,4",
-      "value": 1
+      "value": 0.20957142
     },
     {
       "source": "3,1",
       "target": "3,8",
-      "value": 1
+      "value": 0.19200814
     },
     {
       "source": "3,1",
       "target": "1,2",
-      "value": 1
+      "value": 0.1873568
     },
     {
       "source": "5,4",
       "target": "2,3",
-      "value": 1
+      "value": 0.28584105
     },
     {
       "source": "5,4",
       "target": "7,9",
-      "value": 1
+      "value": 0.21859343
     },
     {
       "source": "5,4",
       "target": "3,1",
-      "value": 1
+      "value": 0.20957142
     },
     {
       "source": "5,4",
       "target": "3,6",
-      "value": 1
+      "value": 0.20596507
     },
     {
       "source": "5,4",
       "target": "2,6",
-      "value": 1
+      "value": 0.2033709
     },
     {
       "source": "5,4",
       "target": "4,3",
-      "value": 1
+      "value": 0.18357806
     },
     {
       "source": "5,4",
       "target": "8,4",
-      "value": 1
+      "value": 0.17376079
     },
     {
       "source": "5,4",
       "target": "1,2",
-      "value": 1
+      "value": 0.17143336
     },
     {
       "source": "4,3",
       "target": "1,9",
-      "value": 1
+      "value": 0.21367657
     },
     {
       "source": "4,3",
       "target": "7,3",
-      "value": 1
+      "value": 0.20260766
     },
     {
       "source": "4,3",
       "target": "8,6",
-      "value": 1
+      "value": 0.19673823
     },
     {
       "source": "4,3",
       "target": "1,0",
-      "value": 1
+      "value": 0.19591562
     },
     {
       "source": "4,3",
       "target": "5,4",
-      "value": 1
+      "value": 0.18357806
     },
     {
       "source": "4,3",
       "target": "1,8",
-      "value": 1
+      "value": 0.17817485
     },
     {
       "source": "4,3",
       "target": "4,7",
-      "value": 1
+      "value": 0.16163784
     },
     {
       "source": "4,3",
       "target": "8,1",
-      "value": 1
+      "value": 0.15651737
     },
     {
       "source": "6,2",
       "target": "5,7",
-      "value": 1
+      "value": 0.22086534
     },
     {
       "source": "6,2",
       "target": "3,3",
-      "value": 1
+      "value": 0.21942808
     },
     {
       "source": "6,2",
       "target": "6,6",
-      "value": 1
+      "value": 0.20145836
     },
     {
       "source": "6,2",
       "target": "8,1",
-      "value": 1
+      "value": 0.19123597
     },
     {
       "source": "6,2",
       "target": "8,0",
-      "value": 1
+      "value": 0.17999548
     },
     {
       "source": "6,2",
       "target": "7,4",
-      "value": 1
+      "value": 0.16946805
     },
     {
       "source": "6,2",
       "target": "2,3",
-      "value": 1
+      "value": 0.16879587
     },
     {
       "source": "6,2",
       "target": "2,5",
-      "value": 1
+      "value": 0.16521916
     },
     {
       "source": "8,5",
       "target": "5,1",
-      "value": 1
+      "value": 0.34701714
     },
     {
       "source": "8,5",
       "target": "8,1",
-      "value": 1
+      "value": 0.3212863
     },
     {
       "source": "8,5",
       "target": "2,0",
-      "value": 1
+      "value": 0.26900753
     },
     {
       "source": "8,5",
       "target": "9,6",
-      "value": 1
+      "value": 0.23154046
     },
     {
       "source": "8,5",
       "target": "8,6",
-      "value": 1
+      "value": 0.2307113
     },
     {
       "source": "8,5",
       "target": "1,3",
-      "value": 1
+      "value": 0.22192848
     },
     {
       "source": "8,5",
       "target": "9,4",
-      "value": 1
+      "value": 0.21528223
     },
     {
       "source": "8,5",
       "target": "7,8",
-      "value": 1
+      "value": 0.2065191
     },
     {
       "source": "4,2",
       "target": "4,4",
-      "value": 1
+      "value": 0.24546878
     },
     {
       "source": "4,2",
       "target": "7,3",
-      "value": 1
+      "value": 0.23707117
     },
     {
       "source": "4,2",
       "target": "1,7",
-      "value": 1
+      "value": 0.22839172
     },
     {
       "source": "4,2",
       "target": "9,1",
-      "value": 1
+      "value": 0.19625811
     },
     {
       "source": "4,2",
       "target": "6,6",
-      "value": 1
+      "value": 0.18213768
     },
     {
       "source": "4,2",
       "target": "9,3",
-      "value": 1
+      "value": 0.16489805
     },
     {
       "source": "4,2",
       "target": "1,2",
-      "value": 1
+      "value": 0.16222647
     },
     {
       "source": "4,2",
       "target": "0,5",
-      "value": 1
+      "value": 0.16095789
     },
     {
       "source": "3,7",
       "target": "8,7",
-      "value": 1
+      "value": 0.2863015
     },
     {
       "source": "3,7",
       "target": "1,9",
-      "value": 1
+      "value": 0.27003846
     },
     {
       "source": "3,7",
       "target": "5,0",
-      "value": 1
+      "value": 0.26140484
     },
     {
       "source": "3,7",
       "target": "6,8",
-      "value": 1
+      "value": 0.25012073
     },
     {
       "source": "3,7",
       "target": "2,9",
-      "value": 1
+      "value": 0.24526809
     },
     {
       "source": "3,7",
       "target": "5,2",
-      "value": 1
+      "value": 0.2111789
     },
     {
       "source": "3,7",
       "target": "3,3",
-      "value": 1
+      "value": 0.1930262
     },
     {
       "source": "3,7",
       "target": "8,5",
-      "value": 1
+      "value": 0.18817803
     },
     {
       "source": "1,3",
       "target": "0,8",
-      "value": 1
+      "value": 0.2968847
     },
     {
       "source": "1,3",
       "target": "8,0",
-      "value": 1
+      "value": 0.27023408
     },
     {
       "source": "1,3",
       "target": "0,7",
-      "value": 1
+      "value": 0.26169965
     },
     {
       "source": "1,3",
       "target": "8,5",
-      "value": 1
+      "value": 0.22192848
     },
     {
       "source": "1,3",
       "target": "6,1",
-      "value": 1
+      "value": 0.22162564
     },
     {
       "source": "1,3",
       "target": "0,6",
-      "value": 1
+      "value": 0.22120664
     },
     {
       "source": "1,3",
       "target": "7,9",
-      "value": 1
+      "value": 0.21694233
     },
     {
       "source": "1,3",
       "target": "6,9",
-      "value": 1
+      "value": 0.2153213
     },
     {
       "source": "5,1",
       "target": "3,2",
-      "value": 1
+      "value": 0.35415164
     },
     {
       "source": "5,1",
       "target": "8,1",
-      "value": 1
+      "value": 0.35211715
     },
     {
       "source": "5,1",
       "target": "8,5",
-      "value": 1
+      "value": 0.34701714
     },
     {
       "source": "5,1",
       "target": "5,0",
-      "value": 1
+      "value": 0.27837884
     },
     {
       "source": "5,1",
       "target": "6,7",
-      "value": 1
+      "value": 0.27613932
     },
     {
       "source": "5,1",
       "target": "7,8",
-      "value": 1
+      "value": 0.25757197
     },
     {
       "source": "5,1",
       "target": "9,2",
-      "value": 1
+      "value": 0.25044134
     },
     {
       "source": "5,1",
       "target": "4,0",
-      "value": 1
+      "value": 0.23695692
     },
     {
       "source": "7,6",
       "target": "7,7",
-      "value": 1
+      "value": 0.23775546
     },
     {
       "source": "7,6",
       "target": "2,2",
-      "value": 1
+      "value": 0.22301541
     },
     {
       "source": "7,6",
       "target": "5,7",
-      "value": 1
+      "value": 0.21050261
     },
     {
       "source": "7,6",
       "target": "4,0",
-      "value": 1
+      "value": 0.18888718
     },
     {
       "source": "7,6",
       "target": "2,9",
-      "value": 1
+      "value": 0.17524001
     },
     {
       "source": "7,6",
       "target": "6,6",
-      "value": 1
+      "value": 0.15235429
     },
     {
       "source": "7,6",
       "target": "4,1",
-      "value": 1
+      "value": 0.14297765
     },
     {
       "source": "7,6",
       "target": "1,3",
-      "value": 1
+      "value": 0.1429621
     },
     {
       "source": "1,6",
       "target": "2,6",
-      "value": 1
+      "value": 0.24622443
     },
     {
       "source": "1,6",
       "target": "1,3",
-      "value": 1
+      "value": 0.20044845
     },
     {
       "source": "1,6",
       "target": "0,4",
-      "value": 1
+      "value": 0.1952914
     },
     {
       "source": "1,6",
       "target": "3,5",
-      "value": 1
+      "value": 0.17813921
     },
     {
       "source": "1,6",
       "target": "7,3",
-      "value": 1
+      "value": 0.17264381
     },
     {
       "source": "1,6",
       "target": "5,9",
-      "value": 1
+      "value": 0.16172993
     },
     {
       "source": "1,6",
       "target": "0,8",
-      "value": 1
+      "value": 0.15361694
     },
     {
       "source": "1,6",
       "target": "5,2",
-      "value": 1
+      "value": 0.15209012
     },
     {
       "source": "4,1",
       "target": "7,4",
-      "value": 1
+      "value": 0.2037644
     },
     {
       "source": "4,1",
       "target": "2,2",
-      "value": 1
+      "value": 0.1887016
     },
     {
       "source": "4,1",
       "target": "2,5",
-      "value": 1
+      "value": 0.17212348
     },
     {
       "source": "4,1",
       "target": "2,1",
-      "value": 1
+      "value": 0.15624359
     },
     {
       "source": "4,1",
       "target": "8,0",
-      "value": 1
+      "value": 0.14782657
     },
     {
       "source": "4,1",
       "target": "2,6",
-      "value": 1
+      "value": 0.14771901
     },
     {
       "source": "4,1",
       "target": "1,3",
-      "value": 1
+      "value": 0.14470103
     },
     {
       "source": "4,1",
       "target": "7,6",
-      "value": 1
+      "value": 0.14297765
     },
     {
       "source": "3,2",
       "target": "5,1",
-      "value": 1
+      "value": 0.35415164
     },
     {
       "source": "3,2",
       "target": "2,5",
-      "value": 1
+      "value": 0.31865653
     },
     {
       "source": "3,2",
       "target": "7,8",
-      "value": 1
+      "value": 0.2962328
     },
     {
       "source": "3,2",
       "target": "0,4",
-      "value": 1
+      "value": 0.27829534
     },
     {
       "source": "3,2",
       "target": "0,2",
-      "value": 1
+      "value": 0.27471623
     },
     {
       "source": "3,2",
       "target": "9,3",
-      "value": 1
+      "value": 0.25923046
     },
     {
       "source": "3,2",
       "target": "2,2",
-      "value": 1
+      "value": 0.25429398
     },
     {
       "source": "3,2",
       "target": "9,9",
-      "value": 1
+      "value": 0.24280792
     },
     {
       "source": "2,2",
       "target": "5,7",
-      "value": 1
+      "value": 0.39301616
     },
     {
       "source": "2,2",
       "target": "7,9",
-      "value": 1
+      "value": 0.32162654
     },
     {
       "source": "2,2",
       "target": "2,5",
-      "value": 1
+      "value": 0.2612368
     },
     {
       "source": "2,2",
       "target": "3,2",
-      "value": 1
+      "value": 0.25429398
     },
     {
       "source": "2,2",
       "target": "6,6",
-      "value": 1
+      "value": 0.23892547
     },
     {
       "source": "2,2",
       "target": "7,6",
-      "value": 1
+      "value": 0.22301541
     },
     {
       "source": "2,2",
       "target": "9,1",
-      "value": 1
+      "value": 0.21088867
     },
     {
       "source": "2,2",
       "target": "9,9",
-      "value": 1
+      "value": 0.20524675
     },
     {
       "source": "2,3",
       "target": "8,0",
-      "value": 1
+      "value": 0.3896077
     },
     {
       "source": "2,3",
       "target": "6,9",
-      "value": 1
+      "value": 0.2877458
     },
     {
       "source": "2,3",
       "target": "5,4",
-      "value": 1
+      "value": 0.28584105
     },
     {
       "source": "2,3",
       "target": "1,5",
-      "value": 1
+      "value": 0.28576556
     },
     {
       "source": "2,3",
       "target": "0,2",
-      "value": 1
+      "value": 0.27927616
     },
     {
       "source": "2,3",
       "target": "7,9",
-      "value": 1
+      "value": 0.2685834
     },
     {
       "source": "2,3",
       "target": "5,6",
-      "value": 1
+      "value": 0.25233006
     },
     {
       "source": "2,3",
       "target": "7,5",
-      "value": 1
+      "value": 0.22495033
     },
     {
       "source": "8,4",
       "target": "1,4",
-      "value": 1
+      "value": 0.28567
     },
     {
       "source": "8,4",
       "target": "7,2",
-      "value": 1
+      "value": 0.24183242
     },
     {
       "source": "8,4",
       "target": "3,9",
-      "value": 1
+      "value": 0.19006167
     },
     {
       "source": "8,4",
       "target": "5,4",
-      "value": 1
+      "value": 0.17376079
     },
     {
       "source": "8,4",
       "target": "6,8",
-      "value": 1
+      "value": 0.16410878
     },
     {
       "source": "8,4",
       "target": "5,5",
-      "value": 1
+      "value": 0.1614687
     },
     {
       "source": "8,4",
       "target": "8,8",
-      "value": 1
+      "value": 0.15812925
     },
     {
       "source": "8,4",
       "target": "0,8",
-      "value": 1
+      "value": 0.15603158
     },
     {
       "source": "1,4",
       "target": "8,4",
-      "value": 1
+      "value": 0.28567
     },
     {
       "source": "1,4",
       "target": "6,7",
-      "value": 1
+      "value": 0.21082522
     },
     {
       "source": "1,4",
       "target": "8,9",
-      "value": 1
+      "value": 0.20562887
     },
     {
       "source": "1,4",
       "target": "9,0",
-      "value": 1
+      "value": 0.16129573
     },
     {
       "source": "1,4",
       "target": "6,8",
-      "value": 1
+      "value": 0.16028437
     },
     {
       "source": "1,4",
       "target": "0,8",
-      "value": 1
+      "value": 0.14693561
     },
     {
       "source": "1,4",
       "target": "3,2",
-      "value": 1
+      "value": 0.13689099
     },
     {
       "source": "1,4",
       "target": "3,9",
-      "value": 1
+      "value": 0.13555773
     },
     {
       "source": "8,8",
       "target": "2,0",
-      "value": 1
+      "value": 0.23883268
     },
     {
       "source": "8,8",
       "target": "6,8",
-      "value": 1
+      "value": 0.20880754
     },
     {
       "source": "8,8",
       "target": "6,6",
-      "value": 1
+      "value": 0.19668512
     },
     {
       "source": "8,8",
       "target": "3,9",
-      "value": 1
+      "value": 0.17257857
     },
     {
       "source": "8,8",
       "target": "9,3",
-      "value": 1
+      "value": 0.17190482
     },
     {
       "source": "8,8",
       "target": "8,4",
-      "value": 1
+      "value": 0.15812925
     },
     {
       "source": "8,8",
       "target": "6,7",
-      "value": 1
+      "value": 0.15688777
     },
     {
       "source": "8,8",
       "target": "0,2",
-      "value": 1
+      "value": 0.1530553
     },
     {
       "source": "1,1",
       "target": "3,2",
-      "value": 1
+      "value": 0.22384639
     },
     {
       "source": "1,1",
       "target": "6,4",
-      "value": 1
+      "value": 0.21906109
     },
     {
       "source": "1,1",
       "target": "6,6",
-      "value": 1
+      "value": 0.19320934
     },
     {
       "source": "1,1",
       "target": "4,0",
-      "value": 1
+      "value": 0.18916817
     },
     {
       "source": "1,1",
       "target": "7,9",
-      "value": 1
+      "value": 0.18723007
     },
     {
       "source": "1,1",
       "target": "2,3",
-      "value": 1
+      "value": 0.17720272
     },
     {
       "source": "1,1",
       "target": "2,9",
-      "value": 1
+      "value": 0.15355745
     },
     {
       "source": "1,1",
       "target": "1,8",
-      "value": 1
+      "value": 0.14682901
     },
     {
       "source": "9,5",
       "target": "1,9",
-      "value": 1
+      "value": 0.23430057
     },
     {
       "source": "9,5",
       "target": "1,7",
-      "value": 1
+      "value": 0.1957284
     },
     {
       "source": "9,5",
       "target": "8,2",
-      "value": 1
+      "value": 0.182085
     },
     {
       "source": "9,5",
       "target": "0,0",
-      "value": 1
+      "value": 0.15772526
     },
     {
       "source": "9,5",
       "target": "4,0",
-      "value": 1
+      "value": 0.15411563
     },
     {
       "source": "9,5",
       "target": "7,8",
-      "value": 1
+      "value": 0.15403515
     },
     {
       "source": "9,5",
       "target": "3,7",
-      "value": 1
+      "value": 0.14262903
     },
     {
       "source": "9,5",
       "target": "0,6",
-      "value": 1
+      "value": 0.13563818
     },
     {
       "source": "8,6",
       "target": "8,1",
-      "value": 1
+      "value": 0.27725405
     },
     {
       "source": "8,6",
       "target": "2,5",
-      "value": 1
+      "value": 0.2671839
     },
     {
       "source": "8,6",
       "target": "7,8",
-      "value": 1
+      "value": 0.25966564
     },
     {
       "source": "8,6",
       "target": "1,8",
-      "value": 1
+      "value": 0.2510632
     },
     {
       "source": "8,6",
       "target": "5,2",
-      "value": 1
+      "value": 0.24542034
     },
     {
       "source": "8,6",
       "target": "8,5",
-      "value": 1
+      "value": 0.2307113
     },
     {
       "source": "8,6",
       "target": "9,3",
-      "value": 1
+      "value": 0.22293656
     },
     {
       "source": "8,6",
       "target": "6,1",
-      "value": 1
+      "value": 0.20358804
     },
     {
       "source": "5,0",
       "target": "5,1",
-      "value": 1
+      "value": 0.27837884
     },
     {
       "source": "5,0",
       "target": "3,7",
-      "value": 1
+      "value": 0.26140484
     },
     {
       "source": "5,0",
       "target": "4,5",
-      "value": 1
+      "value": 0.25403395
     },
     {
       "source": "5,0",
       "target": "6,4",
-      "value": 1
+      "value": 0.23221876
     },
     {
       "source": "5,0",
       "target": "5,3",
-      "value": 1
+      "value": 0.2265155
     },
     {
       "source": "5,0",
       "target": "9,8",
-      "value": 1
+      "value": 0.20788082
     },
     {
       "source": "5,0",
       "target": "1,9",
-      "value": 1
+      "value": 0.18612923
     },
     {
       "source": "5,0",
       "target": "8,9",
-      "value": 1
+      "value": 0.17629682
     },
     {
       "source": "6,8",
       "target": "2,9",
-      "value": 1
+      "value": 0.28770766
     },
     {
       "source": "6,8",
       "target": "3,9",
-      "value": 1
+      "value": 0.26934645
     },
     {
       "source": "6,8",
       "target": "8,7",
-      "value": 1
+      "value": 0.26716286
     },
     {
       "source": "6,8",
       "target": "3,3",
-      "value": 1
+      "value": 0.25332683
     },
     {
       "source": "6,8",
       "target": "3,7",
-      "value": 1
+      "value": 0.25012073
     },
     {
       "source": "6,8",
       "target": "9,8",
-      "value": 1
+      "value": 0.24873748
     },
     {
       "source": "6,8",
       "target": "9,2",
-      "value": 1
+      "value": 0.24783473
     },
     {
       "source": "6,8",
       "target": "8,8",
-      "value": 1
+      "value": 0.20880754
     },
     {
       "source": "7,8",
       "target": "0,2",
-      "value": 1
+      "value": 0.30766353
     },
     {
       "source": "7,8",
       "target": "3,2",
-      "value": 1
+      "value": 0.2962328
     },
     {
       "source": "7,8",
       "target": "7,1",
-      "value": 1
+      "value": 0.286795
     },
     {
       "source": "7,8",
       "target": "3,1",
-      "value": 1
+      "value": 0.2617068
     },
     {
       "source": "7,8",
       "target": "8,6",
-      "value": 1
+      "value": 0.25966564
     },
     {
       "source": "7,8",
       "target": "5,1",
-      "value": 1
+      "value": 0.25757197
     },
     {
       "source": "7,8",
       "target": "8,1",
-      "value": 1
+      "value": 0.21506107
     },
     {
       "source": "7,8",
       "target": "8,5",
-      "value": 1
+      "value": 0.2065191
     },
     {
       "source": "2,7",
       "target": "6,7",
-      "value": 1
+      "value": 0.2302159
     },
     {
       "source": "2,7",
       "target": "7,5",
-      "value": 1
+      "value": 0.21689473
     },
     {
       "source": "2,7",
       "target": "9,2",
-      "value": 1
+      "value": 0.19737777
     },
     {
       "source": "2,7",
       "target": "0,5",
-      "value": 1
+      "value": 0.17670673
     },
     {
       "source": "2,7",
       "target": "8,0",
-      "value": 1
+      "value": 0.1743691
     },
     {
       "source": "2,7",
       "target": "2,2",
-      "value": 1
+      "value": 0.17431493
     },
     {
       "source": "2,7",
       "target": "6,5",
-      "value": 1
+      "value": 0.16346768
     },
     {
       "source": "2,7",
       "target": "7,4",
-      "value": 1
+      "value": 0.16123031
     },
     {
       "source": "0,5",
       "target": "6,6",
-      "value": 1
+      "value": 0.26148564
     },
     {
       "source": "0,5",
       "target": "5,8",
-      "value": 1
+      "value": 0.2100741
     },
     {
       "source": "0,5",
       "target": "0,6",
-      "value": 1
+      "value": 0.1910617
     },
     {
       "source": "0,5",
       "target": "2,7",
-      "value": 1
+      "value": 0.17670673
     },
     {
       "source": "0,5",
       "target": "9,1",
-      "value": 1
+      "value": 0.16599621
     },
     {
       "source": "0,5",
       "target": "1,7",
-      "value": 1
+      "value": 0.16183701
     },
     {
       "source": "0,5",
       "target": "4,2",
-      "value": 1
+      "value": 0.16095789
     },
     {
       "source": "0,5",
       "target": "5,0",
-      "value": 1
+      "value": 0.14738175
     },
     {
       "source": "0,6",
       "target": "8,1",
-      "value": 1
+      "value": 0.22546196
     },
     {
       "source": "0,6",
       "target": "1,3",
-      "value": 1
+      "value": 0.22120664
     },
     {
       "source": "0,6",
       "target": "6,7",
-      "value": 1
+      "value": 0.21774788
     },
     {
       "source": "0,6",
       "target": "9,4",
-      "value": 1
+      "value": 0.199301
     },
     {
       "source": "0,6",
       "target": "7,8",
-      "value": 1
+      "value": 0.19279778
     },
     {
       "source": "0,6",
       "target": "0,5",
-      "value": 1
+      "value": 0.1910617
     },
     {
       "source": "0,6",
       "target": "8,5",
-      "value": 1
+      "value": 0.18571535
     },
     {
       "source": "0,6",
       "target": "0,2",
-      "value": 1
+      "value": 0.18510567
     },
     {
       "source": "3,8",
       "target": "3,4",
-      "value": 1
+      "value": 0.23810735
     },
     {
       "source": "3,8",
       "target": "3,1",
-      "value": 1
+      "value": 0.19200814
     },
     {
       "source": "3,8",
       "target": "1,2",
-      "value": 1
+      "value": 0.15867344
     },
     {
       "source": "3,8",
       "target": "1,7",
-      "value": 1
+      "value": 0.1552982
     },
     {
       "source": "3,8",
       "target": "8,6",
-      "value": 1
+      "value": 0.14201653
     },
     {
       "source": "3,8",
       "target": "1,0",
-      "value": 1
+      "value": 0.13193808
     },
     {
       "source": "3,8",
       "target": "7,8",
-      "value": 1
+      "value": 0.12204612
     },
     {
       "source": "3,8",
       "target": "5,1",
-      "value": 1
+      "value": 0.11635177
     },
     {
       "source": "8,7",
       "target": "3,7",
-      "value": 1
+      "value": 0.2863015
     },
     {
       "source": "8,7",
       "target": "6,8",
-      "value": 1
+      "value": 0.26716286
     },
     {
       "source": "8,7",
       "target": "7,4",
-      "value": 1
+      "value": 0.24116442
     },
     {
       "source": "8,7",
       "target": "3,9",
-      "value": 1
+      "value": 0.21337116
     },
     {
       "source": "8,7",
       "target": "2,0",
-      "value": 1
+      "value": 0.20631525
     },
     {
       "source": "8,7",
       "target": "0,8",
-      "value": 1
+      "value": 0.18901822
     },
     {
       "source": "8,7",
       "target": "3,4",
-      "value": 1
+      "value": 0.1817272
     },
     {
       "source": "8,7",
       "target": "9,9",
-      "value": 1
+      "value": 0.17473759
     },
     {
       "source": "4,0",
       "target": "1,9",
-      "value": 1
+      "value": 0.25478336
     },
     {
       "source": "4,0",
       "target": "7,4",
-      "value": 1
+      "value": 0.24454702
     },
     {
       "source": "4,0",
       "target": "5,1",
-      "value": 1
+      "value": 0.23695692
     },
     {
       "source": "4,0",
       "target": "9,3",
-      "value": 1
+      "value": 0.20741223
     },
     {
       "source": "4,0",
       "target": "9,4",
-      "value": 1
+      "value": 0.20240632
     },
     {
       "source": "4,0",
       "target": "1,1",
-      "value": 1
+      "value": 0.18916817
     },
     {
       "source": "4,0",
       "target": "7,6",
-      "value": 1
+      "value": 0.18888718
     },
     {
       "source": "4,0",
       "target": "8,2",
-      "value": 1
+      "value": 0.1803926
     },
     {
       "source": "7,1",
       "target": "7,8",
-      "value": 1
+      "value": 0.286795
     },
     {
       "source": "7,1",
       "target": "3,6",
-      "value": 1
+      "value": 0.18889228
     },
     {
       "source": "7,1",
       "target": "6,5",
-      "value": 1
+      "value": 0.16945252
     },
     {
       "source": "7,1",
       "target": "1,0",
-      "value": 1
+      "value": 0.1572743
     },
     {
       "source": "7,1",
       "target": "4,8",
-      "value": 1
+      "value": 0.15706758
     },
     {
       "source": "7,1",
       "target": "9,2",
-      "value": 1
+      "value": 0.15482539
     },
     {
       "source": "7,1",
       "target": "2,8",
-      "value": 1
+      "value": 0.15268554
     },
     {
       "source": "7,1",
       "target": "8,1",
-      "value": 1
+      "value": 0.14854982
     },
     {
       "source": "2,1",
       "target": "2,8",
-      "value": 1
+      "value": 0.19696651
     },
     {
       "source": "2,1",
       "target": "0,9",
-      "value": 1
+      "value": 0.18545449
     },
     {
       "source": "2,1",
       "target": "6,0",
-      "value": 1
+      "value": 0.17543189
     },
     {
       "source": "2,1",
       "target": "1,2",
-      "value": 1
+      "value": 0.17532441
     },
     {
       "source": "2,1",
       "target": "7,4",
-      "value": 1
+      "value": 0.16290079
     },
     {
       "source": "2,1",
       "target": "4,1",
-      "value": 1
+      "value": 0.15624359
     },
     {
       "source": "2,1",
       "target": "5,4",
-      "value": 1
+      "value": 0.1428136
     },
     {
       "source": "2,1",
       "target": "0,8",
-      "value": 1
+      "value": 0.14243369
     },
     {
       "source": "5,8",
       "target": "2,8",
-      "value": 1
+      "value": 0.23668714
     },
     {
       "source": "5,8",
       "target": "0,5",
-      "value": 1
+      "value": 0.2100741
     },
     {
       "source": "5,8",
       "target": "5,5",
-      "value": 1
+      "value": 0.2091085
     },
     {
       "source": "5,8",
       "target": "1,3",
-      "value": 1
+      "value": 0.17899832
     },
     {
       "source": "5,8",
       "target": "9,6",
-      "value": 1
+      "value": 0.16661173
     },
     {
       "source": "5,8",
       "target": "0,3",
-      "value": 1
+      "value": 0.16159952
     },
     {
       "source": "5,8",
       "target": "4,0",
-      "value": 1
+      "value": 0.14698537
     },
     {
       "source": "5,8",
       "target": "2,1",
-      "value": 1
+      "value": 0.14077432
     },
     {
       "source": "8,9",
       "target": "1,7",
-      "value": 1
+      "value": 0.20585546
     },
     {
       "source": "8,9",
       "target": "1,4",
-      "value": 1
+      "value": 0.20562887
     },
     {
       "source": "8,9",
       "target": "8,2",
-      "value": 1
+      "value": 0.17733558
     },
     {
       "source": "8,9",
       "target": "5,0",
-      "value": 1
+      "value": 0.17629682
     },
     {
       "source": "8,9",
       "target": "6,7",
-      "value": 1
+      "value": 0.16840732
     },
     {
       "source": "8,9",
       "target": "2,1",
-      "value": 1
+      "value": 0.14143066
     },
     {
       "source": "8,9",
       "target": "2,7",
-      "value": 1
+      "value": 0.14098705
     },
     {
       "source": "8,9",
       "target": "0,3",
-      "value": 1
+      "value": 0.13296635
     },
     {
       "source": "0,4",
       "target": "3,2",
-      "value": 1
+      "value": 0.27829534
     },
     {
       "source": "0,4",
       "target": "2,9",
-      "value": 1
+      "value": 0.26503506
     },
     {
       "source": "0,4",
       "target": "1,3",
-      "value": 1
+      "value": 0.19824938
     },
     {
       "source": "0,4",
       "target": "1,6",
-      "value": 1
+      "value": 0.1952914
     },
     {
       "source": "0,4",
       "target": "6,0",
-      "value": 1
+      "value": 0.194627
     },
     {
       "source": "0,4",
       "target": "4,4",
-      "value": 1
+      "value": 0.19241866
     },
     {
       "source": "0,4",
       "target": "1,9",
-      "value": 1
+      "value": 0.18464528
     },
     {
       "source": "0,4",
       "target": "7,2",
-      "value": 1
+      "value": 0.18103155
     },
     {
       "source": "1,2",
       "target": "7,3",
-      "value": 1
+      "value": 0.2808758
     },
     {
       "source": "1,2",
       "target": "0,2",
-      "value": 1
+      "value": 0.25620398
     },
     {
       "source": "1,2",
       "target": "6,0",
-      "value": 1
+      "value": 0.24445517
     },
     {
       "source": "1,2",
       "target": "1,0",
-      "value": 1
+      "value": 0.20501617
     },
     {
       "source": "1,2",
       "target": "3,1",
-      "value": 1
+      "value": 0.1873568
     },
     {
       "source": "1,2",
       "target": "1,7",
-      "value": 1
+      "value": 0.18391714
     },
     {
       "source": "1,2",
       "target": "8,5",
-      "value": 1
+      "value": 0.18238214
     },
     {
       "source": "1,2",
       "target": "6,4",
-      "value": 1
+      "value": 0.17786977
     },
     {
       "source": "7,9",
       "target": "2,2",
-      "value": 1
+      "value": 0.32162654
     },
     {
       "source": "7,9",
       "target": "2,3",
-      "value": 1
+      "value": 0.2685834
     },
     {
       "source": "7,9",
       "target": "3,9",
-      "value": 1
+      "value": 0.26809743
     },
     {
       "source": "7,9",
       "target": "6,7",
-      "value": 1
+      "value": 0.25194874
     },
     {
       "source": "7,9",
       "target": "4,5",
-      "value": 1
+      "value": 0.24201499
     },
     {
       "source": "7,9",
       "target": "5,7",
-      "value": 1
+      "value": 0.23431472
     },
     {
       "source": "7,9",
       "target": "5,4",
-      "value": 1
+      "value": 0.21859343
     },
     {
       "source": "7,9",
       "target": "1,3",
-      "value": 1
+      "value": 0.21694233
     },
     {
       "source": "8,3",
       "target": "6,1",
-      "value": 1
+      "value": 0.24923633
     },
     {
       "source": "8,3",
       "target": "7,2",
-      "value": 1
+      "value": 0.23511997
     },
     {
       "source": "8,3",
       "target": "0,9",
-      "value": 1
+      "value": 0.2279216
     },
     {
       "source": "8,3",
       "target": "3,1",
-      "value": 1
+      "value": 0.22734688
     },
     {
       "source": "8,3",
       "target": "9,9",
-      "value": 1
+      "value": 0.21983035
     },
     {
       "source": "8,3",
       "target": "9,8",
-      "value": 1
+      "value": 0.21692578
     },
     {
       "source": "8,3",
       "target": "9,6",
-      "value": 1
+      "value": 0.21274868
     },
     {
       "source": "8,3",
       "target": "7,3",
-      "value": 1
+      "value": 0.18612354
     },
     {
       "source": "8,2",
       "target": "5,1",
-      "value": 1
+      "value": 0.2092135
     },
     {
       "source": "8,2",
       "target": "9,5",
-      "value": 1
+      "value": 0.182085
     },
     {
       "source": "8,2",
       "target": "4,0",
-      "value": 1
+      "value": 0.1803926
     },
     {
       "source": "8,2",
       "target": "8,9",
-      "value": 1
+      "value": 0.17733558
     },
     {
       "source": "8,2",
       "target": "8,5",
-      "value": 1
+      "value": 0.16996595
     },
     {
       "source": "8,2",
       "target": "7,4",
-      "value": 1
+      "value": 0.15928811
     },
     {
       "source": "8,2",
       "target": "9,2",
-      "value": 1
+      "value": 0.15740706
     },
     {
       "source": "8,2",
       "target": "9,4",
-      "value": 1
+      "value": 0.15551601
     },
     {
       "source": "9,6",
       "target": "9,9",
-      "value": 1
+      "value": 0.23361255
     },
     {
       "source": "9,6",
       "target": "8,5",
-      "value": 1
+      "value": 0.23154046
     },
     {
       "source": "9,6",
       "target": "6,9",
-      "value": 1
+      "value": 0.21789777
     },
     {
       "source": "9,6",
       "target": "8,3",
-      "value": 1
+      "value": 0.21274868
     },
     {
       "source": "9,6",
       "target": "3,4",
-      "value": 1
+      "value": 0.2055856
     },
     {
       "source": "9,6",
       "target": "6,6",
-      "value": 1
+      "value": 0.19301103
     },
     {
       "source": "9,6",
       "target": "5,5",
-      "value": 1
+      "value": 0.19053845
     },
     {
       "source": "9,6",
       "target": "5,8",
-      "value": 1
+      "value": 0.16661173
     },
     {
       "source": "2,8",
       "target": "5,8",
-      "value": 1
+      "value": 0.23668714
     },
     {
       "source": "2,8",
       "target": "5,5",
-      "value": 1
+      "value": 0.23418091
     },
     {
       "source": "2,8",
       "target": "2,1",
-      "value": 1
+      "value": 0.19696651
     },
     {
       "source": "2,8",
       "target": "0,1",
-      "value": 1
+      "value": 0.18655698
     },
     {
       "source": "2,8",
       "target": "6,0",
-      "value": 1
+      "value": 0.18127005
     },
     {
       "source": "2,8",
       "target": "3,5",
-      "value": 1
+      "value": 0.16736154
     },
     {
       "source": "2,8",
       "target": "4,6",
-      "value": 1
+      "value": 0.16263352
     },
     {
       "source": "2,8",
       "target": "4,9",
-      "value": 1
+      "value": 0.15932532
     },
     {
       "source": "9,4",
       "target": "6,5",
-      "value": 1
+      "value": 0.28443873
     },
     {
       "source": "9,4",
       "target": "4,7",
-      "value": 1
+      "value": 0.22442065
     },
     {
       "source": "9,4",
       "target": "4,8",
-      "value": 1
+      "value": 0.21981604
     },
     {
       "source": "9,4",
       "target": "8,5",
-      "value": 1
+      "value": 0.21528223
     },
     {
       "source": "9,4",
       "target": "4,0",
-      "value": 1
+      "value": 0.20240632
     },
     {
       "source": "9,4",
       "target": "0,6",
-      "value": 1
+      "value": 0.199301
     },
     {
       "source": "9,4",
       "target": "1,0",
-      "value": 1
+      "value": 0.19685192
     },
     {
       "source": "9,4",
       "target": "2,4",
-      "value": 1
+      "value": 0.18619138
     },
     {
       "source": "7,2",
       "target": "8,4",
-      "value": 1
+      "value": 0.24183242
     },
     {
       "source": "7,2",
       "target": "8,3",
-      "value": 1
+      "value": 0.23511997
     },
     {
       "source": "7,2",
       "target": "3,6",
-      "value": 1
+      "value": 0.21193819
     },
     {
       "source": "7,2",
       "target": "0,0",
-      "value": 1
+      "value": 0.19155417
     },
     {
       "source": "7,2",
       "target": "0,4",
-      "value": 1
+      "value": 0.18103155
     },
     {
       "source": "7,2",
       "target": "9,4",
-      "value": 1
+      "value": 0.17264958
     },
     {
       "source": "7,2",
       "target": "0,7",
-      "value": 1
+      "value": 0.16696748
     },
     {
       "source": "7,2",
       "target": "6,5",
-      "value": 1
+      "value": 0.15222731
     },
     {
       "source": "9,3",
       "target": "4,7",
-      "value": 1
+      "value": 0.29738137
     },
     {
       "source": "9,3",
       "target": "1,8",
-      "value": 1
+      "value": 0.28291634
     },
     {
       "source": "9,3",
       "target": "3,2",
-      "value": 1
+      "value": 0.25923046
     },
     {
       "source": "9,3",
       "target": "9,2",
-      "value": 1
+      "value": 0.25855005
     },
     {
       "source": "9,3",
       "target": "6,6",
-      "value": 1
+      "value": 0.23221272
     },
     {
       "source": "9,3",
       "target": "8,6",
-      "value": 1
+      "value": 0.22293656
     },
     {
       "source": "9,3",
       "target": "6,0",
-      "value": 1
+      "value": 0.21671514
     },
     {
       "source": "9,3",
       "target": "5,1",
-      "value": 1
+      "value": 0.21475942
     },
     {
       "source": "3,9",
       "target": "6,8",
-      "value": 1
+      "value": 0.26934645
     },
     {
       "source": "3,9",
       "target": "7,9",
-      "value": 1
+      "value": 0.26809743
     },
     {
       "source": "3,9",
       "target": "0,2",
-      "value": 1
+      "value": 0.26798254
     },
     {
       "source": "3,9",
       "target": "6,0",
-      "value": 1
+      "value": 0.26575035
     },
     {
       "source": "3,9",
       "target": "2,0",
-      "value": 1
+      "value": 0.26425484
     },
     {
       "source": "3,9",
       "target": "6,7",
-      "value": 1
+      "value": 0.26241297
     },
     {
       "source": "3,9",
       "target": "4,7",
-      "value": 1
+      "value": 0.25243294
     },
     {
       "source": "3,9",
       "target": "6,5",
-      "value": 1
+      "value": 0.24527858
     },
     {
       "source": "4,8",
       "target": "9,4",
-      "value": 1
+      "value": 0.21981604
     },
     {
       "source": "4,8",
       "target": "0,9",
-      "value": 1
+      "value": 0.19467781
     },
     {
       "source": "4,8",
       "target": "7,8",
-      "value": 1
+      "value": 0.18605597
     },
     {
       "source": "4,8",
       "target": "9,9",
-      "value": 1
+      "value": 0.17055434
     },
     {
       "source": "4,8",
       "target": "0,8",
-      "value": 1
+      "value": 0.15995169
     },
     {
       "source": "4,8",
       "target": "7,1",
-      "value": 1
+      "value": 0.15706758
     },
     {
       "source": "4,8",
       "target": "3,4",
-      "value": 1
+      "value": 0.14830266
     },
     {
       "source": "4,8",
       "target": "1,5",
-      "value": 1
+      "value": 0.14284593
     },
     {
       "source": "0,3",
       "target": "2,5",
-      "value": 1
+      "value": 0.2740812
     },
     {
       "source": "0,3",
       "target": "5,5",
-      "value": 1
+      "value": 0.1757245
     },
     {
       "source": "0,3",
       "target": "5,8",
-      "value": 1
+      "value": 0.16159952
     },
     {
       "source": "0,3",
       "target": "9,8",
-      "value": 1
+      "value": 0.1475059
     },
     {
       "source": "0,3",
       "target": "9,9",
-      "value": 1
+      "value": 0.14428103
     },
     {
       "source": "0,3",
       "target": "8,9",
-      "value": 1
+      "value": 0.13296635
     },
     {
       "source": "0,3",
       "target": "1,5",
-      "value": 1
+      "value": 0.12589215
     },
     {
       "source": "0,3",
       "target": "5,1",
-      "value": 1
+      "value": 0.12536241
     },
     {
       "source": "9,8",
       "target": "6,8",
-      "value": 1
+      "value": 0.24873748
     },
     {
       "source": "9,8",
       "target": "3,3",
-      "value": 1
+      "value": 0.24252984
     },
     {
       "source": "9,8",
       "target": "9,2",
-      "value": 1
+      "value": 0.2259966
     },
     {
       "source": "9,8",
       "target": "8,3",
-      "value": 1
+      "value": 0.21692578
     },
     {
       "source": "9,8",
       "target": "5,0",
-      "value": 1
+      "value": 0.20788082
     },
     {
       "source": "9,8",
       "target": "9,9",
-      "value": 1
+      "value": 0.19153537
     },
     {
       "source": "9,8",
       "target": "9,3",
-      "value": 1
+      "value": 0.1873291
     },
     {
       "source": "9,8",
       "target": "8,7",
-      "value": 1
+      "value": 0.17129351
     },
     {
       "source": "4,9",
       "target": "3,2",
-      "value": 1
+      "value": 0.19316158
     },
     {
       "source": "4,9",
       "target": "7,7",
-      "value": 1
+      "value": 0.1633882
     },
     {
       "source": "4,9",
       "target": "9,0",
-      "value": 1
+      "value": 0.15988396
     },
     {
       "source": "4,9",
       "target": "2,8",
-      "value": 1
+      "value": 0.15932532
     },
     {
       "source": "4,9",
       "target": "1,6",
-      "value": 1
+      "value": 0.15164179
     },
     {
       "source": "4,9",
       "target": "6,2",
-      "value": 1
+      "value": 0.14806385
     },
     {
       "source": "4,9",
       "target": "5,3",
-      "value": 1
+      "value": 0.14633197
     },
     {
       "source": "4,9",
       "target": "3,0",
-      "value": 1
+      "value": 0.14299096
     },
     {
       "source": "6,0",
       "target": "3,9",
-      "value": 1
+      "value": 0.26575035
     },
     {
       "source": "6,0",
       "target": "1,8",
-      "value": 1
+      "value": 0.26248586
     },
     {
       "source": "6,0",
       "target": "0,8",
-      "value": 1
+      "value": 0.24490058
     },
     {
       "source": "6,0",
       "target": "7,0",
-      "value": 1
+      "value": 0.24471839
     },
     {
       "source": "6,0",
       "target": "1,2",
-      "value": 1
+      "value": 0.24445517
     },
     {
       "source": "6,0",
       "target": "9,3",
-      "value": 1
+      "value": 0.21671514
     },
     {
       "source": "6,0",
       "target": "0,4",
-      "value": 1
+      "value": 0.194627
     },
     {
       "source": "6,0",
       "target": "2,8",
-      "value": 1
+      "value": 0.18127005
     },
     {
       "source": "9,2",
       "target": "9,3",
-      "value": 1
+      "value": 0.25855005
     },
     {
       "source": "9,2",
       "target": "5,1",
-      "value": 1
+      "value": 0.25044134
     },
     {
       "source": "9,2",
       "target": "6,8",
-      "value": 1
+      "value": 0.24783473
     },
     {
       "source": "9,2",
       "target": "3,3",
-      "value": 1
+      "value": 0.2273543
     },
     {
       "source": "9,2",
       "target": "9,8",
-      "value": 1
+      "value": 0.2259966
     },
     {
       "source": "9,2",
       "target": "1,0",
-      "value": 1
+      "value": 0.2257107
     },
     {
       "source": "9,2",
       "target": "2,0",
-      "value": 1
+      "value": 0.20816469
     },
     {
       "source": "9,2",
       "target": "2,7",
-      "value": 1
+      "value": 0.19737777
     },
     {
       "source": "1,8",
       "target": "9,3",
-      "value": 1
+      "value": 0.28291634
     },
     {
       "source": "1,8",
       "target": "6,0",
-      "value": 1
+      "value": 0.26248586
     },
     {
       "source": "1,8",
       "target": "2,5",
-      "value": 1
+      "value": 0.2565141
     },
     {
       "source": "1,8",
       "target": "8,6",
-      "value": 1
+      "value": 0.2510632
     },
     {
       "source": "1,8",
       "target": "7,0",
-      "value": 1
+      "value": 0.24545342
     },
     {
       "source": "1,8",
       "target": "2,3",
-      "value": 1
+      "value": 0.21723868
     },
     {
       "source": "1,8",
       "target": "2,4",
-      "value": 1
+      "value": 0.18374728
     },
     {
       "source": "1,8",
       "target": "4,3",
-      "value": 1
+      "value": 0.17817485
     },
     {
       "source": "6,9",
       "target": "2,3",
-      "value": 1
+      "value": 0.2877458
     },
     {
       "source": "6,9",
       "target": "1,5",
-      "value": 1
+      "value": 0.25939593
     },
     {
       "source": "6,9",
       "target": "3,5",
-      "value": 1
+      "value": 0.2418948
     },
     {
       "source": "6,9",
       "target": "8,0",
-      "value": 1
+      "value": 0.23481838
     },
     {
       "source": "6,9",
       "target": "9,6",
-      "value": 1
+      "value": 0.21789777
     },
     {
       "source": "6,9",
       "target": "1,3",
-      "value": 1
+      "value": 0.2153213
     },
     {
       "source": "6,9",
       "target": "4,6",
-      "value": 1
+      "value": 0.20453823
     },
     {
       "source": "6,9",
       "target": "9,3",
-      "value": 1
+      "value": 0.18063337
     },
     {
       "source": "9,7",
       "target": "7,5",
-      "value": 1
+      "value": 0.21842557
     },
     {
       "source": "9,7",
       "target": "0,9",
-      "value": 1
+      "value": 0.20692822
     },
     {
       "source": "9,7",
       "target": "3,2",
-      "value": 1
+      "value": 0.16166209
     },
     {
       "source": "9,7",
       "target": "6,7",
-      "value": 1
+      "value": 0.15467894
     },
     {
       "source": "9,7",
       "target": "3,1",
-      "value": 1
+      "value": 0.14604664
     },
     {
       "source": "9,7",
       "target": "4,2",
-      "value": 1
+      "value": 0.14108136
     },
     {
       "source": "9,7",
       "target": "3,0",
-      "value": 1
+      "value": 0.13820294
     },
     {
       "source": "9,7",
       "target": "5,5",
-      "value": 1
+      "value": 0.1372521
     },
     {
       "source": "7,0",
       "target": "3,4",
-      "value": 1
+      "value": 0.26064157
     },
     {
       "source": "7,0",
       "target": "1,8",
-      "value": 1
+      "value": 0.24545342
     },
     {
       "source": "7,0",
       "target": "6,0",
-      "value": 1
+      "value": 0.24471839
     },
     {
       "source": "7,0",
       "target": "3,6",
-      "value": 1
+      "value": 0.23563533
     },
     {
       "source": "7,0",
       "target": "4,7",
-      "value": 1
+      "value": 0.21288766
     },
     {
       "source": "7,0",
       "target": "6,3",
-      "value": 1
+      "value": 0.20889546
     },
     {
       "source": "7,0",
       "target": "7,4",
-      "value": 1
+      "value": 0.2060445
     },
     {
       "source": "7,0",
       "target": "8,5",
-      "value": 1
+      "value": 0.20004858
     },
     {
       "source": "9,9",
       "target": "1,7",
-      "value": 1
+      "value": 0.2685729
     },
     {
       "source": "9,9",
       "target": "3,2",
-      "value": 1
+      "value": 0.24280792
     },
     {
       "source": "9,9",
       "target": "9,6",
-      "value": 1
+      "value": 0.23361255
     },
     {
       "source": "9,9",
       "target": "4,6",
-      "value": 1
+      "value": 0.22056347
     },
     {
       "source": "9,9",
       "target": "8,3",
-      "value": 1
+      "value": 0.21983035
     },
     {
       "source": "9,9",
       "target": "3,4",
-      "value": 1
+      "value": 0.20577559
     },
     {
       "source": "9,9",
       "target": "2,2",
-      "value": 1
+      "value": 0.20524675
     },
     {
       "source": "9,9",
       "target": "9,8",
-      "value": 1
+      "value": 0.19153537
     },
     {
       "source": "5,9",
       "target": "3,6",
-      "value": 1
+      "value": 0.2322198
     },
     {
       "source": "5,9",
       "target": "4,5",
-      "value": 1
+      "value": 0.18188357
     },
     {
       "source": "5,9",
       "target": "0,4",
-      "value": 1
+      "value": 0.16801108
     },
     {
       "source": "5,9",
       "target": "7,0",
-      "value": 1
+      "value": 0.16271296
     },
     {
       "source": "5,9",
       "target": "1,6",
-      "value": 1
+      "value": 0.16172993
     },
     {
       "source": "5,9",
       "target": "1,8",
-      "value": 1
+      "value": 0.15782505
     },
     {
       "source": "5,9",
       "target": "7,3",
-      "value": 1
+      "value": 0.14572582
     },
     {
       "source": "5,9",
       "target": "2,7",
-      "value": 1
+      "value": 0.14192313
     },
     {
       "source": "8,1",
       "target": "5,1",
-      "value": 1
+      "value": 0.35211715
     },
     {
       "source": "8,1",
       "target": "8,5",
-      "value": 1
+      "value": 0.3212863
     },
     {
       "source": "8,1",
       "target": "8,6",
-      "value": 1
+      "value": 0.27725405
     },
     {
       "source": "8,1",
       "target": "0,2",
-      "value": 1
+      "value": 0.25838265
     },
     {
       "source": "8,1",
       "target": "6,7",
-      "value": 1
+      "value": 0.23715052
     },
     {
       "source": "8,1",
       "target": "0,6",
-      "value": 1
+      "value": 0.22546196
     },
     {
       "source": "8,1",
       "target": "1,5",
-      "value": 1
+      "value": 0.2180162
     },
     {
       "source": "8,1",
       "target": "7,8",
-      "value": 1
+      "value": 0.21506107
     },
     {
       "source": "0,2",
       "target": "7,8",
-      "value": 1
+      "value": 0.30766353
     },
     {
       "source": "0,2",
       "target": "6,1",
-      "value": 1
+      "value": 0.28679538
     },
     {
       "source": "0,2",
       "target": "2,3",
-      "value": 1
+      "value": 0.27927616
     },
     {
       "source": "0,2",
       "target": "3,2",
-      "value": 1
+      "value": 0.27471623
     },
     {
       "source": "0,2",
       "target": "3,9",
-      "value": 1
+      "value": 0.26798254
     },
     {
       "source": "0,2",
       "target": "8,1",
-      "value": 1
+      "value": 0.25838265
     },
     {
       "source": "0,2",
       "target": "1,2",
-      "value": 1
+      "value": 0.25620398
     },
     {
       "source": "0,2",
       "target": "1,5",
-      "value": 1
+      "value": 0.2115629
     },
     {
       "source": "1,7",
       "target": "9,9",
-      "value": 1
+      "value": 0.2685729
     },
     {
       "source": "1,7",
       "target": "4,2",
-      "value": 1
+      "value": 0.22839172
     },
     {
       "source": "1,7",
       "target": "8,9",
-      "value": 1
+      "value": 0.20585546
     },
     {
       "source": "1,7",
       "target": "7,3",
-      "value": 1
+      "value": 0.20390116
     },
     {
       "source": "1,7",
       "target": "9,5",
-      "value": 1
+      "value": 0.1957284
     },
     {
       "source": "1,7",
       "target": "3,5",
-      "value": 1
+      "value": 0.18842813
     },
     {
       "source": "1,7",
       "target": "1,2",
-      "value": 1
+      "value": 0.18391714
     },
     {
       "source": "1,7",
       "target": "9,1",
-      "value": 1
+      "value": 0.18223166
     },
     {
       "source": "0,0",
       "target": "4,6",
-      "value": 1
+      "value": 0.29472598
     },
     {
       "source": "0,0",
       "target": "7,2",
-      "value": 1
+      "value": 0.19155417
     },
     {
       "source": "0,0",
       "target": "6,5",
-      "value": 1
+      "value": 0.17951824
     },
     {
       "source": "0,0",
       "target": "1,9",
-      "value": 1
+      "value": 0.17536186
     },
     {
       "source": "0,0",
       "target": "9,5",
-      "value": 1
+      "value": 0.15772526
     },
     {
       "source": "0,0",
       "target": "0,7",
-      "value": 1
+      "value": 0.1513161
     },
     {
       "source": "0,0",
       "target": "6,4",
-      "value": 1
+      "value": 0.14335193
     },
     {
       "source": "0,0",
       "target": "7,7",
-      "value": 1
+      "value": 0.1427052
     },
     {
       "source": "2,9",
       "target": "6,8",
-      "value": 1
+      "value": 0.28770766
     },
     {
       "source": "2,9",
       "target": "0,4",
-      "value": 1
+      "value": 0.26503506
     },
     {
       "source": "2,9",
       "target": "3,7",
-      "value": 1
+      "value": 0.24526809
     },
     {
       "source": "2,9",
       "target": "7,6",
-      "value": 1
+      "value": 0.17524001
     },
     {
       "source": "2,9",
       "target": "6,6",
-      "value": 1
+      "value": 0.16932009
     },
     {
       "source": "2,9",
       "target": "9,8",
-      "value": 1
+      "value": 0.16784975
     },
     {
       "source": "2,9",
       "target": "7,5",
-      "value": 1
+      "value": 0.16714488
     },
     {
       "source": "2,9",
       "target": "7,0",
-      "value": 1
+      "value": 0.1638903
     },
     {
       "source": "0,1",
       "target": "2,8",
-      "value": 1
+      "value": 0.18655698
     },
     {
       "source": "0,1",
       "target": "0,4",
-      "value": 1
+      "value": 0.17408739
     },
     {
       "source": "0,1",
       "target": "5,7",
-      "value": 1
+      "value": 0.16104108
     },
     {
       "source": "0,1",
       "target": "4,6",
-      "value": 1
+      "value": 0.1540819
     },
     {
       "source": "0,1",
       "target": "1,7",
-      "value": 1
+      "value": 0.15064432
     },
     {
       "source": "0,1",
       "target": "8,5",
-      "value": 1
+      "value": 0.12151812
     },
     {
       "source": "0,1",
       "target": "5,9",
-      "value": 1
+      "value": 0.1146441
     },
     {
       "source": "0,1",
       "target": "7,6",
-      "value": 1
+      "value": 0.1145007
     },
     {
       "source": "1,0",
       "target": "9,2",
-      "value": 1
+      "value": 0.2257107
     },
     {
       "source": "1,0",
       "target": "4,5",
-      "value": 1
+      "value": 0.2084692
     },
     {
       "source": "1,0",
       "target": "1,2",
-      "value": 1
+      "value": 0.20501617
     },
     {
       "source": "1,0",
       "target": "9,4",
-      "value": 1
+      "value": 0.19685192
     },
     {
       "source": "1,0",
       "target": "4,3",
-      "value": 1
+      "value": 0.19591562
     },
     {
       "source": "1,0",
       "target": "5,1",
-      "value": 1
+      "value": 0.1863885
     },
     {
       "source": "1,0",
       "target": "3,6",
-      "value": 1
+      "value": 0.17875914
     },
     {
       "source": "1,0",
       "target": "3,7",
-      "value": 1
+      "value": 0.17578629
     },
     {
       "source": "3,0",
       "target": "9,1",
-      "value": 1
+      "value": 0.2649989
     },
     {
       "source": "3,0",
       "target": "3,3",
-      "value": 1
+      "value": 0.19434988
     },
     {
       "source": "3,0",
       "target": "9,9",
-      "value": 1
+      "value": 0.18702492
     },
     {
       "source": "3,0",
       "target": "5,6",
-      "value": 1
+      "value": 0.18339641
     },
     {
       "source": "3,0",
       "target": "7,9",
-      "value": 1
+      "value": 0.17021668
     },
     {
       "source": "3,0",
       "target": "5,7",
-      "value": 1
+      "value": 0.15771174
     },
     {
       "source": "3,0",
       "target": "6,8",
-      "value": 1
+      "value": 0.15593497
     },
     {
       "source": "3,0",
       "target": "6,1",
-      "value": 1
+      "value": 0.14907342
     },
     {
       "source": "0,7",
       "target": "1,3",
-      "value": 1
+      "value": 0.26169965
     },
     {
       "source": "0,7",
       "target": "3,1",
-      "value": 1
+      "value": 0.21279371
     },
     {
       "source": "0,7",
       "target": "3,4",
-      "value": 1
+      "value": 0.20248047
     },
     {
       "source": "0,7",
       "target": "6,7",
-      "value": 1
+      "value": 0.19472262
     },
     {
       "source": "0,7",
       "target": "3,5",
-      "value": 1
+      "value": 0.19274338
     },
     {
       "source": "0,7",
       "target": "6,4",
-      "value": 1
+      "value": 0.18808074
     },
     {
       "source": "0,7",
       "target": "6,6",
-      "value": 1
+      "value": 0.17839018
     },
     {
       "source": "0,7",
       "target": "7,2",
-      "value": 1
+      "value": 0.16696748
     },
     {
       "source": "1,9",
       "target": "7,3",
-      "value": 1
+      "value": 0.30732974
     },
     {
       "source": "1,9",
       "target": "3,7",
-      "value": 1
+      "value": 0.27003846
     },
     {
       "source": "1,9",
       "target": "4,0",
-      "value": 1
+      "value": 0.25478336
     },
     {
       "source": "1,9",
       "target": "9,5",
-      "value": 1
+      "value": 0.23430057
     },
     {
       "source": "1,9",
       "target": "8,0",
-      "value": 1
+      "value": 0.22002879
     },
     {
       "source": "1,9",
       "target": "4,3",
-      "value": 1
+      "value": 0.21367657
     },
     {
       "source": "1,9",
       "target": "6,3",
-      "value": 1
+      "value": 0.20744473
     },
     {
       "source": "1,9",
       "target": "6,8",
-      "value": 1
+      "value": 0.1905615
     },
     {
       "source": "2,0",
       "target": "7,7",
-      "value": 1
+      "value": 0.30238765
     },
     {
       "source": "2,0",
       "target": "8,5",
-      "value": 1
+      "value": 0.26900753
     },
     {
       "source": "2,0",
       "target": "3,9",
-      "value": 1
+      "value": 0.26425484
     },
     {
       "source": "2,0",
       "target": "8,8",
-      "value": 1
+      "value": 0.23883268
     },
     {
       "source": "2,0",
       "target": "5,7",
-      "value": 1
+      "value": 0.23134606
     },
     {
       "source": "2,0",
       "target": "2,5",
-      "value": 1
+      "value": 0.21237211
     },
     {
       "source": "2,0",
       "target": "9,2",
-      "value": 1
+      "value": 0.20816469
     },
     {
       "source": "2,0",
       "target": "8,7",
-      "value": 1
+      "value": 0.20631525
     },
     {
       "source": "9,1",
       "target": "3,0",
-      "value": 1
+      "value": 0.2649989
     },
     {
       "source": "9,1",
       "target": "2,2",
-      "value": 1
+      "value": 0.21088867
     },
     {
       "source": "9,1",
       "target": "0,2",
-      "value": 1
+      "value": 0.20032987
     },
     {
       "source": "9,1",
       "target": "4,2",
-      "value": 1
+      "value": 0.19625811
     },
     {
       "source": "9,1",
       "target": "5,7",
-      "value": 1
+      "value": 0.18949193
     },
     {
       "source": "9,1",
       "target": "3,6",
-      "value": 1
+      "value": 0.18442753
     },
     {
       "source": "9,1",
       "target": "1,7",
-      "value": 1
+      "value": 0.18223166
     },
     {
       "source": "9,1",
       "target": "6,4",
-      "value": 1
+      "value": 0.17068198
     },
     {
       "source": "8,0",
       "target": "2,3",
-      "value": 1
+      "value": 0.3896077
     },
     {
       "source": "8,0",
       "target": "1,3",
-      "value": 1
+      "value": 0.27023408
     },
     {
       "source": "8,0",
       "target": "6,9",
-      "value": 1
+      "value": 0.23481838
     },
     {
       "source": "8,0",
       "target": "7,4",
-      "value": 1
+      "value": 0.23161462
     },
     {
       "source": "8,0",
       "target": "1,9",
-      "value": 1
+      "value": 0.22002879
     },
     {
       "source": "8,0",
       "target": "1,5",
-      "value": 1
+      "value": 0.19933052
     },
     {
       "source": "8,0",
       "target": "6,1",
-      "value": 1
+      "value": 0.19175129
     },
     {
       "source": "8,0",
       "target": "2,2",
-      "value": 1
+      "value": 0.18840759
     },
     {
       "source": "0,8",
       "target": "1,3",
-      "value": 1
+      "value": 0.2968847
     },
     {
       "source": "0,8",
       "target": "6,0",
-      "value": 1
+      "value": 0.24490058
     },
     {
       "source": "0,8",
       "target": "5,6",
-      "value": 1
+      "value": 0.19004329
     },
     {
       "source": "0,8",
       "target": "8,7",
-      "value": 1
+      "value": 0.18901822
     },
     {
       "source": "0,8",
       "target": "3,7",
-      "value": 1
+      "value": 0.1710391
     },
     {
       "source": "0,8",
       "target": "4,8",
-      "value": 1
+      "value": 0.15995169
     },
     {
       "source": "0,8",
       "target": "7,0",
-      "value": 1
+      "value": 0.15890585
     },
     {
       "source": "0,8",
       "target": "1,5",
-      "value": 1
+      "value": 0.15872157
     },
     {
       "source": "0,9",
       "target": "8,3",
-      "value": 1
+      "value": 0.2279216
     },
     {
       "source": "0,9",
       "target": "9,7",
-      "value": 1
+      "value": 0.20692822
     },
     {
       "source": "0,9",
       "target": "4,8",
-      "value": 1
+      "value": 0.19467781
     },
     {
       "source": "0,9",
       "target": "6,3",
-      "value": 1
+      "value": 0.19085243
     },
     {
       "source": "0,9",
       "target": "2,1",
-      "value": 1
+      "value": 0.18545449
     },
     {
       "source": "0,9",
       "target": "3,3",
-      "value": 1
+      "value": 0.18130855
     },
     {
       "source": "0,9",
       "target": "1,0",
-      "value": 1
+      "value": 0.16872321
     },
     {
       "source": "0,9",
       "target": "8,7",
-      "value": 1
+      "value": 0.16566738
     },
     {
       "source": "9,0",
       "target": "3,1",
-      "value": 1
+      "value": 0.23796077
     },
     {
       "source": "9,0",
       "target": "6,4",
-      "value": 1
+      "value": 0.17990045
     },
     {
       "source": "9,0",
       "target": "5,3",
-      "value": 1
+      "value": 0.1727179
     },
     {
       "source": "9,0",
       "target": "1,4",
-      "value": 1
+      "value": 0.16129573
     },
     {
       "source": "9,0",
       "target": "4,9",
-      "value": 1
+      "value": 0.15988396
     },
     {
       "source": "9,0",
       "target": "4,2",
-      "value": 1
+      "value": 0.13324739
     },
     {
       "source": "9,0",
       "target": "6,1",
-      "value": 1
+      "value": 0.12000953
     },
     {
       "source": "9,0",
       "target": "6,3",
-      "value": 1
+      "value": 0.118965
     }
   ]
 }
