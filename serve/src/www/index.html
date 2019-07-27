@@ -3,6 +3,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <style>
+      #grid {
+        height: 100vh;
+        width: 100vh;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -14,11 +20,16 @@
         step="0.01"
         style="width: 50%"
       />
-      <label for="strength">Stretch to real grid</label>
+      <button id="stretch">Stretch to real grid</button>
+      <svg
+        id="grid"
+        viewBox="0 0 1000 1000"
+        preserveAspectRatio="xMidYMid meet"
+      ></svg>
     </div>
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script>
-      d3.json("/layout.json").then(function(data) {
+      d3.json("layout.json").then(function(data) {
         console.log(data);
 
         const grid_width = 10;
@@ -106,7 +117,8 @@
           .force("y", yStrength(default_strength))
           .force("center", d3.forceCenter(width / 2, height / 2));
 
-        const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]);
+        // const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]);
+        const svg = d3.select("#grid");
 
         const link = svg
           .append("g")
@@ -139,17 +151,30 @@
           node.attr("cx", d => d.x).attr("cy", d => d.y);
         });
 
-        document.body.appendChild(svg.node());
+        const setStrength = strength => {
+          simulation
+            .force("x", xStrength(strength))
+            .force("y", yStrength(strength));
+          simulation.alpha(1).restart();
+        };
 
         const strengthRangeControl = document.getElementById("strength");
         strengthRangeControl.value = default_strength;
         strengthRangeControl.addEventListener("input", () => {
           const strength = strengthRangeControl.value;
-          simulation
-            .force("x", xStrength(strength))
-            .force("y", yStrength(strength));
-          simulation.alpha(1).restart();
+          setStrength(strength);
         });
+
+        const stretchOut = () => {
+          const strength = 1.0;
+          setStrength(strength);
+          strengthRangeControl.value = strength;
+        };
+
+        document
+          .getElementById("stretch")
+          .addEventListener("click", stretchOut);
+        document.getElementById("grid").addEventListener("click", stretchOut);
       });
     </script>
   </body>
