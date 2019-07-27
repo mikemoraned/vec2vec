@@ -102,7 +102,7 @@ logging.info("generating word2vec models")
 for limit in lengths(len(paths)):
     limited_paths = formatted_paths[slice(limit)]
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
-    model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
+    model = Word2Vec(limited_paths, min_count=0, workers=cpu_count(), size=20)
     model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
         data_directory, width, height, seed, limit
     )
