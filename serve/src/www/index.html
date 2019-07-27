@@ -19,7 +19,12 @@
         };
 
         const links = data.links.map(d => Object.create(d));
-        const nodes = data.nodes.map(d => Object.create(d));
+        const nodes = data.nodes.map(d => {
+          const node = Object.create(d);
+          node.fx = (node.point.x / 10.0) * width;
+          node.fy = (node.point.y / 10.0) * height;
+          return node;
+        });
 
         const simulation = d3
           .forceSimulation(nodes)
