@@ -164,11 +164,17 @@
           const strength = strengthRangeControl.value;
           setStrength(strength);
         });
-        document.getElementById("stretch").addEventListener("click", () => {
+
+        const stretchOut = () => {
           const strength = 1.0;
           setStrength(strength);
           strengthRangeControl.value = strength;
-        });
+        };
+
+        document
+          .getElementById("stretch")
+          .addEventListener("click", stretchOut);
+        document.getElementById("grid").addEventListener("click", stretchOut);
       });
     </script>
   </body>
