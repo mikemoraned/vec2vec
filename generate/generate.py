@@ -61,6 +61,7 @@ def generate_paths():
             if start != mid and mid != end:
                 yield [start, mid, end]
 
+
 def filter_length(max_length):
     def filter(path):
         [start, _, end] = path
@@ -72,22 +73,33 @@ def filter_length(max_length):
 
     return filter
 
+
 filtered = filter(filter_length(3), generate_paths())
 paths = list(itertools.islice(filtered, args.num_paths))
 
 logging.debug("generated {} paths".format(len(paths)))
 # logging.debug(paths)
 
+
 def format_point(point):
     x, y = point
     return "{},{}".format(x, y)
+
 
 formatted_paths = []
 for path in paths:
     formatted_paths.append(list(map(format_point, path)))
 
+
+def lengths(max_length):
+    length = max_length
+    while length > 0:
+        yield length
+        length = int(length / 2)
+
+
 logging.info("generating word2vec models")
-for limit in range(1, len(paths) + 1):
+for limit in lengths(len(paths)):
     limited_paths = formatted_paths[slice(limit)]
     logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
     model = Word2Vec(limited_paths, min_count=0, workers=cpu_count())
