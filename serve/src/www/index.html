@@ -51,8 +51,8 @@
           return node;
         });
 
-        const links = inferred_links.concat(grid_inferred_links);
-        const nodes = inferred_nodes.concat(grid_nodes);
+        const links = inferred_links;
+        const nodes = inferred_nodes;
 
         const simulation = d3
           .forceSimulation(nodes)
@@ -62,14 +62,28 @@
               .forceLink(links)
               .id(d => d.id)
               .distance(link => {
-                if (link.grid) {
-                  return 0;
-                } else {
-                  return between_point_distance * link.value;
-                }
+                return between_point_distance * (1.0 - link.similarity);
               })
           )
           .force("charge", d3.forceManyBody())
+          .force(
+            "x",
+            d3
+              .forceX()
+              .x(node => {
+                return (node.point.x / grid_width) * width;
+              })
+              .strength(0.0)
+          )
+          .force(
+            "y",
+            d3
+              .forceY()
+              .y(node => {
+                return (node.point.y / grid_width) * height;
+              })
+              .strength(0.0)
+          )
           .force("center", d3.forceCenter(width / 2, height / 2));
 
         const svg = d3.create("svg").attr("viewBox", [0, 0, width, height]);

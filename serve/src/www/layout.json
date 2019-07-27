@@ -1,10 +1,31 @@
 {
   "nodes": [
     {
-      "id": "0,6",
+      "id": "4,5",
       "point": {
-        "x": 0,
+        "x": 4,
+        "y": 5
+      }
+    },
+    {
+      "id": "4,6",
+      "point": {
+        "x": 4,
         "y": 6
+      }
+    },
+    {
+      "id": "3,3",
+      "point": {
+        "x": 3,
+        "y": 3
+      }
+    },
+    {
+      "id": "6,0",
+      "point": {
+        "x": 6,
+        "y": 0
       }
     },
     {
@@ -15,58 +36,30 @@
       }
     },
     {
-      "id": "9,9",
+      "id": "9,6",
       "point": {
         "x": 9,
-        "y": 9
+        "y": 6
+      }
+    },
+    {
+      "id": "9,5",
+      "point": {
+        "x": 9,
+        "y": 5
+      }
+    },
+    {
+      "id": "1,8",
+      "point": {
+        "x": 1,
+        "y": 8
       }
     },
     {
       "id": "3,7",
       "point": {
         "x": 3,
-        "y": 7
-      }
-    },
-    {
-      "id": "1,0",
-      "point": {
-        "x": 1,
-        "y": 0
-      }
-    },
-    {
-      "id": "0,0",
-      "point": {
-        "x": 0,
-        "y": 0
-      }
-    },
-    {
-      "id": "3,9",
-      "point": {
-        "x": 3,
-        "y": 9
-      }
-    },
-    {
-      "id": "6,3",
-      "point": {
-        "x": 6,
-        "y": 3
-      }
-    },
-    {
-      "id": "7,9",
-      "point": {
-        "x": 7,
-        "y": 9
-      }
-    },
-    {
-      "id": "1,7",
-      "point": {
-        "x": 1,
         "y": 7
       }
     },
@@ -78,59 +71,24 @@
       }
     },
     {
-      "id": "8,8",
+      "id": "5,9",
       "point": {
-        "x": 8,
-        "y": 8
-      }
-    },
-    {
-      "id": "0,7",
-      "point": {
-        "x": 0,
-        "y": 7
-      }
-    },
-    {
-      "id": "6,9",
-      "point": {
-        "x": 6,
+        "x": 5,
         "y": 9
       }
     },
     {
-      "id": "6,6",
+      "id": "9,4",
       "point": {
-        "x": 6,
-        "y": 6
-      }
-    },
-    {
-      "id": "3,6",
-      "point": {
-        "x": 3,
-        "y": 6
-      }
-    },
-    {
-      "id": "8,5",
-      "point": {
-        "x": 8,
-        "y": 5
-      }
-    },
-    {
-      "id": "2,6",
-      "point": {
-        "x": 2,
-        "y": 6
-      }
-    },
-    {
-      "id": "0,4",
-      "point": {
-        "x": 0,
+        "x": 9,
         "y": 4
+      }
+    },
+    {
+      "id": "7,9",
+      "point": {
+        "x": 7,
+        "y": 9
       }
     },
     {
@@ -141,31 +99,10 @@
       }
     },
     {
-      "id": "4,2",
+      "id": "8,0",
       "point": {
-        "x": 4,
-        "y": 2
-      }
-    },
-    {
-      "id": "9,8",
-      "point": {
-        "x": 9,
-        "y": 8
-      }
-    },
-    {
-      "id": "0,9",
-      "point": {
-        "x": 0,
-        "y": 9
-      }
-    },
-    {
-      "id": "6,1",
-      "point": {
-        "x": 6,
-        "y": 1
+        "x": 8,
+        "y": 0
       }
     },
     {
@@ -176,38 +113,24 @@
       }
     },
     {
-      "id": "8,2",
-      "point": {
-        "x": 8,
-        "y": 2
-      }
-    },
-    {
-      "id": "5,3",
-      "point": {
-        "x": 5,
-        "y": 3
-      }
-    },
-    {
-      "id": "3,3",
-      "point": {
-        "x": 3,
-        "y": 3
-      }
-    },
-    {
-      "id": "7,1",
+      "id": "7,7",
       "point": {
         "x": 7,
-        "y": 1
+        "y": 7
       }
     },
     {
-      "id": "3,1",
+      "id": "5,4",
       "point": {
-        "x": 3,
-        "y": 1
+        "x": 5,
+        "y": 4
+      }
+    },
+    {
+      "id": "5,2",
+      "point": {
+        "x": 5,
+        "y": 2
       }
     },
     {
@@ -218,17 +141,31 @@
       }
     },
     {
-      "id": "0,1",
+      "id": "6,3",
       "point": {
-        "x": 0,
+        "x": 6,
+        "y": 3
+      }
+    },
+    {
+      "id": "3,1",
+      "point": {
+        "x": 3,
         "y": 1
       }
     },
     {
-      "id": "9,2",
+      "id": "5,1",
       "point": {
-        "x": 9,
-        "y": 2
+        "x": 5,
+        "y": 1
+      }
+    },
+    {
+      "id": "8,5",
+      "point": {
+        "x": 8,
+        "y": 5
       }
     },
     {
@@ -236,6 +173,41 @@
       "point": {
         "x": 2,
         "y": 4
+      }
+    },
+    {
+      "id": "6,4",
+      "point": {
+        "x": 6,
+        "y": 4
+      }
+    },
+    {
+      "id": "1,1",
+      "point": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "2,2",
+      "point": {
+        "x": 2,
+        "y": 2
+      }
+    },
+    {
+      "id": "2,5",
+      "point": {
+        "x": 2,
+        "y": 5
+      }
+    },
+    {
+      "id": "6,7",
+      "point": {
+        "x": 6,
+        "y": 7
       }
     },
     {
@@ -253,59 +225,45 @@
       }
     },
     {
-      "id": "7,4",
+      "id": "0,2",
       "point": {
-        "x": 7,
-        "y": 4
+        "x": 0,
+        "y": 2
       }
     },
     {
-      "id": "7,3",
+      "id": "3,0",
       "point": {
-        "x": 7,
-        "y": 3
-      }
-    },
-    {
-      "id": "7,7",
-      "point": {
-        "x": 7,
-        "y": 7
-      }
-    },
-    {
-      "id": "1,6",
-      "point": {
-        "x": 1,
-        "y": 6
-      }
-    },
-    {
-      "id": "5,0",
-      "point": {
-        "x": 5,
+        "x": 3,
         "y": 0
       }
     },
     {
-      "id": "0,3",
+      "id": "0,9",
       "point": {
         "x": 0,
-        "y": 3
+        "y": 9
       }
     },
     {
-      "id": "4,6",
+      "id": "9,8",
       "point": {
-        "x": 4,
+        "x": 9,
+        "y": 8
+      }
+    },
+    {
+      "id": "5,6",
+      "point": {
+        "x": 5,
         "y": 6
       }
     },
     {
-      "id": "5,8",
+      "id": "8,3",
       "point": {
-        "x": 5,
-        "y": 8
+        "x": 8,
+        "y": 3
       }
     },
     {
@@ -316,6 +274,76 @@
       }
     },
     {
+      "id": "6,1",
+      "point": {
+        "x": 6,
+        "y": 1
+      }
+    },
+    {
+      "id": "3,8",
+      "point": {
+        "x": 3,
+        "y": 8
+      }
+    },
+    {
+      "id": "0,4",
+      "point": {
+        "x": 0,
+        "y": 4
+      }
+    },
+    {
+      "id": "2,9",
+      "point": {
+        "x": 2,
+        "y": 9
+      }
+    },
+    {
+      "id": "2,6",
+      "point": {
+        "x": 2,
+        "y": 6
+      }
+    },
+    {
+      "id": "4,0",
+      "point": {
+        "x": 4,
+        "y": 0
+      }
+    },
+    {
+      "id": "6,8",
+      "point": {
+        "x": 6,
+        "y": 8
+      }
+    },
+    {
+      "id": "3,9",
+      "point": {
+        "x": 3,
+        "y": 9
+      }
+    },
+    {
+      "id": "8,4",
+      "point": {
+        "x": 8,
+        "y": 4
+      }
+    },
+    {
+      "id": "5,7",
+      "point": {
+        "x": 5,
+        "y": 7
+      }
+    },
+    {
       "id": "2,8",
       "point": {
         "x": 2,
@@ -323,23 +351,205 @@
       }
     },
     {
-      "id": "5,4",
+      "id": "9,3",
       "point": {
-        "x": 5,
-        "y": 4
+        "x": 9,
+        "y": 3
       }
     },
     {
-      "id": "9,6",
+      "id": "0,5",
       "point": {
-        "x": 9,
+        "x": 0,
+        "y": 5
+      }
+    },
+    {
+      "id": "0,3",
+      "point": {
+        "x": 0,
+        "y": 3
+      }
+    },
+    {
+      "id": "8,8",
+      "point": {
+        "x": 8,
+        "y": 8
+      }
+    },
+    {
+      "id": "0,1",
+      "point": {
+        "x": 0,
+        "y": 1
+      }
+    },
+    {
+      "id": "8,1",
+      "point": {
+        "x": 8,
+        "y": 1
+      }
+    },
+    {
+      "id": "0,0",
+      "point": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "2,3",
+      "point": {
+        "x": 2,
+        "y": 3
+      }
+    },
+    {
+      "id": "4,3",
+      "point": {
+        "x": 4,
+        "y": 3
+      }
+    },
+    {
+      "id": "4,2",
+      "point": {
+        "x": 4,
+        "y": 2
+      }
+    },
+    {
+      "id": "7,6",
+      "point": {
+        "x": 7,
         "y": 6
+      }
+    },
+    {
+      "id": "6,2",
+      "point": {
+        "x": 6,
+        "y": 2
+      }
+    },
+    {
+      "id": "2,1",
+      "point": {
+        "x": 2,
+        "y": 1
+      }
+    },
+    {
+      "id": "1,7",
+      "point": {
+        "x": 1,
+        "y": 7
       }
     },
     {
       "id": "2,7",
       "point": {
         "x": 2,
+        "y": 7
+      }
+    },
+    {
+      "id": "7,1",
+      "point": {
+        "x": 7,
+        "y": 1
+      }
+    },
+    {
+      "id": "1,9",
+      "point": {
+        "x": 1,
+        "y": 9
+      }
+    },
+    {
+      "id": "5,0",
+      "point": {
+        "x": 5,
+        "y": 0
+      }
+    },
+    {
+      "id": "9,1",
+      "point": {
+        "x": 9,
+        "y": 1
+      }
+    },
+    {
+      "id": "8,9",
+      "point": {
+        "x": 8,
+        "y": 9
+      }
+    },
+    {
+      "id": "6,5",
+      "point": {
+        "x": 6,
+        "y": 5
+      }
+    },
+    {
+      "id": "2,0",
+      "point": {
+        "x": 2,
+        "y": 0
+      }
+    },
+    {
+      "id": "6,9",
+      "point": {
+        "x": 6,
+        "y": 9
+      }
+    },
+    {
+      "id": "5,3",
+      "point": {
+        "x": 5,
+        "y": 3
+      }
+    },
+    {
+      "id": "4,8",
+      "point": {
+        "x": 4,
+        "y": 8
+      }
+    },
+    {
+      "id": "1,3",
+      "point": {
+        "x": 1,
+        "y": 3
+      }
+    },
+    {
+      "id": "8,2",
+      "point": {
+        "x": 8,
+        "y": 2
+      }
+    },
+    {
+      "id": "1,0",
+      "point": {
+        "x": 1,
+        "y": 0
+      }
+    },
+    {
+      "id": "0,7",
+      "point": {
+        "x": 0,
         "y": 7
       }
     },
@@ -351,192 +561,24 @@
       }
     },
     {
-      "id": "8,7",
-      "point": {
-        "x": 8,
-        "y": 7
-      }
-    },
-    {
-      "id": "4,8",
+      "id": "4,4",
       "point": {
         "x": 4,
-        "y": 8
-      }
-    },
-    {
-      "id": "1,9",
-      "point": {
-        "x": 1,
-        "y": 9
-      }
-    },
-    {
-      "id": "9,5",
-      "point": {
-        "x": 9,
-        "y": 5
-      }
-    },
-    {
-      "id": "4,3",
-      "point": {
-        "x": 4,
-        "y": 3
-      }
-    },
-    {
-      "id": "6,2",
-      "point": {
-        "x": 6,
-        "y": 2
-      }
-    },
-    {
-      "id": "5,7",
-      "point": {
-        "x": 5,
-        "y": 7
-      }
-    },
-    {
-      "id": "8,4",
-      "point": {
-        "x": 8,
         "y": 4
       }
     },
     {
-      "id": "4,1",
-      "point": {
-        "x": 4,
-        "y": 1
-      }
-    },
-    {
-      "id": "9,4",
-      "point": {
-        "x": 9,
-        "y": 4
-      }
-    },
-    {
-      "id": "3,2",
-      "point": {
-        "x": 3,
-        "y": 2
-      }
-    },
-    {
-      "id": "6,8",
+      "id": "6,6",
       "point": {
         "x": 6,
-        "y": 8
+        "y": 6
       }
     },
     {
-      "id": "3,8",
-      "point": {
-        "x": 3,
-        "y": 8
-      }
-    },
-    {
-      "id": "6,0",
-      "point": {
-        "x": 6,
-        "y": 0
-      }
-    },
-    {
-      "id": "4,5",
-      "point": {
-        "x": 4,
-        "y": 5
-      }
-    },
-    {
-      "id": "5,9",
-      "point": {
-        "x": 5,
-        "y": 9
-      }
-    },
-    {
-      "id": "1,3",
-      "point": {
-        "x": 1,
-        "y": 3
-      }
-    },
-    {
-      "id": "9,7",
-      "point": {
-        "x": 9,
-        "y": 7
-      }
-    },
-    {
-      "id": "2,0",
-      "point": {
-        "x": 2,
-        "y": 0
-      }
-    },
-    {
-      "id": "1,8",
-      "point": {
-        "x": 1,
-        "y": 8
-      }
-    },
-    {
-      "id": "7,0",
+      "id": "7,3",
       "point": {
         "x": 7,
-        "y": 0
-      }
-    },
-    {
-      "id": "8,9",
-      "point": {
-        "x": 8,
-        "y": 9
-      }
-    },
-    {
-      "id": "6,7",
-      "point": {
-        "x": 6,
-        "y": 7
-      }
-    },
-    {
-      "id": "1,4",
-      "point": {
-        "x": 1,
-        "y": 4
-      }
-    },
-    {
-      "id": "5,1",
-      "point": {
-        "x": 5,
-        "y": 1
-      }
-    },
-    {
-      "id": "2,1",
-      "point": {
-        "x": 2,
-        "y": 1
-      }
-    },
-    {
-      "id": "1,1",
-      "point": {
-        "x": 1,
-        "y": 1
+        "y": 3
       }
     },
     {
@@ -547,94 +589,10 @@
       }
     },
     {
-      "id": "6,5",
-      "point": {
-        "x": 6,
-        "y": 5
-      }
-    },
-    {
-      "id": "1,5",
-      "point": {
-        "x": 1,
-        "y": 5
-      }
-    },
-    {
-      "id": "2,2",
-      "point": {
-        "x": 2,
-        "y": 2
-      }
-    },
-    {
-      "id": "5,6",
-      "point": {
-        "x": 5,
-        "y": 6
-      }
-    },
-    {
-      "id": "0,5",
-      "point": {
-        "x": 0,
-        "y": 5
-      }
-    },
-    {
-      "id": "3,0",
-      "point": {
-        "x": 3,
-        "y": 0
-      }
-    },
-    {
-      "id": "4,4",
+      "id": "4,1",
       "point": {
         "x": 4,
-        "y": 4
-      }
-    },
-    {
-      "id": "3,5",
-      "point": {
-        "x": 3,
-        "y": 5
-      }
-    },
-    {
-      "id": "6,4",
-      "point": {
-        "x": 6,
-        "y": 4
-      }
-    },
-    {
-      "id": "9,3",
-      "point": {
-        "x": 9,
-        "y": 3
-      }
-    },
-    {
-      "id": "8,1",
-      "point": {
-        "x": 8,
         "y": 1
-      }
-    },
-    {
-      "id": "8,3",
-      "point": {
-        "x": 8,
-        "y": 3
-      }
-    },
-    {
-      "id": "2,3",
-      "point": {
-        "x": 2,
-        "y": 3
       }
     },
     {
@@ -645,59 +603,101 @@
       }
     },
     {
-      "id": "2,9",
+      "id": "1,5",
       "point": {
-        "x": 2,
-        "y": 9
-      }
-    },
-    {
-      "id": "8,0",
-      "point": {
-        "x": 8,
-        "y": 0
-      }
-    },
-    {
-      "id": "2,5",
-      "point": {
-        "x": 2,
+        "x": 1,
         "y": 5
       }
     },
     {
-      "id": "4,0",
+      "id": "5,8",
       "point": {
-        "x": 4,
-        "y": 0
+        "x": 5,
+        "y": 8
       }
     },
     {
-      "id": "7,6",
+      "id": "1,6",
       "point": {
-        "x": 7,
+        "x": 1,
         "y": 6
       }
     },
     {
-      "id": "0,2",
+      "id": "1,4",
       "point": {
-        "x": 0,
+        "x": 1,
+        "y": 4
+      }
+    },
+    {
+      "id": "3,6",
+      "point": {
+        "x": 3,
+        "y": 6
+      }
+    },
+    {
+      "id": "7,4",
+      "point": {
+        "x": 7,
+        "y": 4
+      }
+    },
+    {
+      "id": "7,0",
+      "point": {
+        "x": 7,
+        "y": 0
+      }
+    },
+    {
+      "id": "3,2",
+      "point": {
+        "x": 3,
         "y": 2
       }
     },
     {
-      "id": "9,1",
+      "id": "9,9",
       "point": {
         "x": 9,
-        "y": 1
+        "y": 9
       }
     },
     {
-      "id": "5,2",
+      "id": "9,7",
       "point": {
-        "x": 5,
+        "x": 9,
+        "y": 7
+      }
+    },
+    {
+      "id": "0,6",
+      "point": {
+        "x": 0,
+        "y": 6
+      }
+    },
+    {
+      "id": "9,2",
+      "point": {
+        "x": 9,
         "y": 2
+      }
+    },
+    {
+      "id": "8,7",
+      "point": {
+        "x": 8,
+        "y": 7
+      }
+    },
+    {
+      "id": "3,5",
+      "point": {
+        "x": 3,
+        "y": 5
       }
     }
   ],
@@ -705,4002 +705,4002 @@
     {
       "source": "6,5",
       "target": "7,4",
-      "value": 0.6063534
+      "similarity": 0.6063534
     },
     {
       "source": "6,5",
       "target": "9,8",
-      "value": 0.5891771
+      "similarity": 0.5891771
     },
     {
       "source": "6,5",
       "target": "7,5",
-      "value": 0.579481
+      "similarity": 0.579481
     },
     {
       "source": "6,5",
       "target": "6,6",
-      "value": 0.5119046
+      "similarity": 0.5119046
     },
     {
       "source": "6,5",
       "target": "5,5",
-      "value": 0.48937815
+      "similarity": 0.48937815
     },
     {
       "source": "6,5",
       "target": "9,9",
-      "value": 0.48187032
+      "similarity": 0.48187032
     },
     {
       "source": "6,5",
       "target": "6,4",
-      "value": 0.46472406
+      "similarity": 0.46472406
     },
     {
       "source": "6,5",
       "target": "9,7",
-      "value": 0.41165832
+      "similarity": 0.41165832
     },
     {
       "source": "4,4",
       "target": "0,1",
-      "value": 0.5587214
+      "similarity": 0.5587214
     },
     {
       "source": "4,4",
       "target": "5,4",
-      "value": 0.55590624
+      "similarity": 0.55590624
     },
     {
       "source": "4,4",
       "target": "4,3",
-      "value": 0.5400056
+      "similarity": 0.5400056
     },
     {
       "source": "4,4",
       "target": "4,5",
-      "value": 0.53051734
+      "similarity": 0.53051734
     },
     {
       "source": "4,4",
       "target": "1,0",
-      "value": 0.52940875
+      "similarity": 0.52940875
     },
     {
       "source": "4,4",
       "target": "3,5",
-      "value": 0.5261964
+      "similarity": 0.5261964
     },
     {
       "source": "4,4",
       "target": "3,4",
-      "value": 0.5095315
+      "similarity": 0.5095315
     },
     {
       "source": "4,4",
       "target": "1,1",
-      "value": 0.5008557
+      "similarity": 0.5008557
     },
     {
       "source": "5,5",
       "target": "4,5",
-      "value": 0.5598351
+      "similarity": 0.5598351
     },
     {
       "source": "5,5",
       "target": "5,6",
-      "value": 0.5217389
+      "similarity": 0.5217389
     },
     {
       "source": "5,5",
       "target": "6,4",
-      "value": 0.52009386
+      "similarity": 0.52009386
     },
     {
       "source": "5,5",
       "target": "5,4",
-      "value": 0.5198834
+      "similarity": 0.5198834
     },
     {
       "source": "5,5",
       "target": "8,9",
-      "value": 0.50724584
+      "similarity": 0.50724584
     },
     {
       "source": "5,5",
       "target": "8,8",
-      "value": 0.5030288
+      "similarity": 0.5030288
     },
     {
       "source": "5,5",
       "target": "6,5",
-      "value": 0.48937815
+      "similarity": 0.48937815
     },
     {
       "source": "5,5",
       "target": "9,8",
-      "value": 0.46955475
+      "similarity": 0.46955475
     },
     {
       "source": "3,5",
       "target": "2,6",
-      "value": 0.6030179
+      "similarity": 0.6030179
     },
     {
       "source": "3,5",
       "target": "2,5",
-      "value": 0.58424574
+      "similarity": 0.58424574
     },
     {
       "source": "3,5",
       "target": "0,2",
-      "value": 0.5408406
+      "similarity": 0.5408406
     },
     {
       "source": "3,5",
       "target": "4,4",
-      "value": 0.5261964
+      "similarity": 0.5261964
     },
     {
       "source": "3,5",
       "target": "4,5",
-      "value": 0.51640415
+      "similarity": 0.51640415
     },
     {
       "source": "3,5",
       "target": "3,6",
-      "value": 0.50421673
+      "similarity": 0.50421673
     },
     {
       "source": "3,5",
       "target": "3,4",
-      "value": 0.49372622
+      "similarity": 0.49372622
     },
     {
       "source": "3,5",
       "target": "0,1",
-      "value": 0.48209885
+      "similarity": 0.48209885
     },
     {
       "source": "5,3",
       "target": "2,0",
-      "value": 0.5967369
+      "similarity": 0.5967369
     },
     {
       "source": "5,3",
       "target": "5,4",
-      "value": 0.59091485
+      "similarity": 0.59091485
     },
     {
       "source": "5,3",
       "target": "6,2",
-      "value": 0.58019894
+      "similarity": 0.58019894
     },
     {
       "source": "5,3",
       "target": "5,2",
-      "value": 0.5798576
+      "similarity": 0.5798576
     },
     {
       "source": "5,3",
       "target": "6,3",
-      "value": 0.5687344
+      "similarity": 0.5687344
     },
     {
       "source": "5,3",
       "target": "4,3",
-      "value": 0.5238929
+      "similarity": 0.5238929
     },
     {
       "source": "5,3",
       "target": "9,6",
-      "value": 0.49761733
+      "similarity": 0.49761733
     },
     {
       "source": "5,3",
       "target": "8,7",
-      "value": 0.48422924
+      "similarity": 0.48422924
     },
     {
       "source": "4,5",
       "target": "5,5",
-      "value": 0.5598351
+      "similarity": 0.5598351
     },
     {
       "source": "4,5",
       "target": "4,6",
-      "value": 0.5499218
+      "similarity": 0.5499218
     },
     {
       "source": "4,5",
       "target": "4,4",
-      "value": 0.53051734
+      "similarity": 0.53051734
     },
     {
       "source": "4,5",
       "target": "3,6",
-      "value": 0.5164301
+      "similarity": 0.5164301
     },
     {
       "source": "4,5",
       "target": "3,5",
-      "value": 0.51640415
+      "similarity": 0.51640415
     },
     {
       "source": "4,5",
       "target": "7,9",
-      "value": 0.504903
+      "similarity": 0.504903
     },
     {
       "source": "4,5",
       "target": "5,4",
-      "value": 0.49027842
+      "similarity": 0.49027842
     },
     {
       "source": "4,5",
       "target": "8,8",
-      "value": 0.47205478
+      "similarity": 0.47205478
     },
     {
       "source": "3,6",
       "target": "2,7",
-      "value": 0.64744747
+      "similarity": 0.64744747
     },
     {
       "source": "3,6",
       "target": "2,6",
-      "value": 0.6440474
+      "similarity": 0.6440474
     },
     {
       "source": "3,6",
       "target": "3,7",
-      "value": 0.6083182
+      "similarity": 0.6083182
     },
     {
       "source": "3,6",
       "target": "7,9",
-      "value": 0.5879312
+      "similarity": 0.5879312
     },
     {
       "source": "3,6",
       "target": "0,2",
-      "value": 0.58108115
+      "similarity": 0.58108115
     },
     {
       "source": "3,6",
       "target": "6,9",
-      "value": 0.55288416
+      "similarity": 0.55288416
     },
     {
       "source": "3,6",
       "target": "0,3",
-      "value": 0.52676636
+      "similarity": 0.52676636
     },
     {
       "source": "3,6",
       "target": "4,5",
-      "value": 0.5164301
+      "similarity": 0.5164301
     },
     {
       "source": "5,4",
       "target": "5,3",
-      "value": 0.59091485
+      "similarity": 0.59091485
     },
     {
       "source": "5,4",
       "target": "4,4",
-      "value": 0.55590624
+      "similarity": 0.55590624
     },
     {
       "source": "5,4",
       "target": "1,1",
-      "value": 0.5449065
+      "similarity": 0.5449065
     },
     {
       "source": "5,4",
       "target": "2,0",
-      "value": 0.54046124
+      "similarity": 0.54046124
     },
     {
       "source": "5,4",
       "target": "5,5",
-      "value": 0.5198834
+      "similarity": 0.5198834
     },
     {
       "source": "5,4",
       "target": "6,4",
-      "value": 0.50650704
+      "similarity": 0.50650704
     },
     {
       "source": "5,4",
       "target": "4,5",
-      "value": 0.49027842
+      "similarity": 0.49027842
     },
     {
       "source": "5,4",
       "target": "8,7",
-      "value": 0.48097172
+      "similarity": 0.48097172
     },
     {
       "source": "4,6",
       "target": "4,7",
-      "value": 0.6271898
+      "similarity": 0.6271898
     },
     {
       "source": "4,6",
       "target": "3,7",
-      "value": 0.6042852
+      "similarity": 0.6042852
     },
     {
       "source": "4,6",
       "target": "4,5",
-      "value": 0.5499218
+      "similarity": 0.5499218
     },
     {
       "source": "4,6",
       "target": "7,9",
-      "value": 0.5393142
+      "similarity": 0.5393142
     },
     {
       "source": "4,6",
       "target": "3,6",
-      "value": 0.49734315
+      "similarity": 0.49734315
     },
     {
       "source": "4,6",
       "target": "5,6",
-      "value": 0.46628848
+      "similarity": 0.46628848
     },
     {
       "source": "4,6",
       "target": "5,7",
-      "value": 0.44216403
+      "similarity": 0.44216403
     },
     {
       "source": "4,6",
       "target": "1,2",
-      "value": 0.43472862
+      "similarity": 0.43472862
     },
     {
       "source": "3,3",
       "target": "0,0",
-      "value": 0.6417924
+      "similarity": 0.6417924
     },
     {
       "source": "3,3",
       "target": "3,2",
-      "value": 0.63599163
+      "similarity": 0.63599163
     },
     {
       "source": "3,3",
       "target": "2,3",
-      "value": 0.59736145
+      "similarity": 0.59736145
     },
     {
       "source": "3,3",
       "target": "2,4",
-      "value": 0.58359957
+      "similarity": 0.58359957
     },
     {
       "source": "3,3",
       "target": "4,2",
-      "value": 0.5517788
+      "similarity": 0.5517788
     },
     {
       "source": "3,3",
       "target": "2,2",
-      "value": 0.5504923
+      "similarity": 0.5504923
     },
     {
       "source": "3,3",
       "target": "3,4",
-      "value": 0.54053485
+      "similarity": 0.54053485
     },
     {
       "source": "3,3",
       "target": "4,3",
-      "value": 0.5300273
+      "similarity": 0.5300273
     },
     {
       "source": "3,4",
       "target": "2,5",
-      "value": 0.61310863
+      "similarity": 0.61310863
     },
     {
       "source": "3,4",
       "target": "2,4",
-      "value": 0.61291945
+      "similarity": 0.61291945
     },
     {
       "source": "3,4",
       "target": "0,1",
-      "value": 0.5871816
+      "similarity": 0.5871816
     },
     {
       "source": "3,4",
       "target": "0,0",
-      "value": 0.54197145
+      "similarity": 0.54197145
     },
     {
       "source": "3,4",
       "target": "3,3",
-      "value": 0.54053485
+      "similarity": 0.54053485
     },
     {
       "source": "3,4",
       "target": "4,4",
-      "value": 0.5095315
+      "similarity": 0.5095315
     },
     {
       "source": "3,4",
       "target": "3,5",
-      "value": 0.49372622
+      "similarity": 0.49372622
     },
     {
       "source": "3,4",
       "target": "0,2",
-      "value": 0.4302171
+      "similarity": 0.4302171
     },
     {
       "source": "6,3",
       "target": "7,2",
-      "value": 0.6978462
+      "similarity": 0.6978462
     },
     {
       "source": "6,3",
       "target": "6,2",
-      "value": 0.5705135
+      "similarity": 0.5705135
     },
     {
       "source": "6,3",
       "target": "7,3",
-      "value": 0.56946737
+      "similarity": 0.56946737
     },
     {
       "source": "6,3",
       "target": "5,3",
-      "value": 0.5687344
+      "similarity": 0.5687344
     },
     {
       "source": "6,3",
       "target": "3,0",
-      "value": 0.5473608
+      "similarity": 0.5473608
     },
     {
       "source": "6,3",
       "target": "9,6",
-      "value": 0.54668105
+      "similarity": 0.54668105
     },
     {
       "source": "6,3",
       "target": "2,0",
-      "value": 0.52628374
+      "similarity": 0.52628374
     },
     {
       "source": "6,3",
       "target": "6,4",
-      "value": 0.514196
+      "similarity": 0.514196
     },
     {
       "source": "4,3",
       "target": "4,2",
-      "value": 0.6174614
+      "similarity": 0.6174614
     },
     {
       "source": "4,3",
       "target": "5,2",
-      "value": 0.5912871
+      "similarity": 0.5912871
     },
     {
       "source": "4,3",
       "target": "0,0",
-      "value": 0.5739521
+      "similarity": 0.5739521
     },
     {
       "source": "4,3",
       "target": "1,0",
-      "value": 0.57242996
+      "similarity": 0.57242996
     },
     {
       "source": "4,3",
       "target": "4,4",
-      "value": 0.5400056
+      "similarity": 0.5400056
     },
     {
       "source": "4,3",
       "target": "3,3",
-      "value": 0.5300273
+      "similarity": 0.5300273
     },
     {
       "source": "4,3",
       "target": "5,3",
-      "value": 0.5238929
+      "similarity": 0.5238929
     },
     {
       "source": "4,3",
       "target": "3,2",
-      "value": 0.43899968
+      "similarity": 0.43899968
     },
     {
       "source": "5,6",
       "target": "5,7",
-      "value": 0.59812194
+      "similarity": 0.59812194
     },
     {
       "source": "5,6",
       "target": "9,9",
-      "value": 0.5697888
+      "similarity": 0.5697888
     },
     {
       "source": "5,6",
       "target": "8,9",
-      "value": 0.5545536
+      "similarity": 0.5545536
     },
     {
       "source": "5,6",
       "target": "4,7",
-      "value": 0.5466229
+      "similarity": 0.5466229
     },
     {
       "source": "5,6",
       "target": "5,5",
-      "value": 0.5217389
+      "similarity": 0.5217389
     },
     {
       "source": "5,6",
       "target": "6,6",
-      "value": 0.48659912
+      "similarity": 0.48659912
     },
     {
       "source": "5,6",
       "target": "6,7",
-      "value": 0.4807726
+      "similarity": 0.4807726
     },
     {
       "source": "5,6",
       "target": "4,6",
-      "value": 0.46628848
+      "similarity": 0.46628848
     },
     {
       "source": "6,6",
       "target": "6,7",
-      "value": 0.63346493
+      "similarity": 0.63346493
     },
     {
       "source": "6,6",
       "target": "9,9",
-      "value": 0.612333
+      "similarity": 0.612333
     },
     {
       "source": "6,6",
       "target": "7,6",
-      "value": 0.59914076
+      "similarity": 0.59914076
     },
     {
       "source": "6,6",
       "target": "5,7",
-      "value": 0.59161747
+      "similarity": 0.59161747
     },
     {
       "source": "6,6",
       "target": "7,7",
-      "value": 0.52127606
+      "similarity": 0.52127606
     },
     {
       "source": "6,6",
       "target": "6,5",
-      "value": 0.5119046
+      "similarity": 0.5119046
     },
     {
       "source": "6,6",
       "target": "7,5",
-      "value": 0.5092984
+      "similarity": 0.5092984
     },
     {
       "source": "6,6",
       "target": "5,6",
-      "value": 0.48659912
+      "similarity": 0.48659912
     },
     {
       "source": "6,4",
       "target": "7,3",
-      "value": 0.6184105
+      "similarity": 0.6184105
     },
     {
       "source": "6,4",
       "target": "7,4",
-      "value": 0.59963644
+      "similarity": 0.59963644
     },
     {
       "source": "6,4",
       "target": "5,5",
-      "value": 0.52009386
+      "similarity": 0.52009386
     },
     {
       "source": "6,4",
       "target": "6,3",
-      "value": 0.514196
+      "similarity": 0.514196
     },
     {
       "source": "6,4",
       "target": "5,4",
-      "value": 0.50650704
+      "similarity": 0.50650704
     },
     {
       "source": "6,4",
       "target": "9,8",
-      "value": 0.5032072
+      "similarity": 0.5032072
     },
     {
       "source": "6,4",
       "target": "9,7",
-      "value": 0.49823272
+      "similarity": 0.49823272
     },
     {
       "source": "6,4",
       "target": "6,5",
-      "value": 0.46472406
+      "similarity": 0.46472406
     },
     {
       "source": "3,7",
       "target": "2,8",
-      "value": 0.654711
+      "similarity": 0.654711
     },
     {
       "source": "3,7",
       "target": "2,7",
-      "value": 0.61863446
+      "similarity": 0.61863446
     },
     {
       "source": "3,7",
       "target": "3,6",
-      "value": 0.6083182
+      "similarity": 0.6083182
     },
     {
       "source": "3,7",
       "target": "4,6",
-      "value": 0.6042852
+      "similarity": 0.6042852
     },
     {
       "source": "3,7",
       "target": "0,3",
-      "value": 0.57671964
+      "similarity": 0.57671964
     },
     {
       "source": "3,7",
       "target": "4,7",
-      "value": 0.5702965
+      "similarity": 0.5702965
     },
     {
       "source": "3,7",
       "target": "3,8",
-      "value": 0.56529313
+      "similarity": 0.56529313
     },
     {
       "source": "3,7",
       "target": "0,4",
-      "value": 0.50686693
+      "similarity": 0.50686693
     },
     {
       "source": "4,7",
       "target": "3,8",
-      "value": 0.64654464
+      "similarity": 0.64654464
     },
     {
       "source": "4,7",
       "target": "4,6",
-      "value": 0.6271898
+      "similarity": 0.6271898
     },
     {
       "source": "4,7",
       "target": "4,8",
-      "value": 0.59192264
+      "similarity": 0.59192264
     },
     {
       "source": "4,7",
       "target": "0,4",
-      "value": 0.5796813
+      "similarity": 0.5796813
     },
     {
       "source": "4,7",
       "target": "3,7",
-      "value": 0.5702965
+      "similarity": 0.5702965
     },
     {
       "source": "4,7",
       "target": "5,7",
-      "value": 0.5649831
+      "similarity": 0.5649831
     },
     {
       "source": "4,7",
       "target": "5,6",
-      "value": 0.5466229
+      "similarity": 0.5466229
     },
     {
       "source": "4,7",
       "target": "8,9",
-      "value": 0.50650483
+      "similarity": 0.50650483
     },
     {
       "source": "2,6",
       "target": "2,5",
-      "value": 0.66154927
+      "similarity": 0.66154927
     },
     {
       "source": "2,6",
       "target": "3,6",
-      "value": 0.6440474
+      "similarity": 0.6440474
     },
     {
       "source": "2,6",
       "target": "1,7",
-      "value": 0.63806915
+      "similarity": 0.63806915
     },
     {
       "source": "2,6",
       "target": "2,7",
-      "value": 0.6068578
+      "similarity": 0.6068578
     },
     {
       "source": "2,6",
       "target": "3,5",
-      "value": 0.6030179
+      "similarity": 0.6030179
     },
     {
       "source": "2,6",
       "target": "1,6",
-      "value": 0.55952835
+      "similarity": 0.55952835
     },
     {
       "source": "2,6",
       "target": "6,9",
-      "value": 0.53909284
+      "similarity": 0.53909284
     },
     {
       "source": "2,6",
       "target": "5,9",
-      "value": 0.5130622
+      "similarity": 0.5130622
     },
     {
       "source": "2,5",
       "target": "2,6",
-      "value": 0.66154927
+      "similarity": 0.66154927
     },
     {
       "source": "2,5",
       "target": "1,6",
-      "value": 0.61800677
+      "similarity": 0.61800677
     },
     {
       "source": "2,5",
       "target": "3,4",
-      "value": 0.61310863
+      "similarity": 0.61310863
     },
     {
       "source": "2,5",
       "target": "1,5",
-      "value": 0.59600484
+      "similarity": 0.59600484
     },
     {
       "source": "2,5",
       "target": "2,4",
-      "value": 0.5899664
+      "similarity": 0.5899664
     },
     {
       "source": "2,5",
       "target": "3,5",
-      "value": 0.58424574
+      "similarity": 0.58424574
     },
     {
       "source": "2,5",
       "target": "5,9",
-      "value": 0.49792793
+      "similarity": 0.49792793
     },
     {
       "source": "2,5",
       "target": "6,8",
-      "value": 0.48201597
+      "similarity": 0.48201597
     },
     {
       "source": "4,2",
       "target": "4,3",
-      "value": 0.6174614
+      "similarity": 0.6174614
     },
     {
       "source": "4,2",
       "target": "5,1",
-      "value": 0.5900061
+      "similarity": 0.5900061
     },
     {
       "source": "4,2",
       "target": "4,1",
-      "value": 0.5735672
+      "similarity": 0.5735672
     },
     {
       "source": "4,2",
       "target": "5,2",
-      "value": 0.5541442
+      "similarity": 0.5541442
     },
     {
       "source": "4,2",
       "target": "3,2",
-      "value": 0.5520201
+      "similarity": 0.5520201
     },
     {
       "source": "4,2",
       "target": "3,3",
-      "value": 0.5517788
+      "similarity": 0.5517788
     },
     {
       "source": "4,2",
       "target": "0,0",
-      "value": 0.5292539
+      "similarity": 0.5292539
     },
     {
       "source": "4,2",
       "target": "1,0",
-      "value": 0.4931061
+      "similarity": 0.4931061
     },
     {
       "source": "3,2",
       "target": "2,2",
-      "value": 0.6483175
+      "similarity": 0.6483175
     },
     {
       "source": "3,2",
       "target": "3,3",
-      "value": 0.63599163
+      "similarity": 0.63599163
     },
     {
       "source": "3,2",
       "target": "2,3",
-      "value": 0.59260184
+      "similarity": 0.59260184
     },
     {
       "source": "3,2",
       "target": "4,1",
-      "value": 0.5899873
+      "similarity": 0.5899873
     },
     {
       "source": "3,2",
       "target": "3,1",
-      "value": 0.57853353
+      "similarity": 0.57853353
     },
     {
       "source": "3,2",
       "target": "4,2",
-      "value": 0.5520201
+      "similarity": 0.5520201
     },
     {
       "source": "3,2",
       "target": "0,0",
-      "value": 0.541008
+      "similarity": 0.541008
     },
     {
       "source": "3,2",
       "target": "2,1",
-      "value": 0.5233394
+      "similarity": 0.5233394
     },
     {
       "source": "7,6",
       "target": "7,7",
-      "value": 0.6609372
+      "similarity": 0.6609372
     },
     {
       "source": "7,6",
       "target": "8,5",
-      "value": 0.64116836
+      "similarity": 0.64116836
     },
     {
       "source": "7,6",
       "target": "6,7",
-      "value": 0.6201981
+      "similarity": 0.6201981
     },
     {
       "source": "7,6",
       "target": "6,6",
-      "value": 0.59914076
+      "similarity": 0.59914076
     },
     {
       "source": "7,6",
       "target": "7,5",
-      "value": 0.56733835
+      "similarity": 0.56733835
     },
     {
       "source": "7,6",
       "target": "8,6",
-      "value": 0.560673
+      "similarity": 0.560673
     },
     {
       "source": "7,6",
       "target": "9,9",
-      "value": 0.50693375
+      "similarity": 0.50693375
     },
     {
       "source": "7,6",
       "target": "8,7",
-      "value": 0.50560874
+      "similarity": 0.50560874
     },
     {
       "source": "6,7",
       "target": "6,6",
-      "value": 0.63346493
+      "similarity": 0.63346493
     },
     {
       "source": "6,7",
       "target": "5,8",
-      "value": 0.6322832
+      "similarity": 0.6322832
     },
     {
       "source": "6,7",
       "target": "7,7",
-      "value": 0.6260802
+      "similarity": 0.6260802
     },
     {
       "source": "6,7",
       "target": "7,6",
-      "value": 0.6201981
+      "similarity": 0.6201981
     },
     {
       "source": "6,7",
       "target": "6,8",
-      "value": 0.60839117
+      "similarity": 0.60839117
     },
     {
       "source": "6,7",
       "target": "9,9",
-      "value": 0.5753275
+      "similarity": 0.5753275
     },
     {
       "source": "6,7",
       "target": "5,7",
-      "value": 0.56938267
+      "similarity": 0.56938267
     },
     {
       "source": "6,7",
       "target": "7,8",
-      "value": 0.51219183
+      "similarity": 0.51219183
     },
     {
       "source": "5,2",
       "target": "6,2",
-      "value": 0.5917723
+      "similarity": 0.5917723
     },
     {
       "source": "5,2",
       "target": "4,3",
-      "value": 0.5912871
+      "similarity": 0.5912871
     },
     {
       "source": "5,2",
       "target": "5,1",
-      "value": 0.581752
+      "similarity": 0.581752
     },
     {
       "source": "5,2",
       "target": "5,3",
-      "value": 0.5798576
+      "similarity": 0.5798576
     },
     {
       "source": "5,2",
       "target": "9,5",
-      "value": 0.56171584
+      "similarity": 0.56171584
     },
     {
       "source": "5,2",
       "target": "4,2",
-      "value": 0.5541442
+      "similarity": 0.5541442
     },
     {
       "source": "5,2",
       "target": "6,1",
-      "value": 0.506357
+      "similarity": 0.506357
     },
     {
       "source": "5,2",
       "target": "2,0",
-      "value": 0.49279302
+      "similarity": 0.49279302
     },
     {
       "source": "2,4",
       "target": "1,5",
-      "value": 0.63645726
+      "similarity": 0.63645726
     },
     {
       "source": "2,4",
       "target": "3,4",
-      "value": 0.61291945
+      "similarity": 0.61291945
     },
     {
       "source": "2,4",
       "target": "1,4",
-      "value": 0.5919658
+      "similarity": 0.5919658
     },
     {
       "source": "2,4",
       "target": "2,5",
-      "value": 0.5899664
+      "similarity": 0.5899664
     },
     {
       "source": "2,4",
       "target": "3,3",
-      "value": 0.58359957
+      "similarity": 0.58359957
     },
     {
       "source": "2,4",
       "target": "2,3",
-      "value": 0.5237569
+      "similarity": 0.5237569
     },
     {
       "source": "2,4",
       "target": "0,1",
-      "value": 0.47584707
+      "similarity": 0.47584707
     },
     {
       "source": "2,4",
       "target": "0,0",
-      "value": 0.46506864
+      "similarity": 0.46506864
     },
     {
       "source": "6,2",
       "target": "7,2",
-      "value": 0.6694781
+      "similarity": 0.6694781
     },
     {
       "source": "6,2",
       "target": "7,1",
-      "value": 0.61468685
+      "similarity": 0.61468685
     },
     {
       "source": "6,2",
       "target": "5,2",
-      "value": 0.5917723
+      "similarity": 0.5917723
     },
     {
       "source": "6,2",
       "target": "6,1",
-      "value": 0.58789754
+      "similarity": 0.58789754
     },
     {
       "source": "6,2",
       "target": "5,3",
-      "value": 0.58019894
+      "similarity": 0.58019894
     },
     {
       "source": "6,2",
       "target": "6,3",
-      "value": 0.5705135
+      "similarity": 0.5705135
     },
     {
       "source": "6,2",
       "target": "9,6",
-      "value": 0.56008923
+      "similarity": 0.56008923
     },
     {
       "source": "6,2",
       "target": "9,5",
-      "value": 0.49760452
+      "similarity": 0.49760452
     },
     {
       "source": "7,5",
       "target": "8,4",
-      "value": 0.6122838
+      "similarity": 0.6122838
     },
     {
       "source": "7,5",
       "target": "6,5",
-      "value": 0.579481
+      "similarity": 0.579481
     },
     {
       "source": "7,5",
       "target": "7,4",
-      "value": 0.5698583
+      "similarity": 0.5698583
     },
     {
       "source": "7,5",
       "target": "7,6",
-      "value": 0.56733835
+      "similarity": 0.56733835
     },
     {
       "source": "7,5",
       "target": "8,5",
-      "value": 0.5650119
+      "similarity": 0.5650119
     },
     {
       "source": "7,5",
       "target": "9,8",
-      "value": 0.51399714
+      "similarity": 0.51399714
     },
     {
       "source": "7,5",
       "target": "6,6",
-      "value": 0.5092984
+      "similarity": 0.5092984
     },
     {
       "source": "7,5",
       "target": "8,6",
-      "value": 0.46463585
+      "similarity": 0.46463585
     },
     {
       "source": "5,7",
       "target": "5,6",
-      "value": 0.59812194
+      "similarity": 0.59812194
     },
     {
       "source": "5,7",
       "target": "6,6",
-      "value": 0.59161747
+      "similarity": 0.59161747
     },
     {
       "source": "5,7",
       "target": "4,8",
-      "value": 0.58461857
+      "similarity": 0.58461857
     },
     {
       "source": "5,7",
       "target": "6,7",
-      "value": 0.56938267
+      "similarity": 0.56938267
     },
     {
       "source": "5,7",
       "target": "4,7",
-      "value": 0.5649831
+      "similarity": 0.5649831
     },
     {
       "source": "5,7",
       "target": "5,8",
-      "value": 0.55674785
+      "similarity": 0.55674785
     },
     {
       "source": "5,7",
       "target": "9,9",
-      "value": 0.5294943
+      "similarity": 0.5294943
     },
     {
       "source": "5,7",
       "target": "8,9",
-      "value": 0.5294349
+      "similarity": 0.5294349
     },
     {
       "source": "7,3",
       "target": "7,2",
-      "value": 0.63547844
+      "similarity": 0.63547844
     },
     {
       "source": "7,3",
       "target": "6,4",
-      "value": 0.6184105
+      "similarity": 0.6184105
     },
     {
       "source": "7,3",
       "target": "8,3",
-      "value": 0.6075646
+      "similarity": 0.6075646
     },
     {
       "source": "7,3",
       "target": "7,4",
-      "value": 0.589116
+      "similarity": 0.589116
     },
     {
       "source": "7,3",
       "target": "6,3",
-      "value": 0.56946737
+      "similarity": 0.56946737
     },
     {
       "source": "7,3",
       "target": "8,2",
-      "value": 0.5582968
+      "similarity": 0.5582968
     },
     {
       "source": "7,3",
       "target": "3,0",
-      "value": 0.55296737
+      "similarity": 0.55296737
     },
     {
       "source": "7,3",
       "target": "4,0",
-      "value": 0.48655242
+      "similarity": 0.48655242
     },
     {
       "source": "2,3",
       "target": "2,2",
-      "value": 0.6508662
+      "similarity": 0.6508662
     },
     {
       "source": "2,3",
       "target": "3,3",
-      "value": 0.59736145
+      "similarity": 0.59736145
     },
     {
       "source": "2,3",
       "target": "3,2",
-      "value": 0.59260184
+      "similarity": 0.59260184
     },
     {
       "source": "2,3",
       "target": "1,4",
-      "value": 0.5870459
+      "similarity": 0.5870459
     },
     {
       "source": "2,3",
       "target": "1,3",
-      "value": 0.5633681
+      "similarity": 0.5633681
     },
     {
       "source": "2,3",
       "target": "2,4",
-      "value": 0.5237569
+      "similarity": 0.5237569
     },
     {
       "source": "2,3",
       "target": "0,0",
-      "value": 0.523294
+      "similarity": 0.523294
     },
     {
       "source": "2,3",
       "target": "1,2",
-      "value": 0.47107184
+      "similarity": 0.47107184
     },
     {
       "source": "7,4",
       "target": "8,3",
-      "value": 0.63364357
+      "similarity": 0.63364357
     },
     {
       "source": "7,4",
       "target": "6,5",
-      "value": 0.6063534
+      "similarity": 0.6063534
     },
     {
       "source": "7,4",
       "target": "6,4",
-      "value": 0.59963644
+      "similarity": 0.59963644
     },
     {
       "source": "7,4",
       "target": "7,3",
-      "value": 0.589116
+      "similarity": 0.589116
     },
     {
       "source": "7,4",
       "target": "7,5",
-      "value": 0.5698583
+      "similarity": 0.5698583
     },
     {
       "source": "7,4",
       "target": "8,4",
-      "value": 0.56587255
+      "similarity": 0.56587255
     },
     {
       "source": "7,4",
       "target": "4,0",
-      "value": 0.5153452
+      "similarity": 0.5153452
     },
     {
       "source": "7,4",
       "target": "3,1",
-      "value": 0.49046886
+      "similarity": 0.49046886
     },
     {
       "source": "7,7",
       "target": "6,8",
-      "value": 0.6833431
+      "similarity": 0.6833431
     },
     {
       "source": "7,7",
       "target": "7,6",
-      "value": 0.6609372
+      "similarity": 0.6609372
     },
     {
       "source": "7,7",
       "target": "8,7",
-      "value": 0.649568
+      "similarity": 0.649568
     },
     {
       "source": "7,7",
       "target": "6,7",
-      "value": 0.6260802
+      "similarity": 0.6260802
     },
     {
       "source": "7,7",
       "target": "7,8",
-      "value": 0.5926597
+      "similarity": 0.5926597
     },
     {
       "source": "7,7",
       "target": "8,6",
-      "value": 0.5922633
+      "similarity": 0.5922633
     },
     {
       "source": "7,7",
       "target": "6,6",
-      "value": 0.52127606
+      "similarity": 0.52127606
     },
     {
       "source": "7,7",
       "target": "9,9",
-      "value": 0.51773953
+      "similarity": 0.51773953
     },
     {
       "source": "2,2",
       "target": "1,3",
-      "value": 0.69623446
+      "similarity": 0.69623446
     },
     {
       "source": "2,2",
       "target": "3,1",
-      "value": 0.6630857
+      "similarity": 0.6630857
     },
     {
       "source": "2,2",
       "target": "2,3",
-      "value": 0.6508662
+      "similarity": 0.6508662
     },
     {
       "source": "2,2",
       "target": "3,2",
-      "value": 0.6483175
+      "similarity": 0.6483175
     },
     {
       "source": "2,2",
       "target": "2,1",
-      "value": 0.64735967
+      "similarity": 0.64735967
     },
     {
       "source": "2,2",
       "target": "1,2",
-      "value": 0.6427376
+      "similarity": 0.6427376
     },
     {
       "source": "2,2",
       "target": "0,0",
-      "value": 0.55767745
+      "similarity": 0.55767745
     },
     {
       "source": "2,2",
       "target": "3,3",
-      "value": 0.5504923
+      "similarity": 0.5504923
     },
     {
       "source": "2,7",
       "target": "1,8",
-      "value": 0.65786135
+      "similarity": 0.65786135
     },
     {
       "source": "2,7",
       "target": "3,6",
-      "value": 0.64744747
+      "similarity": 0.64744747
     },
     {
       "source": "2,7",
       "target": "3,7",
-      "value": 0.61863446
+      "similarity": 0.61863446
     },
     {
       "source": "2,7",
       "target": "2,8",
-      "value": 0.607886
+      "similarity": 0.607886
     },
     {
       "source": "2,7",
       "target": "2,6",
-      "value": 0.6068578
+      "similarity": 0.6068578
     },
     {
       "source": "2,7",
       "target": "1,7",
-      "value": 0.5918534
+      "similarity": 0.5918534
     },
     {
       "source": "2,7",
       "target": "1,6",
-      "value": 0.5102274
+      "similarity": 0.5102274
     },
     {
       "source": "2,7",
       "target": "1,9",
-      "value": 0.46911532
+      "similarity": 0.46911532
     },
     {
       "source": "7,2",
       "target": "6,3",
-      "value": 0.6978462
+      "similarity": 0.6978462
     },
     {
       "source": "7,2",
       "target": "6,2",
-      "value": 0.6694781
+      "similarity": 0.6694781
     },
     {
       "source": "7,2",
       "target": "8,1",
-      "value": 0.64870816
+      "similarity": 0.64870816
     },
     {
       "source": "7,2",
       "target": "7,3",
-      "value": 0.63547844
+      "similarity": 0.63547844
     },
     {
       "source": "7,2",
       "target": "7,1",
-      "value": 0.6308879
+      "similarity": 0.6308879
     },
     {
       "source": "7,2",
       "target": "8,2",
-      "value": 0.5755143
+      "similarity": 0.5755143
     },
     {
       "source": "7,2",
       "target": "6,1",
-      "value": 0.5728126
+      "similarity": 0.5728126
     },
     {
       "source": "7,2",
       "target": "8,3",
-      "value": 0.49812284
+      "similarity": 0.49812284
     },
     {
       "source": "1,5",
       "target": "0,6",
-      "value": 0.6438417
+      "similarity": 0.6438417
     },
     {
       "source": "1,5",
       "target": "2,4",
-      "value": 0.63645726
+      "similarity": 0.63645726
     },
     {
       "source": "1,5",
       "target": "1,6",
-      "value": 0.62133133
+      "similarity": 0.62133133
     },
     {
       "source": "1,5",
       "target": "1,4",
-      "value": 0.60662663
+      "similarity": 0.60662663
     },
     {
       "source": "1,5",
       "target": "2,5",
-      "value": 0.59600484
+      "similarity": 0.59600484
     },
     {
       "source": "1,5",
       "target": "4,9",
-      "value": 0.5520387
+      "similarity": 0.5520387
     },
     {
       "source": "1,5",
       "target": "5,8",
-      "value": 0.54084194
+      "similarity": 0.54084194
     },
     {
       "source": "1,5",
       "target": "0,5",
-      "value": 0.5073974
+      "similarity": 0.5073974
     },
     {
       "source": "5,8",
       "target": "4,9",
-      "value": 0.6732862
+      "similarity": 0.6732862
     },
     {
       "source": "5,8",
       "target": "6,7",
-      "value": 0.6322832
+      "similarity": 0.6322832
     },
     {
       "source": "5,8",
       "target": "6,8",
-      "value": 0.5887389
+      "similarity": 0.5887389
     },
     {
       "source": "5,8",
       "target": "4,8",
-      "value": 0.5835933
+      "similarity": 0.5835933
     },
     {
       "source": "5,8",
       "target": "5,7",
-      "value": 0.55674785
+      "similarity": 0.55674785
     },
     {
       "source": "5,8",
       "target": "5,9",
-      "value": 0.54687965
+      "similarity": 0.54687965
     },
     {
       "source": "5,8",
       "target": "1,5",
-      "value": 0.54084194
+      "similarity": 0.54084194
     },
     {
       "source": "5,8",
       "target": "6,9",
-      "value": 0.4717461
+      "similarity": 0.4717461
     },
     {
       "source": "8,3",
       "target": "9,2",
-      "value": 0.6997319
+      "similarity": 0.6997319
     },
     {
       "source": "8,3",
       "target": "8,2",
-      "value": 0.6623875
+      "similarity": 0.6623875
     },
     {
       "source": "8,3",
       "target": "7,4",
-      "value": 0.63364357
+      "similarity": 0.63364357
     },
     {
       "source": "8,3",
       "target": "7,3",
-      "value": 0.6075646
+      "similarity": 0.6075646
     },
     {
       "source": "8,3",
       "target": "8,4",
-      "value": 0.60060954
+      "similarity": 0.60060954
     },
     {
       "source": "8,3",
       "target": "4,0",
-      "value": 0.56284773
+      "similarity": 0.56284773
     },
     {
       "source": "8,3",
       "target": "5,0",
-      "value": 0.5145073
+      "similarity": 0.5145073
     },
     {
       "source": "8,3",
       "target": "7,2",
-      "value": 0.49812284
+      "similarity": 0.49812284
     },
     {
       "source": "8,4",
       "target": "7,5",
-      "value": 0.6122838
+      "similarity": 0.6122838
     },
     {
       "source": "8,4",
       "target": "8,5",
-      "value": 0.6121225
+      "similarity": 0.6121225
     },
     {
       "source": "8,4",
       "target": "8,3",
-      "value": 0.60060954
+      "similarity": 0.60060954
     },
     {
       "source": "8,4",
       "target": "9,3",
-      "value": 0.5934194
+      "similarity": 0.5934194
     },
     {
       "source": "8,4",
       "target": "9,4",
-      "value": 0.5696064
+      "similarity": 0.5696064
     },
     {
       "source": "8,4",
       "target": "7,4",
-      "value": 0.56587255
+      "similarity": 0.56587255
     },
     {
       "source": "8,4",
       "target": "4,1",
-      "value": 0.5205561
+      "similarity": 0.5205561
     },
     {
       "source": "8,4",
       "target": "5,0",
-      "value": 0.5175419
+      "similarity": 0.5175419
     },
     {
       "source": "1,4",
       "target": "0,5",
-      "value": 0.6182617
+      "similarity": 0.6182617
     },
     {
       "source": "1,4",
       "target": "1,5",
-      "value": 0.60662663
+      "similarity": 0.60662663
     },
     {
       "source": "1,4",
       "target": "1,3",
-      "value": 0.5952785
+      "similarity": 0.5952785
     },
     {
       "source": "1,4",
       "target": "0,4",
-      "value": 0.5935248
+      "similarity": 0.5935248
     },
     {
       "source": "1,4",
       "target": "2,4",
-      "value": 0.5919658
+      "similarity": 0.5919658
     },
     {
       "source": "1,4",
       "target": "2,3",
-      "value": 0.5870459
+      "similarity": 0.5870459
     },
     {
       "source": "1,4",
       "target": "4,8",
-      "value": 0.5046493
+      "similarity": 0.5046493
     },
     {
       "source": "1,4",
       "target": "0,3",
-      "value": 0.47695142
+      "similarity": 0.47695142
     },
     {
       "source": "6,1",
       "target": "7,1",
-      "value": 0.66497713
+      "similarity": 0.66497713
     },
     {
       "source": "6,1",
       "target": "5,1",
-      "value": 0.60527635
+      "similarity": 0.60527635
     },
     {
       "source": "6,1",
       "target": "7,0",
-      "value": 0.5928871
+      "similarity": 0.5928871
     },
     {
       "source": "6,1",
       "target": "9,4",
-      "value": 0.5907157
+      "similarity": 0.5907157
     },
     {
       "source": "6,1",
       "target": "6,2",
-      "value": 0.58789754
+      "similarity": 0.58789754
     },
     {
       "source": "6,1",
       "target": "7,2",
-      "value": 0.5728126
+      "similarity": 0.5728126
     },
     {
       "source": "6,1",
       "target": "9,5",
-      "value": 0.52714854
+      "similarity": 0.52714854
     },
     {
       "source": "6,1",
       "target": "5,2",
-      "value": 0.506357
+      "similarity": 0.506357
     },
     {
       "source": "3,1",
       "target": "2,2",
-      "value": 0.6630857
+      "similarity": 0.6630857
     },
     {
       "source": "3,1",
       "target": "2,1",
-      "value": 0.65368
+      "similarity": 0.65368
     },
     {
       "source": "3,1",
       "target": "4,0",
-      "value": 0.60780466
+      "similarity": 0.60780466
     },
     {
       "source": "3,1",
       "target": "4,1",
-      "value": 0.6038674
+      "similarity": 0.6038674
     },
     {
       "source": "3,1",
       "target": "3,2",
-      "value": 0.57853353
+      "similarity": 0.57853353
     },
     {
       "source": "3,1",
       "target": "3,0",
-      "value": 0.5705736
+      "similarity": 0.5705736
     },
     {
       "source": "3,1",
       "target": "2,0",
-      "value": 0.53302336
+      "similarity": 0.53302336
     },
     {
       "source": "3,1",
       "target": "7,4",
-      "value": 0.49046886
+      "similarity": 0.49046886
     },
     {
       "source": "4,1",
       "target": "5,0",
-      "value": 0.63246226
+      "similarity": 0.63246226
     },
     {
       "source": "4,1",
       "target": "5,1",
-      "value": 0.6086031
+      "similarity": 0.6086031
     },
     {
       "source": "4,1",
       "target": "3,1",
-      "value": 0.6038674
+      "similarity": 0.6038674
     },
     {
       "source": "4,1",
       "target": "3,2",
-      "value": 0.5899873
+      "similarity": 0.5899873
     },
     {
       "source": "4,1",
       "target": "4,2",
-      "value": 0.5735672
+      "similarity": 0.5735672
     },
     {
       "source": "4,1",
       "target": "4,0",
-      "value": 0.5349733
+      "similarity": 0.5349733
     },
     {
       "source": "4,1",
       "target": "8,4",
-      "value": 0.5205561
+      "similarity": 0.5205561
     },
     {
       "source": "4,1",
       "target": "3,0",
-      "value": 0.48950982
+      "similarity": 0.48950982
     },
     {
       "source": "1,6",
       "target": "0,7",
-      "value": 0.6646376
+      "similarity": 0.6646376
     },
     {
       "source": "1,6",
       "target": "1,7",
-      "value": 0.6466322
+      "similarity": 0.6466322
     },
     {
       "source": "1,6",
       "target": "1,5",
-      "value": 0.62133133
+      "similarity": 0.62133133
     },
     {
       "source": "1,6",
       "target": "2,5",
-      "value": 0.61800677
+      "similarity": 0.61800677
     },
     {
       "source": "1,6",
       "target": "5,9",
-      "value": 0.5947846
+      "similarity": 0.5947846
     },
     {
       "source": "1,6",
       "target": "4,9",
-      "value": 0.5668912
+      "similarity": 0.5668912
     },
     {
       "source": "1,6",
       "target": "2,6",
-      "value": 0.55952835
+      "similarity": 0.55952835
     },
     {
       "source": "1,6",
       "target": "0,6",
-      "value": 0.55452156
+      "similarity": 0.55452156
     },
     {
       "source": "6,8",
       "target": "7,7",
-      "value": 0.6833431
+      "similarity": 0.6833431
     },
     {
       "source": "6,8",
       "target": "7,8",
-      "value": 0.63525546
+      "similarity": 0.63525546
     },
     {
       "source": "6,8",
       "target": "5,9",
-      "value": 0.6185191
+      "similarity": 0.6185191
     },
     {
       "source": "6,8",
       "target": "6,7",
-      "value": 0.60839117
+      "similarity": 0.60839117
     },
     {
       "source": "6,8",
       "target": "5,8",
-      "value": 0.5887389
+      "similarity": 0.5887389
     },
     {
       "source": "6,8",
       "target": "6,9",
-      "value": 0.5599403
+      "similarity": 0.5599403
     },
     {
       "source": "6,8",
       "target": "7,9",
-      "value": 0.51700294
+      "similarity": 0.51700294
     },
     {
       "source": "6,8",
       "target": "2,5",
-      "value": 0.48201597
+      "similarity": 0.48201597
     },
     {
       "source": "5,1",
       "target": "6,0",
-      "value": 0.614995
+      "similarity": 0.614995
     },
     {
       "source": "5,1",
       "target": "4,1",
-      "value": 0.6086031
+      "similarity": 0.6086031
     },
     {
       "source": "5,1",
       "target": "6,1",
-      "value": 0.60527635
+      "similarity": 0.60527635
     },
     {
       "source": "5,1",
       "target": "4,2",
-      "value": 0.5900061
+      "similarity": 0.5900061
     },
     {
       "source": "5,1",
       "target": "5,2",
-      "value": 0.581752
+      "similarity": 0.581752
     },
     {
       "source": "5,1",
       "target": "9,4",
-      "value": 0.5634785
+      "similarity": 0.5634785
     },
     {
       "source": "5,1",
       "target": "5,0",
-      "value": 0.5467863
+      "similarity": 0.5467863
     },
     {
       "source": "5,1",
       "target": "4,0",
-      "value": 0.48146105
+      "similarity": 0.48146105
     },
     {
       "source": "3,8",
       "target": "2,8",
-      "value": 0.6652202
+      "similarity": 0.6652202
     },
     {
       "source": "3,8",
       "target": "2,9",
-      "value": 0.66139936
+      "similarity": 0.66139936
     },
     {
       "source": "3,8",
       "target": "4,7",
-      "value": 0.64654464
+      "similarity": 0.64654464
     },
     {
       "source": "3,8",
       "target": "0,5",
-      "value": 0.6048614
+      "similarity": 0.6048614
     },
     {
       "source": "3,8",
       "target": "4,8",
-      "value": 0.60035706
+      "similarity": 0.60035706
     },
     {
       "source": "3,8",
       "target": "0,4",
-      "value": 0.59462035
+      "similarity": 0.59462035
     },
     {
       "source": "3,8",
       "target": "3,7",
-      "value": 0.56529313
+      "similarity": 0.56529313
     },
     {
       "source": "3,8",
       "target": "3,9",
-      "value": 0.5179782
+      "similarity": 0.5179782
     },
     {
       "source": "4,8",
       "target": "3,9",
-      "value": 0.6294261
+      "similarity": 0.6294261
     },
     {
       "source": "4,8",
       "target": "3,8",
-      "value": 0.60035706
+      "similarity": 0.60035706
     },
     {
       "source": "4,8",
       "target": "4,7",
-      "value": 0.59192264
+      "similarity": 0.59192264
     },
     {
       "source": "4,8",
       "target": "5,7",
-      "value": 0.58461857
+      "similarity": 0.58461857
     },
     {
       "source": "4,8",
       "target": "5,8",
-      "value": 0.5835933
+      "similarity": 0.5835933
     },
     {
       "source": "4,8",
       "target": "0,5",
-      "value": 0.54021865
+      "similarity": 0.54021865
     },
     {
       "source": "4,8",
       "target": "4,9",
-      "value": 0.52477163
+      "similarity": 0.52477163
     },
     {
       "source": "4,8",
       "target": "1,4",
-      "value": 0.5046493
+      "similarity": 0.5046493
     },
     {
       "source": "8,6",
       "target": "8,7",
-      "value": 0.6588443
+      "similarity": 0.6588443
     },
     {
       "source": "8,6",
       "target": "9,5",
-      "value": 0.64214
+      "similarity": 0.64214
     },
     {
       "source": "8,6",
       "target": "7,7",
-      "value": 0.5922633
+      "similarity": 0.5922633
     },
     {
       "source": "8,6",
       "target": "9,6",
-      "value": 0.587308
+      "similarity": 0.587308
     },
     {
       "source": "8,6",
       "target": "8,5",
-      "value": 0.5637654
+      "similarity": 0.5637654
     },
     {
       "source": "8,6",
       "target": "7,6",
-      "value": 0.560673
+      "similarity": 0.560673
     },
     {
       "source": "8,6",
       "target": "9,7",
-      "value": 0.5422396
+      "similarity": 0.5422396
     },
     {
       "source": "8,6",
       "target": "9,8",
-      "value": 0.4824784
+      "similarity": 0.4824784
     },
     {
       "source": "8,5",
       "target": "7,6",
-      "value": 0.64116836
+      "similarity": 0.64116836
     },
     {
       "source": "8,5",
       "target": "8,4",
-      "value": 0.6121225
+      "similarity": 0.6121225
     },
     {
       "source": "8,5",
       "target": "9,4",
-      "value": 0.6110314
+      "similarity": 0.6110314
     },
     {
       "source": "8,5",
       "target": "9,5",
-      "value": 0.5844353
+      "similarity": 0.5844353
     },
     {
       "source": "8,5",
       "target": "7,5",
-      "value": 0.5650119
+      "similarity": 0.5650119
     },
     {
       "source": "8,5",
       "target": "8,6",
-      "value": 0.5637654
+      "similarity": 0.5637654
     },
     {
       "source": "8,5",
       "target": "9,6",
-      "value": 0.4833581
+      "similarity": 0.4833581
     },
     {
       "source": "8,5",
       "target": "9,3",
-      "value": 0.466799
+      "similarity": 0.466799
     },
     {
       "source": "1,3",
       "target": "2,2",
-      "value": 0.69623446
+      "similarity": 0.69623446
     },
     {
       "source": "1,3",
       "target": "1,2",
-      "value": 0.6347772
+      "similarity": 0.6347772
     },
     {
       "source": "1,3",
       "target": "1,4",
-      "value": 0.5952785
+      "similarity": 0.5952785
     },
     {
       "source": "1,3",
       "target": "0,4",
-      "value": 0.5942072
+      "similarity": 0.5942072
     },
     {
       "source": "1,3",
       "target": "0,3",
-      "value": 0.57288444
+      "similarity": 0.57288444
     },
     {
       "source": "1,3",
       "target": "2,3",
-      "value": 0.5633681
+      "similarity": 0.5633681
     },
     {
       "source": "1,3",
       "target": "0,2",
-      "value": 0.5179419
+      "similarity": 0.5179419
     },
     {
       "source": "1,3",
       "target": "4,7",
-      "value": 0.47603622
+      "similarity": 0.47603622
     },
     {
       "source": "7,8",
       "target": "6,9",
-      "value": 0.7011069
+      "similarity": 0.7011069
     },
     {
       "source": "7,8",
       "target": "8,7",
-      "value": 0.6919326
+      "similarity": 0.6919326
     },
     {
       "source": "7,8",
       "target": "8,8",
-      "value": 0.64556307
+      "similarity": 0.64556307
     },
     {
       "source": "7,8",
       "target": "6,8",
-      "value": 0.63525546
+      "similarity": 0.63525546
     },
     {
       "source": "7,8",
       "target": "7,9",
-      "value": 0.6167596
+      "similarity": 0.6167596
     },
     {
       "source": "7,8",
       "target": "7,7",
-      "value": 0.5926597
+      "similarity": 0.5926597
     },
     {
       "source": "7,8",
       "target": "8,9",
-      "value": 0.5761167
+      "similarity": 0.5761167
     },
     {
       "source": "7,8",
       "target": "6,7",
-      "value": 0.51219183
+      "similarity": 0.51219183
     },
     {
       "source": "8,7",
       "target": "7,8",
-      "value": 0.6919326
+      "similarity": 0.6919326
     },
     {
       "source": "8,7",
       "target": "9,6",
-      "value": 0.67127544
+      "similarity": 0.67127544
     },
     {
       "source": "8,7",
       "target": "8,6",
-      "value": 0.6588443
+      "similarity": 0.6588443
     },
     {
       "source": "8,7",
       "target": "7,7",
-      "value": 0.649568
+      "similarity": 0.649568
     },
     {
       "source": "8,7",
       "target": "8,8",
-      "value": 0.63695776
+      "similarity": 0.63695776
     },
     {
       "source": "8,7",
       "target": "9,7",
-      "value": 0.6142103
+      "similarity": 0.6142103
     },
     {
       "source": "8,7",
       "target": "9,8",
-      "value": 0.59803796
+      "similarity": 0.59803796
     },
     {
       "source": "8,7",
       "target": "7,6",
-      "value": 0.50560874
+      "similarity": 0.50560874
     },
     {
       "source": "1,2",
       "target": "0,3",
-      "value": 0.6671615
+      "similarity": 0.6671615
     },
     {
       "source": "1,2",
       "target": "2,2",
-      "value": 0.6427376
+      "similarity": 0.6427376
     },
     {
       "source": "1,2",
       "target": "1,1",
-      "value": 0.6361991
+      "similarity": 0.6361991
     },
     {
       "source": "1,2",
       "target": "1,3",
-      "value": 0.6347772
+      "similarity": 0.6347772
     },
     {
       "source": "1,2",
       "target": "2,1",
-      "value": 0.5994943
+      "similarity": 0.5994943
     },
     {
       "source": "1,2",
       "target": "0,2",
-      "value": 0.56366414
+      "similarity": 0.56366414
     },
     {
       "source": "1,2",
       "target": "0,1",
-      "value": 0.54692394
+      "similarity": 0.54692394
     },
     {
       "source": "1,2",
       "target": "2,3",
-      "value": 0.47107184
+      "similarity": 0.47107184
     },
     {
       "source": "2,1",
       "target": "3,0",
-      "value": 0.6557809
+      "similarity": 0.6557809
     },
     {
       "source": "2,1",
       "target": "3,1",
-      "value": 0.65368
+      "similarity": 0.65368
     },
     {
       "source": "2,1",
       "target": "2,2",
-      "value": 0.64735967
+      "similarity": 0.64735967
     },
     {
       "source": "2,1",
       "target": "1,1",
-      "value": 0.63915676
+      "similarity": 0.63915676
     },
     {
       "source": "2,1",
       "target": "2,0",
-      "value": 0.6025885
+      "similarity": 0.6025885
     },
     {
       "source": "2,1",
       "target": "1,2",
-      "value": 0.5994943
+      "similarity": 0.5994943
     },
     {
       "source": "2,1",
       "target": "1,0",
-      "value": 0.5482978
+      "similarity": 0.5482978
     },
     {
       "source": "2,1",
       "target": "3,2",
-      "value": 0.5233394
+      "similarity": 0.5233394
     },
     {
       "source": "1,7",
       "target": "1,6",
-      "value": 0.6466322
+      "similarity": 0.6466322
     },
     {
       "source": "1,7",
       "target": "0,8",
-      "value": 0.6393996
+      "similarity": 0.6393996
     },
     {
       "source": "1,7",
       "target": "2,6",
-      "value": 0.63806915
+      "similarity": 0.63806915
     },
     {
       "source": "1,7",
       "target": "1,8",
-      "value": 0.60903424
+      "similarity": 0.60903424
     },
     {
       "source": "1,7",
       "target": "2,7",
-      "value": 0.5918534
+      "similarity": 0.5918534
     },
     {
       "source": "1,7",
       "target": "2,8",
-      "value": 0.5315188
+      "similarity": 0.5315188
     },
     {
       "source": "1,7",
       "target": "0,7",
-      "value": 0.52659017
+      "similarity": 0.52659017
     },
     {
       "source": "1,7",
       "target": "0,6",
-      "value": 0.5012161
+      "similarity": 0.5012161
     },
     {
       "source": "8,2",
       "target": "9,1",
-      "value": 0.6890941
+      "similarity": 0.6890941
     },
     {
       "source": "8,2",
       "target": "8,3",
-      "value": 0.6623875
+      "similarity": 0.6623875
     },
     {
       "source": "8,2",
       "target": "7,2",
-      "value": 0.5755143
+      "similarity": 0.5755143
     },
     {
       "source": "8,2",
       "target": "8,1",
-      "value": 0.57292396
+      "similarity": 0.57292396
     },
     {
       "source": "8,2",
       "target": "7,3",
-      "value": 0.5582968
+      "similarity": 0.5582968
     },
     {
       "source": "8,2",
       "target": "9,2",
-      "value": 0.55175704
+      "similarity": 0.55175704
     },
     {
       "source": "8,2",
       "target": "9,3",
-      "value": 0.51261663
+      "similarity": 0.51261663
     },
     {
       "source": "8,2",
       "target": "5,0",
-      "value": 0.47713786
+      "similarity": 0.47713786
     },
     {
       "source": "7,1",
       "target": "8,0",
-      "value": 0.6853518
+      "similarity": 0.6853518
     },
     {
       "source": "7,1",
       "target": "6,1",
-      "value": 0.66497713
+      "similarity": 0.66497713
     },
     {
       "source": "7,1",
       "target": "7,2",
-      "value": 0.6308879
+      "similarity": 0.6308879
     },
     {
       "source": "7,1",
       "target": "6,2",
-      "value": 0.61468685
+      "similarity": 0.61468685
     },
     {
       "source": "7,1",
       "target": "8,1",
-      "value": 0.6036874
+      "similarity": 0.6036874
     },
     {
       "source": "7,1",
       "target": "6,0",
-      "value": 0.5357114
+      "similarity": 0.5357114
     },
     {
       "source": "7,1",
       "target": "7,0",
-      "value": 0.52647173
+      "similarity": 0.52647173
     },
     {
       "source": "7,1",
       "target": "9,4",
-      "value": 0.4821829
+      "similarity": 0.4821829
     },
     {
       "source": "2,8",
       "target": "1,9",
-      "value": 0.6792508
+      "similarity": 0.6792508
     },
     {
       "source": "2,8",
       "target": "3,8",
-      "value": 0.6652202
+      "similarity": 0.6652202
     },
     {
       "source": "2,8",
       "target": "3,7",
-      "value": 0.654711
+      "similarity": 0.654711
     },
     {
       "source": "2,8",
       "target": "1,8",
-      "value": 0.6511636
+      "similarity": 0.6511636
     },
     {
       "source": "2,8",
       "target": "2,7",
-      "value": 0.607886
+      "similarity": 0.607886
     },
     {
       "source": "2,8",
       "target": "1,7",
-      "value": 0.5315188
+      "similarity": 0.5315188
     },
     {
       "source": "2,8",
       "target": "2,9",
-      "value": 0.53111154
+      "similarity": 0.53111154
     },
     {
       "source": "2,8",
       "target": "3,9",
-      "value": 0.5162716
+      "similarity": 0.5162716
     },
     {
       "source": "1,1",
       "target": "2,0",
-      "value": 0.7094331
+      "similarity": 0.7094331
     },
     {
       "source": "1,1",
       "target": "0,2",
-      "value": 0.67789185
+      "similarity": 0.67789185
     },
     {
       "source": "1,1",
       "target": "0,1",
-      "value": 0.66697305
+      "similarity": 0.66697305
     },
     {
       "source": "1,1",
       "target": "2,1",
-      "value": 0.63915676
+      "similarity": 0.63915676
     },
     {
       "source": "1,1",
       "target": "1,2",
-      "value": 0.6361991
+      "similarity": 0.6361991
     },
     {
       "source": "1,1",
       "target": "1,0",
-      "value": 0.6267606
+      "similarity": 0.6267606
     },
     {
       "source": "1,1",
       "target": "0,0",
-      "value": 0.5803406
+      "similarity": 0.5803406
     },
     {
       "source": "1,1",
       "target": "5,4",
-      "value": 0.5449065
+      "similarity": 0.5449065
     },
     {
       "source": "8,8",
       "target": "9,7",
-      "value": 0.679748
+      "similarity": 0.679748
     },
     {
       "source": "8,8",
       "target": "9,8",
-      "value": 0.6703692
+      "similarity": 0.6703692
     },
     {
       "source": "8,8",
       "target": "7,9",
-      "value": 0.66839755
+      "similarity": 0.66839755
     },
     {
       "source": "8,8",
       "target": "8,9",
-      "value": 0.66358656
+      "similarity": 0.66358656
     },
     {
       "source": "8,8",
       "target": "7,8",
-      "value": 0.64556307
+      "similarity": 0.64556307
     },
     {
       "source": "8,8",
       "target": "8,7",
-      "value": 0.63695776
+      "similarity": 0.63695776
     },
     {
       "source": "8,8",
       "target": "9,9",
-      "value": 0.5772491
+      "similarity": 0.5772491
     },
     {
       "source": "8,8",
       "target": "5,5",
-      "value": 0.5030288
+      "similarity": 0.5030288
     },
     {
       "source": "0,4",
       "target": "0,5",
-      "value": 0.6627265
+      "similarity": 0.6627265
     },
     {
       "source": "0,4",
       "target": "0,3",
-      "value": 0.6493596
+      "similarity": 0.6493596
     },
     {
       "source": "0,4",
       "target": "3,8",
-      "value": 0.59462035
+      "similarity": 0.59462035
     },
     {
       "source": "0,4",
       "target": "1,3",
-      "value": 0.5942072
+      "similarity": 0.5942072
     },
     {
       "source": "0,4",
       "target": "1,4",
-      "value": 0.5935248
+      "similarity": 0.5935248
     },
     {
       "source": "0,4",
       "target": "4,7",
-      "value": 0.5796813
+      "similarity": 0.5796813
     },
     {
       "source": "0,4",
       "target": "3,7",
-      "value": 0.50686693
+      "similarity": 0.50686693
     },
     {
       "source": "0,4",
       "target": "1,5",
-      "value": 0.47742048
+      "similarity": 0.47742048
     },
     {
       "source": "6,9",
       "target": "7,8",
-      "value": 0.7011069
+      "similarity": 0.7011069
     },
     {
       "source": "6,9",
       "target": "7,9",
-      "value": 0.69868344
+      "similarity": 0.69868344
     },
     {
       "source": "6,9",
       "target": "5,9",
-      "value": 0.6274535
+      "similarity": 0.6274535
     },
     {
       "source": "6,9",
       "target": "6,8",
-      "value": 0.5599403
+      "similarity": 0.5599403
     },
     {
       "source": "6,9",
       "target": "3,6",
-      "value": 0.55288416
+      "similarity": 0.55288416
     },
     {
       "source": "6,9",
       "target": "2,6",
-      "value": 0.53909284
+      "similarity": 0.53909284
     },
     {
       "source": "6,9",
       "target": "3,7",
-      "value": 0.4726152
+      "similarity": 0.4726152
     },
     {
       "source": "6,9",
       "target": "5,8",
-      "value": 0.4717461
+      "similarity": 0.4717461
     },
     {
       "source": "9,6",
       "target": "8,7",
-      "value": 0.67127544
+      "similarity": 0.67127544
     },
     {
       "source": "9,6",
       "target": "9,5",
-      "value": 0.65173703
+      "similarity": 0.65173703
     },
     {
       "source": "9,6",
       "target": "9,7",
-      "value": 0.65040255
+      "similarity": 0.65040255
     },
     {
       "source": "9,6",
       "target": "8,6",
-      "value": 0.587308
+      "similarity": 0.587308
     },
     {
       "source": "9,6",
       "target": "6,2",
-      "value": 0.56008923
+      "similarity": 0.56008923
     },
     {
       "source": "9,6",
       "target": "6,3",
-      "value": 0.54668105
+      "similarity": 0.54668105
     },
     {
       "source": "9,6",
       "target": "5,3",
-      "value": 0.49761733
+      "similarity": 0.49761733
     },
     {
       "source": "9,6",
       "target": "8,5",
-      "value": 0.4833581
+      "similarity": 0.4833581
     },
     {
       "source": "9,5",
       "target": "9,4",
-      "value": 0.661942
+      "similarity": 0.661942
     },
     {
       "source": "9,5",
       "target": "9,6",
-      "value": 0.65173703
+      "similarity": 0.65173703
     },
     {
       "source": "9,5",
       "target": "8,6",
-      "value": 0.64214
+      "similarity": 0.64214
     },
     {
       "source": "9,5",
       "target": "8,5",
-      "value": 0.5844353
+      "similarity": 0.5844353
     },
     {
       "source": "9,5",
       "target": "5,2",
-      "value": 0.56171584
+      "similarity": 0.56171584
     },
     {
       "source": "9,5",
       "target": "6,1",
-      "value": 0.52714854
+      "similarity": 0.52714854
     },
     {
       "source": "9,5",
       "target": "6,2",
-      "value": 0.49760452
+      "similarity": 0.49760452
     },
     {
       "source": "9,5",
       "target": "8,4",
-      "value": 0.4909659
+      "similarity": 0.4909659
     },
     {
       "source": "5,0",
       "target": "4,1",
-      "value": 0.63246226
+      "similarity": 0.63246226
     },
     {
       "source": "5,0",
       "target": "6,0",
-      "value": 0.6111437
+      "similarity": 0.6111437
     },
     {
       "source": "5,0",
       "target": "4,0",
-      "value": 0.6032747
+      "similarity": 0.6032747
     },
     {
       "source": "5,0",
       "target": "9,3",
-      "value": 0.5756673
+      "similarity": 0.5756673
     },
     {
       "source": "5,0",
       "target": "5,1",
-      "value": 0.5467863
+      "similarity": 0.5467863
     },
     {
       "source": "5,0",
       "target": "8,4",
-      "value": 0.5175419
+      "similarity": 0.5175419
     },
     {
       "source": "5,0",
       "target": "8,3",
-      "value": 0.5145073
+      "similarity": 0.5145073
     },
     {
       "source": "5,0",
       "target": "8,2",
-      "value": 0.47713786
+      "similarity": 0.47713786
     },
     {
       "source": "0,3",
       "target": "0,2",
-      "value": 0.6761525
+      "similarity": 0.6761525
     },
     {
       "source": "0,3",
       "target": "1,2",
-      "value": 0.6671615
+      "similarity": 0.6671615
     },
     {
       "source": "0,3",
       "target": "0,4",
-      "value": 0.6493596
+      "similarity": 0.6493596
     },
     {
       "source": "0,3",
       "target": "3,7",
-      "value": 0.57671964
+      "similarity": 0.57671964
     },
     {
       "source": "0,3",
       "target": "1,3",
-      "value": 0.57288444
+      "similarity": 0.57288444
     },
     {
       "source": "0,3",
       "target": "3,6",
-      "value": 0.52676636
+      "similarity": 0.52676636
     },
     {
       "source": "0,3",
       "target": "2,6",
-      "value": 0.509109
+      "similarity": 0.509109
     },
     {
       "source": "0,3",
       "target": "0,1",
-      "value": 0.48789972
+      "similarity": 0.48789972
     },
     {
       "source": "9,3",
       "target": "9,2",
-      "value": 0.6835374
+      "similarity": 0.6835374
     },
     {
       "source": "9,3",
       "target": "9,4",
-      "value": 0.67166597
+      "similarity": 0.67166597
     },
     {
       "source": "9,3",
       "target": "6,0",
-      "value": 0.61736995
+      "similarity": 0.61736995
     },
     {
       "source": "9,3",
       "target": "8,4",
-      "value": 0.5934194
+      "similarity": 0.5934194
     },
     {
       "source": "9,3",
       "target": "5,0",
-      "value": 0.5756673
+      "similarity": 0.5756673
     },
     {
       "source": "9,3",
       "target": "7,0",
-      "value": 0.55960506
+      "similarity": 0.55960506
     },
     {
       "source": "9,3",
       "target": "9,1",
-      "value": 0.5269014
+      "similarity": 0.5269014
     },
     {
       "source": "9,3",
       "target": "8,2",
-      "value": 0.51261663
+      "similarity": 0.51261663
     },
     {
       "source": "6,0",
       "target": "7,0",
-      "value": 0.63648623
+      "similarity": 0.63648623
     },
     {
       "source": "6,0",
       "target": "9,3",
-      "value": 0.61736995
+      "similarity": 0.61736995
     },
     {
       "source": "6,0",
       "target": "5,1",
-      "value": 0.614995
+      "similarity": 0.614995
     },
     {
       "source": "6,0",
       "target": "5,0",
-      "value": 0.6111437
+      "similarity": 0.6111437
     },
     {
       "source": "6,0",
       "target": "9,4",
-      "value": 0.58151656
+      "similarity": 0.58151656
     },
     {
       "source": "6,0",
       "target": "9,2",
-      "value": 0.5459112
+      "similarity": 0.5459112
     },
     {
       "source": "6,0",
       "target": "7,1",
-      "value": 0.5357114
+      "similarity": 0.5357114
     },
     {
       "source": "6,0",
       "target": "8,0",
-      "value": 0.5289296
+      "similarity": 0.5289296
     },
     {
       "source": "0,5",
       "target": "0,4",
-      "value": 0.6627265
+      "similarity": 0.6627265
     },
     {
       "source": "0,5",
       "target": "1,4",
-      "value": 0.6182617
+      "similarity": 0.6182617
     },
     {
       "source": "0,5",
       "target": "3,8",
-      "value": 0.6048614
+      "similarity": 0.6048614
     },
     {
       "source": "0,5",
       "target": "0,6",
-      "value": 0.5997473
+      "similarity": 0.5997473
     },
     {
       "source": "0,5",
       "target": "3,9",
-      "value": 0.593352
+      "similarity": 0.593352
     },
     {
       "source": "0,5",
       "target": "4,8",
-      "value": 0.54021865
+      "similarity": 0.54021865
     },
     {
       "source": "0,5",
       "target": "1,5",
-      "value": 0.5073974
+      "similarity": 0.5073974
     },
     {
       "source": "0,5",
       "target": "2,8",
-      "value": 0.4747228
+      "similarity": 0.4747228
     },
     {
       "source": "3,9",
       "target": "2,9",
-      "value": 0.67036104
+      "similarity": 0.67036104
     },
     {
       "source": "3,9",
       "target": "4,8",
-      "value": 0.6294261
+      "similarity": 0.6294261
     },
     {
       "source": "3,9",
       "target": "4,9",
-      "value": 0.60604274
+      "similarity": 0.60604274
     },
     {
       "source": "3,9",
       "target": "0,5",
-      "value": 0.593352
+      "similarity": 0.593352
     },
     {
       "source": "3,9",
       "target": "0,6",
-      "value": 0.5819132
+      "similarity": 0.5819132
     },
     {
       "source": "3,9",
       "target": "1,9",
-      "value": 0.52273816
+      "similarity": 0.52273816
     },
     {
       "source": "3,9",
       "target": "3,8",
-      "value": 0.5179782
+      "similarity": 0.5179782
     },
     {
       "source": "3,9",
       "target": "2,8",
-      "value": 0.5162716
+      "similarity": 0.5162716
     },
     {
       "source": "0,6",
       "target": "0,7",
-      "value": 0.66743755
+      "similarity": 0.66743755
     },
     {
       "source": "0,6",
       "target": "1,5",
-      "value": 0.6438417
+      "similarity": 0.6438417
     },
     {
       "source": "0,6",
       "target": "4,9",
-      "value": 0.63175243
+      "similarity": 0.63175243
     },
     {
       "source": "0,6",
       "target": "0,5",
-      "value": 0.5997473
+      "similarity": 0.5997473
     },
     {
       "source": "0,6",
       "target": "3,9",
-      "value": 0.5819132
+      "similarity": 0.5819132
     },
     {
       "source": "0,6",
       "target": "1,6",
-      "value": 0.55452156
+      "similarity": 0.55452156
     },
     {
       "source": "0,6",
       "target": "2,9",
-      "value": 0.5445266
+      "similarity": 0.5445266
     },
     {
       "source": "0,6",
       "target": "0,8",
-      "value": 0.5197097
+      "similarity": 0.5197097
     },
     {
       "source": "4,0",
       "target": "3,0",
-      "value": 0.6104748
+      "similarity": 0.6104748
     },
     {
       "source": "4,0",
       "target": "3,1",
-      "value": 0.60780466
+      "similarity": 0.60780466
     },
     {
       "source": "4,0",
       "target": "5,0",
-      "value": 0.6032747
+      "similarity": 0.6032747
     },
     {
       "source": "4,0",
       "target": "8,3",
-      "value": 0.56284773
+      "similarity": 0.56284773
     },
     {
       "source": "4,0",
       "target": "4,1",
-      "value": 0.5349733
+      "similarity": 0.5349733
     },
     {
       "source": "4,0",
       "target": "7,4",
-      "value": 0.5153452
+      "similarity": 0.5153452
     },
     {
       "source": "4,0",
       "target": "7,3",
-      "value": 0.48655242
+      "similarity": 0.48655242
     },
     {
       "source": "4,0",
       "target": "5,1",
-      "value": 0.48146105
+      "similarity": 0.48146105
     },
     {
       "source": "4,9",
       "target": "5,8",
-      "value": 0.6732862
+      "similarity": 0.6732862
     },
     {
       "source": "4,9",
       "target": "5,9",
-      "value": 0.6712576
+      "similarity": 0.6712576
     },
     {
       "source": "4,9",
       "target": "0,6",
-      "value": 0.63175243
+      "similarity": 0.63175243
     },
     {
       "source": "4,9",
       "target": "3,9",
-      "value": 0.60604274
+      "similarity": 0.60604274
     },
     {
       "source": "4,9",
       "target": "1,6",
-      "value": 0.5668912
+      "similarity": 0.5668912
     },
     {
       "source": "4,9",
       "target": "1,5",
-      "value": 0.5520387
+      "similarity": 0.5520387
     },
     {
       "source": "4,9",
       "target": "4,8",
-      "value": 0.52477163
+      "similarity": 0.52477163
     },
     {
       "source": "4,9",
       "target": "0,7",
-      "value": 0.47098732
+      "similarity": 0.47098732
     },
     {
       "source": "3,0",
       "target": "2,0",
-      "value": 0.6676618
+      "similarity": 0.6676618
     },
     {
       "source": "3,0",
       "target": "2,1",
-      "value": 0.6557809
+      "similarity": 0.6557809
     },
     {
       "source": "3,0",
       "target": "4,0",
-      "value": 0.6104748
+      "similarity": 0.6104748
     },
     {
       "source": "3,0",
       "target": "3,1",
-      "value": 0.5705736
+      "similarity": 0.5705736
     },
     {
       "source": "3,0",
       "target": "7,3",
-      "value": 0.55296737
+      "similarity": 0.55296737
     },
     {
       "source": "3,0",
       "target": "6,3",
-      "value": 0.5473608
+      "similarity": 0.5473608
     },
     {
       "source": "3,0",
       "target": "1,0",
-      "value": 0.507167
+      "similarity": 0.507167
     },
     {
       "source": "3,0",
       "target": "4,1",
-      "value": 0.48950982
+      "similarity": 0.48950982
     },
     {
       "source": "5,9",
       "target": "4,9",
-      "value": 0.6712576
+      "similarity": 0.6712576
     },
     {
       "source": "5,9",
       "target": "6,9",
-      "value": 0.6274535
+      "similarity": 0.6274535
     },
     {
       "source": "5,9",
       "target": "6,8",
-      "value": 0.6185191
+      "similarity": 0.6185191
     },
     {
       "source": "5,9",
       "target": "1,6",
-      "value": 0.5947846
+      "similarity": 0.5947846
     },
     {
       "source": "5,9",
       "target": "5,8",
-      "value": 0.54687965
+      "similarity": 0.54687965
     },
     {
       "source": "5,9",
       "target": "2,6",
-      "value": 0.5130622
+      "similarity": 0.5130622
     },
     {
       "source": "5,9",
       "target": "2,5",
-      "value": 0.49792793
+      "similarity": 0.49792793
     },
     {
       "source": "5,9",
       "target": "4,8",
-      "value": 0.42390844
+      "similarity": 0.42390844
     },
     {
       "source": "9,4",
       "target": "9,3",
-      "value": 0.67166597
+      "similarity": 0.67166597
     },
     {
       "source": "9,4",
       "target": "9,5",
-      "value": 0.661942
+      "similarity": 0.661942
     },
     {
       "source": "9,4",
       "target": "8,5",
-      "value": 0.6110314
+      "similarity": 0.6110314
     },
     {
       "source": "9,4",
       "target": "6,1",
-      "value": 0.5907157
+      "similarity": 0.5907157
     },
     {
       "source": "9,4",
       "target": "6,0",
-      "value": 0.58151656
+      "similarity": 0.58151656
     },
     {
       "source": "9,4",
       "target": "8,4",
-      "value": 0.5696064
+      "similarity": 0.5696064
     },
     {
       "source": "9,4",
       "target": "5,1",
-      "value": 0.5634785
+      "similarity": 0.5634785
     },
     {
       "source": "9,4",
       "target": "7,1",
-      "value": 0.4821829
+      "similarity": 0.4821829
     },
     {
       "source": "9,7",
       "target": "8,8",
-      "value": 0.679748
+      "similarity": 0.679748
     },
     {
       "source": "9,7",
       "target": "9,8",
-      "value": 0.67910486
+      "similarity": 0.67910486
     },
     {
       "source": "9,7",
       "target": "9,6",
-      "value": 0.65040255
+      "similarity": 0.65040255
     },
     {
       "source": "9,7",
       "target": "8,7",
-      "value": 0.6142103
+      "similarity": 0.6142103
     },
     {
       "source": "9,7",
       "target": "8,6",
-      "value": 0.5422396
+      "similarity": 0.5422396
     },
     {
       "source": "9,7",
       "target": "6,4",
-      "value": 0.49823272
+      "similarity": 0.49823272
     },
     {
       "source": "9,7",
       "target": "9,5",
-      "value": 0.47241864
+      "similarity": 0.47241864
     },
     {
       "source": "9,7",
       "target": "6,3",
-      "value": 0.46742836
+      "similarity": 0.46742836
     },
     {
       "source": "7,9",
       "target": "6,9",
-      "value": 0.69868344
+      "similarity": 0.69868344
     },
     {
       "source": "7,9",
       "target": "8,8",
-      "value": 0.66839755
+      "similarity": 0.66839755
     },
     {
       "source": "7,9",
       "target": "8,9",
-      "value": 0.64003724
+      "similarity": 0.64003724
     },
     {
       "source": "7,9",
       "target": "7,8",
-      "value": 0.6167596
+      "similarity": 0.6167596
     },
     {
       "source": "7,9",
       "target": "3,6",
-      "value": 0.5879312
+      "similarity": 0.5879312
     },
     {
       "source": "7,9",
       "target": "4,6",
-      "value": 0.5393142
+      "similarity": 0.5393142
     },
     {
       "source": "7,9",
       "target": "6,8",
-      "value": 0.51700294
+      "similarity": 0.51700294
     },
     {
       "source": "7,9",
       "target": "4,5",
-      "value": 0.504903
+      "similarity": 0.504903
     },
     {
       "source": "2,0",
       "target": "1,1",
-      "value": 0.7094331
+      "similarity": 0.7094331
     },
     {
       "source": "2,0",
       "target": "3,0",
-      "value": 0.6676618
+      "similarity": 0.6676618
     },
     {
       "source": "2,0",
       "target": "1,0",
-      "value": 0.6522181
+      "similarity": 0.6522181
     },
     {
       "source": "2,0",
       "target": "2,1",
-      "value": 0.6025885
+      "similarity": 0.6025885
     },
     {
       "source": "2,0",
       "target": "5,3",
-      "value": 0.5967369
+      "similarity": 0.5967369
     },
     {
       "source": "2,0",
       "target": "5,4",
-      "value": 0.54046124
+      "similarity": 0.54046124
     },
     {
       "source": "2,0",
       "target": "3,1",
-      "value": 0.53302336
+      "similarity": 0.53302336
     },
     {
       "source": "2,0",
       "target": "6,3",
-      "value": 0.52628374
+      "similarity": 0.52628374
     },
     {
       "source": "0,2",
       "target": "1,1",
-      "value": 0.67789185
+      "similarity": 0.67789185
     },
     {
       "source": "0,2",
       "target": "0,3",
-      "value": 0.6761525
+      "similarity": 0.6761525
     },
     {
       "source": "0,2",
       "target": "0,1",
-      "value": 0.66107124
+      "similarity": 0.66107124
     },
     {
       "source": "0,2",
       "target": "3,6",
-      "value": 0.58108115
+      "similarity": 0.58108115
     },
     {
       "source": "0,2",
       "target": "1,2",
-      "value": 0.56366414
+      "similarity": 0.56366414
     },
     {
       "source": "0,2",
       "target": "3,5",
-      "value": 0.5408406
+      "similarity": 0.5408406
     },
     {
       "source": "0,2",
       "target": "1,3",
-      "value": 0.5179419
+      "similarity": 0.5179419
     },
     {
       "source": "0,2",
       "target": "4,5",
-      "value": 0.46820474
+      "similarity": 0.46820474
     },
     {
       "source": "9,8",
       "target": "9,7",
-      "value": 0.67910486
+      "similarity": 0.67910486
     },
     {
       "source": "9,8",
       "target": "8,8",
-      "value": 0.6703692
+      "similarity": 0.6703692
     },
     {
       "source": "9,8",
       "target": "8,9",
-      "value": 0.6629532
+      "similarity": 0.6629532
     },
     {
       "source": "9,8",
       "target": "9,9",
-      "value": 0.6562808
+      "similarity": 0.6562808
     },
     {
       "source": "9,8",
       "target": "8,7",
-      "value": 0.59803796
+      "similarity": 0.59803796
     },
     {
       "source": "9,8",
       "target": "6,5",
-      "value": 0.5891771
+      "similarity": 0.5891771
     },
     {
       "source": "9,8",
       "target": "7,5",
-      "value": 0.51399714
+      "similarity": 0.51399714
     },
     {
       "source": "9,8",
       "target": "6,4",
-      "value": 0.5032072
+      "similarity": 0.5032072
     },
     {
       "source": "1,0",
       "target": "0,0",
-      "value": 0.6819044
+      "similarity": 0.6819044
     },
     {
       "source": "1,0",
       "target": "2,0",
-      "value": 0.6522181
+      "similarity": 0.6522181
     },
     {
       "source": "1,0",
       "target": "0,1",
-      "value": 0.6441923
+      "similarity": 0.6441923
     },
     {
       "source": "1,0",
       "target": "1,1",
-      "value": 0.6267606
+      "similarity": 0.6267606
     },
     {
       "source": "1,0",
       "target": "4,3",
-      "value": 0.57242996
+      "similarity": 0.57242996
     },
     {
       "source": "1,0",
       "target": "2,1",
-      "value": 0.5482978
+      "similarity": 0.5482978
     },
     {
       "source": "1,0",
       "target": "4,4",
-      "value": 0.52940875
+      "similarity": 0.52940875
     },
     {
       "source": "1,0",
       "target": "3,0",
-      "value": 0.507167
+      "similarity": 0.507167
     },
     {
       "source": "0,1",
       "target": "1,1",
-      "value": 0.66697305
+      "similarity": 0.66697305
     },
     {
       "source": "0,1",
       "target": "0,2",
-      "value": 0.66107124
+      "similarity": 0.66107124
     },
     {
       "source": "0,1",
       "target": "1,0",
-      "value": 0.6441923
+      "similarity": 0.6441923
     },
     {
       "source": "0,1",
       "target": "0,0",
-      "value": 0.64049834
+      "similarity": 0.64049834
     },
     {
       "source": "0,1",
       "target": "3,4",
-      "value": 0.5871816
+      "similarity": 0.5871816
     },
     {
       "source": "0,1",
       "target": "4,4",
-      "value": 0.5587214
+      "similarity": 0.5587214
     },
     {
       "source": "0,1",
       "target": "1,2",
-      "value": 0.54692394
+      "similarity": 0.54692394
     },
     {
       "source": "0,1",
       "target": "0,3",
-      "value": 0.48789972
+      "similarity": 0.48789972
     },
     {
       "source": "8,9",
       "target": "8,8",
-      "value": 0.66358656
+      "similarity": 0.66358656
     },
     {
       "source": "8,9",
       "target": "9,8",
-      "value": 0.6629532
+      "similarity": 0.6629532
     },
     {
       "source": "8,9",
       "target": "9,9",
-      "value": 0.6429774
+      "similarity": 0.6429774
     },
     {
       "source": "8,9",
       "target": "7,9",
-      "value": 0.64003724
+      "similarity": 0.64003724
     },
     {
       "source": "8,9",
       "target": "7,8",
-      "value": 0.5761167
+      "similarity": 0.5761167
     },
     {
       "source": "8,9",
       "target": "5,6",
-      "value": 0.5545536
+      "similarity": 0.5545536
     },
     {
       "source": "8,9",
       "target": "5,7",
-      "value": 0.5294349
+      "similarity": 0.5294349
     },
     {
       "source": "8,9",
       "target": "5,5",
-      "value": 0.50724584
+      "similarity": 0.50724584
     },
     {
       "source": "8,1",
       "target": "9,0",
-      "value": 0.66862494
+      "similarity": 0.66862494
     },
     {
       "source": "8,1",
       "target": "7,2",
-      "value": 0.64870816
+      "similarity": 0.64870816
     },
     {
       "source": "8,1",
       "target": "7,1",
-      "value": 0.6036874
+      "similarity": 0.6036874
     },
     {
       "source": "8,1",
       "target": "8,0",
-      "value": 0.5891087
+      "similarity": 0.5891087
     },
     {
       "source": "8,1",
       "target": "8,2",
-      "value": 0.57292396
+      "similarity": 0.57292396
     },
     {
       "source": "8,1",
       "target": "9,1",
-      "value": 0.55425894
+      "similarity": 0.55425894
     },
     {
       "source": "8,1",
       "target": "7,0",
-      "value": 0.53011006
+      "similarity": 0.53011006
     },
     {
       "source": "8,1",
       "target": "9,2",
-      "value": 0.50080204
+      "similarity": 0.50080204
     },
     {
       "source": "1,8",
       "target": "0,9",
-      "value": 0.7070574
+      "similarity": 0.7070574
     },
     {
       "source": "1,8",
       "target": "2,7",
-      "value": 0.65786135
+      "similarity": 0.65786135
     },
     {
       "source": "1,8",
       "target": "2,8",
-      "value": 0.6511636
+      "similarity": 0.6511636
     },
     {
       "source": "1,8",
       "target": "1,7",
-      "value": 0.60903424
+      "similarity": 0.60903424
     },
     {
       "source": "1,8",
       "target": "1,9",
-      "value": 0.5755691
+      "similarity": 0.5755691
     },
     {
       "source": "1,8",
       "target": "0,8",
-      "value": 0.546325
+      "similarity": 0.546325
     },
     {
       "source": "1,8",
       "target": "2,9",
-      "value": 0.49890006
+      "similarity": 0.49890006
     },
     {
       "source": "1,8",
       "target": "3,8",
-      "value": 0.49384135
+      "similarity": 0.49384135
     },
     {
       "source": "7,0",
       "target": "6,0",
-      "value": 0.63648623
+      "similarity": 0.63648623
     },
     {
       "source": "7,0",
       "target": "8,0",
-      "value": 0.6260071
+      "similarity": 0.6260071
     },
     {
       "source": "7,0",
       "target": "6,1",
-      "value": 0.5928871
+      "similarity": 0.5928871
     },
     {
       "source": "7,0",
       "target": "9,3",
-      "value": 0.55960506
+      "similarity": 0.55960506
     },
     {
       "source": "7,0",
       "target": "8,1",
-      "value": 0.53011006
+      "similarity": 0.53011006
     },
     {
       "source": "7,0",
       "target": "7,1",
-      "value": 0.52647173
+      "similarity": 0.52647173
     },
     {
       "source": "7,0",
       "target": "9,2",
-      "value": 0.49958894
+      "similarity": 0.49958894
     },
     {
       "source": "7,0",
       "target": "9,0",
-      "value": 0.47891837
+      "similarity": 0.47891837
     },
     {
       "source": "9,2",
       "target": "8,3",
-      "value": 0.6997319
+      "similarity": 0.6997319
     },
     {
       "source": "9,2",
       "target": "9,3",
-      "value": 0.6835374
+      "similarity": 0.6835374
     },
     {
       "source": "9,2",
       "target": "9,1",
-      "value": 0.63360345
+      "similarity": 0.63360345
     },
     {
       "source": "9,2",
       "target": "8,2",
-      "value": 0.55175704
+      "similarity": 0.55175704
     },
     {
       "source": "9,2",
       "target": "6,0",
-      "value": 0.5459112
+      "similarity": 0.5459112
     },
     {
       "source": "9,2",
       "target": "9,0",
-      "value": 0.5045448
+      "similarity": 0.5045448
     },
     {
       "source": "9,2",
       "target": "8,1",
-      "value": 0.50080204
+      "similarity": 0.50080204
     },
     {
       "source": "9,2",
       "target": "7,0",
-      "value": 0.49958894
+      "similarity": 0.49958894
     },
     {
       "source": "9,9",
       "target": "9,8",
-      "value": 0.6562808
+      "similarity": 0.6562808
     },
     {
       "source": "9,9",
       "target": "8,9",
-      "value": 0.6429774
+      "similarity": 0.6429774
     },
     {
       "source": "9,9",
       "target": "6,6",
-      "value": 0.612333
+      "similarity": 0.612333
     },
     {
       "source": "9,9",
       "target": "8,8",
-      "value": 0.5772491
+      "similarity": 0.5772491
     },
     {
       "source": "9,9",
       "target": "6,7",
-      "value": 0.5753275
+      "similarity": 0.5753275
     },
     {
       "source": "9,9",
       "target": "5,6",
-      "value": 0.5697888
+      "similarity": 0.5697888
     },
     {
       "source": "9,9",
       "target": "5,7",
-      "value": 0.5294943
+      "similarity": 0.5294943
     },
     {
       "source": "9,9",
       "target": "7,7",
-      "value": 0.51773953
+      "similarity": 0.51773953
     },
     {
       "source": "0,7",
       "target": "0,6",
-      "value": 0.66743755
+      "similarity": 0.66743755
     },
     {
       "source": "0,7",
       "target": "1,6",
-      "value": 0.6646376
+      "similarity": 0.6646376
     },
     {
       "source": "0,7",
       "target": "0,8",
-      "value": 0.5856247
+      "similarity": 0.5856247
     },
     {
       "source": "0,7",
       "target": "1,7",
-      "value": 0.52659017
+      "similarity": 0.52659017
     },
     {
       "source": "0,7",
       "target": "3,9",
-      "value": 0.5102112
+      "similarity": 0.5102112
     },
     {
       "source": "0,7",
       "target": "0,9",
-      "value": 0.5101004
+      "similarity": 0.5101004
     },
     {
       "source": "0,7",
       "target": "1,5",
-      "value": 0.48580992
+      "similarity": 0.48580992
     },
     {
       "source": "0,7",
       "target": "1,8",
-      "value": 0.48574272
+      "similarity": 0.48574272
     },
     {
       "source": "2,9",
       "target": "3,9",
-      "value": 0.67036104
+      "similarity": 0.67036104
     },
     {
       "source": "2,9",
       "target": "3,8",
-      "value": 0.66139936
+      "similarity": 0.66139936
     },
     {
       "source": "2,9",
       "target": "1,9",
-      "value": 0.58923
+      "similarity": 0.58923
     },
     {
       "source": "2,9",
       "target": "0,6",
-      "value": 0.5445266
+      "similarity": 0.5445266
     },
     {
       "source": "2,9",
       "target": "2,8",
-      "value": 0.53111154
+      "similarity": 0.53111154
     },
     {
       "source": "2,9",
       "target": "1,8",
-      "value": 0.49890006
+      "similarity": 0.49890006
     },
     {
       "source": "2,9",
       "target": "0,9",
-      "value": 0.49462786
+      "similarity": 0.49462786
     },
     {
       "source": "2,9",
       "target": "0,5",
-      "value": 0.4742098
+      "similarity": 0.4742098
     },
     {
       "source": "0,0",
       "target": "1,0",
-      "value": 0.6819044
+      "similarity": 0.6819044
     },
     {
       "source": "0,0",
       "target": "3,3",
-      "value": 0.6417924
+      "similarity": 0.6417924
     },
     {
       "source": "0,0",
       "target": "0,1",
-      "value": 0.64049834
+      "similarity": 0.64049834
     },
     {
       "source": "0,0",
       "target": "1,1",
-      "value": 0.5803406
+      "similarity": 0.5803406
     },
     {
       "source": "0,0",
       "target": "4,3",
-      "value": 0.5739521
+      "similarity": 0.5739521
     },
     {
       "source": "0,0",
       "target": "2,2",
-      "value": 0.55767745
+      "similarity": 0.55767745
     },
     {
       "source": "0,0",
       "target": "3,4",
-      "value": 0.54197145
+      "similarity": 0.54197145
     },
     {
       "source": "0,0",
       "target": "3,2",
-      "value": 0.541008
+      "similarity": 0.541008
     },
     {
       "source": "9,1",
       "target": "8,2",
-      "value": 0.6890941
+      "similarity": 0.6890941
     },
     {
       "source": "9,1",
       "target": "9,2",
-      "value": 0.63360345
+      "similarity": 0.63360345
     },
     {
       "source": "9,1",
       "target": "9,0",
-      "value": 0.61635065
+      "similarity": 0.61635065
     },
     {
       "source": "9,1",
       "target": "8,1",
-      "value": 0.55425894
+      "similarity": 0.55425894
     },
     {
       "source": "9,1",
       "target": "9,3",
-      "value": 0.5269014
+      "similarity": 0.5269014
     },
     {
       "source": "9,1",
       "target": "8,0",
-      "value": 0.521561
+      "similarity": 0.521561
     },
     {
       "source": "9,1",
       "target": "6,0",
-      "value": 0.50268346
+      "similarity": 0.50268346
     },
     {
       "source": "9,1",
       "target": "7,0",
-      "value": 0.45727688
+      "similarity": 0.45727688
     },
     {
       "source": "8,0",
       "target": "7,1",
-      "value": 0.6853518
+      "similarity": 0.6853518
     },
     {
       "source": "8,0",
       "target": "9,0",
-      "value": 0.6316848
+      "similarity": 0.6316848
     },
     {
       "source": "8,0",
       "target": "7,0",
-      "value": 0.6260071
+      "similarity": 0.6260071
     },
     {
       "source": "8,0",
       "target": "8,1",
-      "value": 0.5891087
+      "similarity": 0.5891087
     },
     {
       "source": "8,0",
       "target": "6,0",
-      "value": 0.5289296
+      "similarity": 0.5289296
     },
     {
       "source": "8,0",
       "target": "9,1",
-      "value": 0.521561
+      "similarity": 0.521561
     },
     {
       "source": "8,0",
       "target": "9,3",
-      "value": 0.48296502
+      "similarity": 0.48296502
     },
     {
       "source": "8,0",
       "target": "9,2",
-      "value": 0.47729883
+      "similarity": 0.47729883
     },
     {
       "source": "1,9",
       "target": "2,8",
-      "value": 0.6792508
+      "similarity": 0.6792508
     },
     {
       "source": "1,9",
       "target": "0,9",
-      "value": 0.6578233
+      "similarity": 0.6578233
     },
     {
       "source": "1,9",
       "target": "2,9",
-      "value": 0.58923
+      "similarity": 0.58923
     },
     {
       "source": "1,9",
       "target": "1,8",
-      "value": 0.5755691
+      "similarity": 0.5755691
     },
     {
       "source": "1,9",
       "target": "0,8",
-      "value": 0.5253755
+      "similarity": 0.5253755
     },
     {
       "source": "1,9",
       "target": "3,9",
-      "value": 0.52273816
+      "similarity": 0.52273816
     },
     {
       "source": "1,9",
       "target": "2,7",
-      "value": 0.46911532
+      "similarity": 0.46911532
     },
     {
       "source": "1,9",
       "target": "0,6",
-      "value": 0.46390852
+      "similarity": 0.46390852
     },
     {
       "source": "0,8",
       "target": "1,7",
-      "value": 0.6393996
+      "similarity": 0.6393996
     },
     {
       "source": "0,8",
       "target": "0,9",
-      "value": 0.6323034
+      "similarity": 0.6323034
     },
     {
       "source": "0,8",
       "target": "0,7",
-      "value": 0.5856247
+      "similarity": 0.5856247
     },
     {
       "source": "0,8",
       "target": "1,8",
-      "value": 0.546325
+      "similarity": 0.546325
     },
     {
       "source": "0,8",
       "target": "1,9",
-      "value": 0.5253755
+      "similarity": 0.5253755
     },
     {
       "source": "0,8",
       "target": "0,6",
-      "value": 0.5197097
+      "similarity": 0.5197097
     },
     {
       "source": "0,8",
       "target": "3,9",
-      "value": 0.4652387
+      "similarity": 0.4652387
     },
     {
       "source": "0,8",
       "target": "2,8",
-      "value": 0.464584
+      "similarity": 0.464584
     },
     {
       "source": "9,0",
       "target": "8,1",
-      "value": 0.66862494
+      "similarity": 0.66862494
     },
     {
       "source": "9,0",
       "target": "8,0",
-      "value": 0.6316848
+      "similarity": 0.6316848
     },
     {
       "source": "9,0",
       "target": "9,1",
-      "value": 0.61635065
+      "similarity": 0.61635065
     },
     {
       "source": "9,0",
       "target": "9,2",
-      "value": 0.5045448
+      "similarity": 0.5045448
     },
     {
       "source": "9,0",
       "target": "7,0",
-      "value": 0.47891837
+      "similarity": 0.47891837
     },
     {
       "source": "9,0",
       "target": "6,0",
-      "value": 0.47702488
+      "similarity": 0.47702488
     },
     {
       "source": "9,0",
       "target": "8,2",
-      "value": 0.4688862
+      "similarity": 0.4688862
     },
     {
       "source": "9,0",
       "target": "9,3",
-      "value": 0.46589518
+      "similarity": 0.46589518
     },
     {
       "source": "0,9",
       "target": "1,8",
-      "value": 0.7070574
+      "similarity": 0.7070574
     },
     {
       "source": "0,9",
       "target": "1,9",
-      "value": 0.6578233
+      "similarity": 0.6578233
     },
     {
       "source": "0,9",
       "target": "0,8",
-      "value": 0.6323034
+      "similarity": 0.6323034
     },
     {
       "source": "0,9",
       "target": "0,7",
-      "value": 0.5101004
+      "similarity": 0.5101004
     },
     {
       "source": "0,9",
       "target": "2,9",
-      "value": 0.49462786
+      "similarity": 0.49462786
     },
     {
       "source": "0,9",
       "target": "3,9",
-      "value": 0.4939272
+      "similarity": 0.4939272
     },
     {
       "source": "0,9",
       "target": "0,6",
-      "value": 0.4861239
+      "similarity": 0.4861239
     },
     {
       "source": "0,9",
       "target": "1,7",
-      "value": 0.4692587
+      "similarity": 0.4692587
     }
   ]
 }

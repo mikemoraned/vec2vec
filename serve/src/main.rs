@@ -75,7 +75,7 @@ struct Node {
 struct Link {
     source: String,
     target: String,
-    value: f32,
+    similarity: f32,
 }
 
 fn main() {
@@ -144,7 +144,7 @@ fn main() {
         for point in &point_set {
             nodes.push(Node {
                 id: point.to_string(),
-                point: point.clone()
+                point: point.clone(),
             });
         }
         let mut links = vec![];
@@ -158,7 +158,7 @@ fn main() {
                         links.push(Link {
                             source: from_point.to_string(),
                             target: to_point.to_string(),
-                            value: word_sim.similarity.into_inner(),
+                            similarity: word_sim.similarity.into_inner(),
                         });
                     }
                 }
