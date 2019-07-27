@@ -18,9 +18,16 @@
         //   Math.sqrt(2 * Math.pow(side_length, 2.0)) / grid_width;
         const between_point_distance = side_length / grid_width;
 
-        const color = () => {
-          const scale = d3.scaleOrdinal(d3.schemeCategory10);
-          return d => scale(d.group);
+        const xScale = d3
+          .scaleLinear()
+          .domain([0, grid_width])
+          .range([0, 255]);
+        const yScale = d3
+          .scaleLinear()
+          .domain([0, grid_width])
+          .range([0, 255]);
+        const color = d => {
+          return d3.rgb(0, xScale(d.point.x), yScale(d.point.y));
         };
 
         const inferred_links = data.links.map(d => {
@@ -73,7 +80,7 @@
               .x(node => {
                 return (node.point.x / grid_width) * width;
               })
-              .strength(0.0)
+              .strength(0.1)
           )
           .force(
             "y",
@@ -82,7 +89,7 @@
               .y(node => {
                 return (node.point.y / grid_width) * height;
               })
-              .strength(0.0)
+              .strength(0.1)
           )
           .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -95,7 +102,7 @@
           .selectAll("line")
           .data(links)
           .join("line")
-          .attr("stroke-width", d => Math.sqrt(d.value));
+          .attr("stroke-width", 1.0);
 
         const node = svg
           .append("g")
