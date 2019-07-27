@@ -10,18 +10,27 @@
       d3.json("/layout.json").then(function(data) {
         console.log(data);
 
-        const width = 1000;
-        const height = 1000;
+        const grid_width = 10;
+        const side_length = 1000;
+        const width = side_length;
+        const height = side_length;
+        // const between_point_distance =
+        //   Math.sqrt(2 * Math.pow(side_length, 2.0)) / grid_width;
+        const between_point_distance = side_length / grid_width;
 
         const color = () => {
           const scale = d3.scaleOrdinal(d3.schemeCategory10);
           return d => scale(d.group);
         };
 
-        const inferred_links = data.links.map(d => Object.create(d));
+        const inferred_links = data.links.map(d => {
+          const link = Object.create(d);
+          link.grid = false;
+          return link;
+        });
         const inferred_nodes = data.nodes.map(d => {
           const node = Object.create(d);
-          node.grid_node = false;
+          node.grid = false;
           return node;
         });
 
@@ -29,15 +38,16 @@
           const link = { value: 1 };
           link.source = node.id;
           link.target = node.id + "_grid";
+          link.grid = true;
           return link;
         });
 
         const grid_nodes = data.nodes.map(d => {
           const node = Object.create(d);
           node.id = node.id + "_grid";
-          node.grid_node = true;
-          node.fx = (node.point.x / 10.0) * width;
-          node.fy = (node.point.y / 10.0) * height;
+          node.grid = true;
+          node.fx = (node.point.x / grid_width) * width;
+          node.fy = (node.point.y / grid_width) * height;
           return node;
         });
 
@@ -46,7 +56,19 @@
 
         const simulation = d3
           .forceSimulation(nodes)
-          .force("link", d3.forceLink(links).id(d => d.id))
+          .force(
+            "link",
+            d3
+              .forceLink(links)
+              .id(d => d.id)
+              .distance(link => {
+                if (link.grid) {
+                  return 0;
+                } else {
+                  return between_point_distance * link.value;
+                }
+              })
+          )
           .force("charge", d3.forceManyBody())
           .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -66,7 +88,7 @@
           .attr("stroke", "#fff")
           .attr("stroke-width", 1.5)
           .selectAll("circle")
-          .data(nodes)
+          .data(nodes.filter(n => !n.grid))
           .join("circle")
           .attr("r", 5)
           .attr("fill", color);
