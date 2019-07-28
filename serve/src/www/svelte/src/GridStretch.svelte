@@ -1,10 +1,8 @@
 <script>
-  export let stretch = 0.0;
-
-  $: console.log("stretch", stretch);
+  import { stretch } from "./stores.js";
 
   function stretchToGrid() {
-    stretch = 1.0;
+    stretch.update(s => 1.0);
   }
 </script>
 
@@ -12,13 +10,17 @@
 
 </style>
 
-<input
-  id="stretch"
-  type="range"
-  min="0.0"
-  max="1.0"
-  step="0.01"
-  bind:value={stretch}
-  style="width: 50%" />
-<label for="strength">{stretch}</label>
-<button on:click={stretchToGrid}>Stretch to real grid</button>
+<div>
+  <input
+    id="stretch"
+    type="range"
+    min="0.0"
+    max="1.0"
+    step="0.01"
+    bind:value={$stretch}
+    style="width: 50%" />
+
+  <label for="strength">{$stretch}</label>
+  <button on:click={stretchToGrid}>Stretch to real grid</button>
+
+</div>

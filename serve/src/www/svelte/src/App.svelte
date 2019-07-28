@@ -1,5 +1,6 @@
 <script>
   import GridStretch from "./GridStretch.svelte";
+  import { stretch } from "./stores.js";
 
   import { json } from "d3-fetch";
   import { scaleLinear } from "d3-scale";
@@ -15,26 +16,44 @@
   import { select } from "d3-selection";
   import { onMount } from "svelte";
 
+  let simulation = forceSimulation([]);
+
+  const grid_width = 10;
+  const side_length = 1000;
+  const width = side_length;
+  const height = side_length;
+  const between_point_distance = side_length / grid_width;
+
+  const xStrength = stretch => {
+    return forceX()
+      .x(node => {
+        return (node.point.x / grid_width) * width;
+      })
+      .strength(stretch);
+  };
+
+  const yStrength = stretch => {
+    return forceY()
+      .y(node => {
+        return (node.point.y / grid_width) * height;
+      })
+      .strength(stretch);
+  };
+
+  const xScale = scaleLinear()
+    .domain([0, grid_width])
+    .range([0, 255]);
+  const yScale = scaleLinear()
+    .domain([0, grid_width])
+    .range([0, 255]);
+
+  const color = d => {
+    return rgb(0, xScale(d.point.x), yScale(d.point.y));
+  };
+
   onMount(async () => {
     const data = await json("/layout.json");
     console.log(data);
-
-    const grid_width = 10;
-    const side_length = 1000;
-    const width = side_length;
-    const height = side_length;
-    const between_point_distance = side_length / grid_width;
-
-    const xScale = scaleLinear()
-      .domain([0, grid_width])
-      .range([0, 255]);
-    const yScale = scaleLinear()
-      .domain([0, grid_width])
-      .range([0, 255]);
-
-    const color = d => {
-      return rgb(0, xScale(d.point.x), yScale(d.point.y));
-    };
 
     const inferred_links = data.links.map(d => {
       const link = Object.create(d);
@@ -67,25 +86,7 @@
     const links = inferred_links;
     const nodes = inferred_nodes;
 
-    const xStrength = strength => {
-      return forceX()
-        .x(node => {
-          return (node.point.x / grid_width) * width;
-        })
-        .strength(strength);
-    };
-
-    const yStrength = strength => {
-      return forceY()
-        .y(node => {
-          return (node.point.y / grid_width) * height;
-        })
-        .strength(strength);
-    };
-
-    const default_strength = 0.0;
-
-    const simulation = forceSimulation(nodes)
+    simulation = forceSimulation(nodes)
       .force(
         "link",
         forceLink(links)
@@ -95,8 +96,8 @@
           })
       )
       .force("charge", forceManyBody())
-      .force("x", xStrength(default_strength))
-      .force("y", yStrength(default_strength))
+      .force("x", xStrength($stretch))
+      .force("y", yStrength($stretch))
       .force("center", forceCenter(width / 2, height / 2));
 
     const svg = select("#grid");
@@ -131,6 +132,13 @@
 
       node.attr("cx", d => d.x).attr("cy", d => d.y);
     });
+  });
+
+  $: console.log("stretch", $stretch);
+
+  stretch.subscribe(strength => {
+    simulation.force("x", xStrength(strength)).force("y", yStrength(strength));
+    simulation.alpha(1).restart();
   });
 </script>
 
