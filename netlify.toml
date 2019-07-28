@@ -1,0 +1,4 @@
+[build]
+  base    = "serve/src/www/svelte"
+  command = "npm run build"
+  publish = "serve/src/www/svelte/public"
