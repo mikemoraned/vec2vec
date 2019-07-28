@@ -123,6 +123,10 @@
     simulation.force("x", xStrength(strength)).force("y", yStrength(strength));
     simulation.alpha(1).restart();
   });
+
+  function stretchToGrid() {
+    stretch.update(s => 1.0);
+  }
 </script>
 
 <style>
@@ -134,4 +138,8 @@
 
 <GridStretch />
 
-<svg id="grid" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" />
+<svg
+  id="grid"
+  viewBox="0 0 1000 1000"
+  preserveAspectRatio="xMidYMid meet"
+  on:click={stretchToGrid} />
