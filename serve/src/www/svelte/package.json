@@ -12,6 +12,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "d3-fetch": "^1.1.2",
     "sirv-cli": "^0.4.4"
   },
   "scripts": {
