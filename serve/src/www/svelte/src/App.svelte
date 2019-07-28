@@ -66,23 +66,6 @@
       return node;
     });
 
-    const grid_inferred_links = data.nodes.map(node => {
-      const link = { value: 1 };
-      link.source = node.id;
-      link.target = node.id + "_grid";
-      link.grid = true;
-      return link;
-    });
-
-    const grid_nodes = data.nodes.map(d => {
-      const node = Object.create(d);
-      node.id = node.id + "_grid";
-      node.grid = true;
-      node.fx = (node.point.x / grid_width) * width;
-      node.fy = (node.point.y / grid_width) * height;
-      return node;
-    });
-
     const links = inferred_links;
     const nodes = inferred_nodes;
 
