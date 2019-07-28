@@ -1,11 +1,25 @@
 <script>
-	export let name;
+  export let strength;
+
+  $: console.log("strength", strength);
+
+  function stretchToGrid() {
+    strength = 1.0;
+  }
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+
 </style>
 
-<h1>Hello {name}!</h1>
+<input
+  id="strength"
+  type="range"
+  min="0.0"
+  max="1.0"
+  step="0.01"
+  bind:value={strength}
+  style="width: 50%" />
+<label for="strength">{strength}</label>
+
+<button on:click={stretchToGrid}>Stretch to real grid</button>
