@@ -13,8 +13,10 @@
     forceCenter
   } from "d3-force";
   import { select } from "d3-selection";
+  import { onMount } from "svelte";
 
-  json("/layout.json").then(function(data) {
+  onMount(async () => {
+    const data = await json("/layout.json");
     console.log(data);
 
     const grid_width = 10;
@@ -133,7 +135,10 @@
 </script>
 
 <style>
-
+  #grid {
+    height: 100vh;
+    width: 100vh;
+  }
 </style>
 
 <GridStretch />
