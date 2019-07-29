@@ -115,16 +115,14 @@ fn main() {
             pb.set_position(count);
         })
         .flat_map(|word| {
-            let from_point = GridPoint::from_str(word).unwrap();
             let mut word_links = vec![];
             match embeddings.similarity(word, max_neighbours) {
                 None => println!("nothing similar found"),
                 Some(sims) => {
                     for word_sim in sims {
-                        let to_point = GridPoint::from_str(word_sim.word).unwrap();
                         word_links.push(Link {
-                            source: from_point.to_string(),
-                            target: to_point.to_string(),
+                            source: word.to_string(),
+                            target: word_sim.word.to_string(),
                             similarity: word_sim.similarity.into_inner(),
                         });
                     }
