@@ -77,9 +77,6 @@ def filter_length(max_length):
 filtered = filter(filter_length(3), generate_paths())
 paths = list(itertools.islice(filtered, args.num_paths))
 
-logging.debug("generated {} paths".format(len(paths)))
-# logging.debug(paths)
-
 
 def format_point(point):
     x, y = point
@@ -88,22 +85,10 @@ def format_point(point):
 
 formatted_paths = []
 for path in paths:
-    formatted_paths.append(list(map(format_point, path)))
+    formatted_paths.append(" ".join(map(format_point, path)))
 
 
-def lengths(max_length):
-    length = max_length
-    while length > 0:
-        yield length
-        length = int(length / 2)
-
-
-logging.info("generating word2vec models")
-for limit in lengths(len(paths)):
-    limited_paths = formatted_paths[slice(limit)]
-    logging.info("generating word2vec model with {} paths".format(len(limited_paths)))
-    model = Word2Vec(limited_paths, min_count=0, workers=cpu_count(), size=20)
-    model_path = "{}/{}x{}.s{}.limit_{}.model.bin".format(
-        data_directory, width, height, seed, limit
-    )
-    model.wv.save_word2vec_format(model_path, binary=True)
+with open("{}/paths.txt".format(data_directory), "w") as out:
+    for path in formatted_paths:
+        out.write(path)
+        out.write("\n")
