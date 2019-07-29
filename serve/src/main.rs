@@ -7,6 +7,7 @@ use std::io::BufWriter;
 
 use finalfusion::prelude::*;
 use finalfusion::similarity::Similarity;
+use indicatif::{ProgressBar, ProgressStyle};
 use serde::{Deserialize, Serialize};
 use statistical::{mean, standard_deviation};
 use std::collections::HashSet;
@@ -16,8 +17,8 @@ use std::str::FromStr;
 
 #[derive(Hash, Eq, PartialEq, Debug, Serialize, Deserialize, Clone)]
 struct GridPoint {
-    x: u8,
-    y: u8,
+    x: u16,
+    y: u16,
 }
 
 impl GridPoint {
@@ -25,12 +26,12 @@ impl GridPoint {
         (self.x_distance(other).pow(2) as f32 + self.y_distance(other).pow(2) as f32).sqrt()
     }
 
-    fn x_distance(&self, other: &GridPoint) -> u8 {
+    fn x_distance(&self, other: &GridPoint) -> u16 {
         use std::cmp::{max, min};
         max(self.x, other.x) - min(self.x, other.x)
     }
 
-    fn y_distance(&self, other: &GridPoint) -> u8 {
+    fn y_distance(&self, other: &GridPoint) -> u16 {
         use std::cmp::{max, min};
         max(self.y, other.y) - min(self.y, other.y)
     }
@@ -46,8 +47,8 @@ impl FromStr for GridPoint {
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         let coords: Vec<&str> = s.split(',').collect();
 
-        let x = coords[0].parse::<u8>()?;
-        let y = coords[1].parse::<u8>()?;
+        let x = coords[0].parse::<u16>()?;
+        let y = coords[1].parse::<u16>()?;
 
         Ok(GridPoint { x, y })
     }
@@ -103,36 +104,6 @@ fn main() {
 
     let embeddings = Embeddings::read_word2vec_binary(&mut reader).unwrap();
 
-    let mut distances = vec![];
-    let mut occupancy = vec![];
-    let max_neighbours = 8;
-    for word in embeddings.vocab().words() {
-        let from_point = GridPoint::from_str(word).unwrap();
-        match embeddings.similarity(word, max_neighbours) {
-            None => println!("nothing similar found"),
-            Some(sims) => {
-                let mut neighbours = 0;
-                for word_sim in sims {
-                    let to_point = GridPoint::from_str(word_sim.word).unwrap();
-                    distances.push(to_point.distance(&from_point));
-                    if from_point.is_neighbour(&to_point) {
-                        neighbours += 1;
-                    }
-                }
-                occupancy.push(neighbours as f32 / max_neighbours as f32);
-            }
-        }
-    }
-
-    let distance_mean = mean(&distances);
-    let distance_stddev = standard_deviation(&distances, Some(distance_mean));
-    let occupancy_mean = mean(&occupancy);
-    let occupancy_stddev = standard_deviation(&occupancy, Some(occupancy_mean));
-    println!(
-        "{}: distance: mean: {}, stddev: {}, occupancy: mean: {}, stddev: {}, ",
-        model_path, distance_mean, distance_stddev, occupancy_mean, occupancy_stddev
-    );
-
     if let Some(layout_path) = matches.value_of("layout") {
         println!("layout path: {}", layout_path);
         let mut point_set = HashSet::new();
@@ -148,7 +119,15 @@ fn main() {
             });
         }
         let mut links = vec![];
-        for word in embeddings.vocab().words() {
+
+        let max_neighbours = 8;
+        let mut words = embeddings.vocab().words().to_vec();
+        words.sort();
+        let pb = ProgressBar::new(words.len() as u64);
+        pb.set_style(ProgressStyle::default_bar());
+        let mut count = 0;
+        for word in words.iter() {
+            pb.set_position(count);
             let from_point = GridPoint::from_str(word).unwrap();
             match embeddings.similarity(word, max_neighbours) {
                 None => println!("nothing similar found"),
@@ -163,6 +142,7 @@ fn main() {
                     }
                 }
             }
+            count += 1;
         }
         let layout = Layout { nodes, links };
 
