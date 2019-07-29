@@ -118,7 +118,6 @@ fn main() {
                 point: point.clone(),
             });
         }
-        let mut links = vec![];
 
         let max_neighbours = 8;
         let mut words = embeddings.vocab().words().to_vec();
@@ -126,24 +125,33 @@ fn main() {
         let pb = ProgressBar::new(words.len() as u64);
         pb.set_style(ProgressStyle::default_bar());
         let mut count = 0;
-        for word in words.iter() {
-            pb.set_position(count);
-            let from_point = GridPoint::from_str(word).unwrap();
-            match embeddings.similarity(word, max_neighbours) {
-                None => println!("nothing similar found"),
-                Some(sims) => {
-                    for word_sim in sims {
-                        let to_point = GridPoint::from_str(word_sim.word).unwrap();
-                        links.push(Link {
-                            source: from_point.to_string(),
-                            target: to_point.to_string(),
-                            similarity: word_sim.similarity.into_inner(),
-                        });
+        pb.set_position(count);
+
+        let links = words
+            .iter()
+            .inspect(|_| {
+                count += 1;
+                pb.set_position(count);
+            })
+            .flat_map(|word| {
+                let from_point = GridPoint::from_str(word).unwrap();
+                let mut word_links = vec![];
+                match embeddings.similarity(word, max_neighbours) {
+                    None => println!("nothing similar found"),
+                    Some(sims) => {
+                        for word_sim in sims {
+                            let to_point = GridPoint::from_str(word_sim.word).unwrap();
+                            word_links.push(Link {
+                                source: from_point.to_string(),
+                                target: to_point.to_string(),
+                                similarity: word_sim.similarity.into_inner(),
+                            });
+                        }
                     }
                 }
-            }
-            count += 1;
-        }
+                return word_links;
+            })
+            .collect();
         let layout = Layout { nodes, links };
 
         let writer = BufWriter::new(File::create(layout_path).unwrap());
