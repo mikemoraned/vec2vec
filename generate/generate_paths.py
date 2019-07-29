@@ -6,6 +6,7 @@ from gensim.models.word2vec import Word2Vec
 from multiprocessing import cpu_count
 import random
 import itertools
+from tqdm import tqdm
 
 
 parser = argparse.ArgumentParser()
@@ -75,7 +76,7 @@ def filter_length(max_length):
 
 
 filtered = filter(filter_length(3), generate_paths())
-paths = list(itertools.islice(filtered, args.num_paths))
+paths = itertools.islice(filtered, args.num_paths)
 
 
 def format_point(point):
@@ -83,12 +84,9 @@ def format_point(point):
     return "{},{}".format(x, y)
 
 
-formatted_paths = []
-for path in paths:
-    formatted_paths.append(" ".join(map(format_point, path)))
-
-
 with open("{}/paths.txt".format(data_directory), "w") as out:
-    for path in formatted_paths:
-        out.write(path)
-        out.write("\n")
+    with tqdm(total=args.num_paths) as progress:
+        for path in paths:
+            out.write(" ".join(map(format_point, path)))
+            out.write("\n")
+            progress.update(1)
