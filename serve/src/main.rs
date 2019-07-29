@@ -9,7 +9,6 @@ use finalfusion::prelude::*;
 use finalfusion::similarity::Similarity;
 use indicatif::{ProgressBar, ProgressStyle};
 use serde::{Deserialize, Serialize};
-use statistical::{mean, standard_deviation};
 use std::collections::HashSet;
 use std::fmt;
 use std::num::ParseIntError;
@@ -19,26 +18,6 @@ use std::str::FromStr;
 struct GridPoint {
     x: u16,
     y: u16,
-}
-
-impl GridPoint {
-    fn distance(&self, other: &GridPoint) -> f32 {
-        (self.x_distance(other).pow(2) as f32 + self.y_distance(other).pow(2) as f32).sqrt()
-    }
-
-    fn x_distance(&self, other: &GridPoint) -> u16 {
-        use std::cmp::{max, min};
-        max(self.x, other.x) - min(self.x, other.x)
-    }
-
-    fn y_distance(&self, other: &GridPoint) -> u16 {
-        use std::cmp::{max, min};
-        max(self.y, other.y) - min(self.y, other.y)
-    }
-
-    fn is_neighbour(&self, other: &GridPoint) -> bool {
-        self.x_distance(other) == 1 && self.y_distance(other) == 1
-    }
 }
 
 impl FromStr for GridPoint {
@@ -93,6 +72,7 @@ fn main() {
         .arg(
             Arg::with_name("layout")
                 .long("layout")
+                .required(true)
                 .help("path to where to output layout as json")
                 .takes_value(true),
         )
@@ -104,58 +84,58 @@ fn main() {
 
     let embeddings = Embeddings::read_word2vec_binary(&mut reader).unwrap();
 
-    if let Some(layout_path) = matches.value_of("layout") {
-        println!("layout path: {}", layout_path);
-        let mut point_set = HashSet::new();
-        for word in embeddings.vocab().words() {
-            let point = GridPoint::from_str(word).unwrap();
-            point_set.insert(point);
-        }
-        let mut nodes = vec![];
-        for point in &point_set {
-            nodes.push(Node {
-                id: point.to_string(),
-                point: point.clone(),
-            });
-        }
+    let layout_path = matches.value_of("layout").unwrap();
 
-        let max_neighbours = 8;
-        let mut words = embeddings.vocab().words().to_vec();
-        words.sort();
-        let pb = ProgressBar::new(words.len() as u64);
-        pb.set_style(ProgressStyle::default_bar());
-        let mut count = 0;
-        pb.set_position(count);
+    println!("layout path: {}", layout_path);
+    let mut point_set = HashSet::new();
+    for word in embeddings.vocab().words() {
+        let point = GridPoint::from_str(word).unwrap();
+        point_set.insert(point);
+    }
+    let mut nodes = vec![];
+    for point in &point_set {
+        nodes.push(Node {
+            id: point.to_string(),
+            point: point.clone(),
+        });
+    }
 
-        let links = words
-            .iter()
-            .inspect(|_| {
-                count += 1;
-                pb.set_position(count);
-            })
-            .flat_map(|word| {
-                let from_point = GridPoint::from_str(word).unwrap();
-                let mut word_links = vec![];
-                match embeddings.similarity(word, max_neighbours) {
-                    None => println!("nothing similar found"),
-                    Some(sims) => {
-                        for word_sim in sims {
-                            let to_point = GridPoint::from_str(word_sim.word).unwrap();
-                            word_links.push(Link {
-                                source: from_point.to_string(),
-                                target: to_point.to_string(),
-                                similarity: word_sim.similarity.into_inner(),
-                            });
-                        }
+    let max_neighbours = 8;
+    let mut words = embeddings.vocab().words().to_vec();
+    words.sort();
+    let pb = ProgressBar::new(words.len() as u64);
+    pb.set_style(ProgressStyle::default_bar());
+    let mut count = 0;
+    pb.set_position(count);
+
+    let links = words
+        .iter()
+        .inspect(|_| {
+            count += 1;
+            pb.set_position(count);
+        })
+        .flat_map(|word| {
+            let from_point = GridPoint::from_str(word).unwrap();
+            let mut word_links = vec![];
+            match embeddings.similarity(word, max_neighbours) {
+                None => println!("nothing similar found"),
+                Some(sims) => {
+                    for word_sim in sims {
+                        let to_point = GridPoint::from_str(word_sim.word).unwrap();
+                        word_links.push(Link {
+                            source: from_point.to_string(),
+                            target: to_point.to_string(),
+                            similarity: word_sim.similarity.into_inner(),
+                        });
                     }
                 }
-                return word_links;
-            })
-            .collect();
-        let layout = Layout { nodes, links };
+            }
+            return word_links;
+        })
+        .collect();
+    let layout = Layout { nodes, links };
 
-        let writer = BufWriter::new(File::create(layout_path).unwrap());
-        let result = serde_json::to_writer_pretty(writer, &layout);
-        println!("{:?}", result);
-    }
+    let writer = BufWriter::new(File::create(layout_path).unwrap());
+    let result = serde_json::to_writer_pretty(writer, &layout);
+    println!("{:?}", result);
 }
