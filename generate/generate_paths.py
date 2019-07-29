@@ -12,6 +12,9 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser()
 parser.add_argument("--width", type=int, help="width of grid square", default=10)
 parser.add_argument(
+    "--max_distance", type=int, help="max manhattan distance", required=True
+)
+parser.add_argument(
     "--num_paths", type=int, help="number of paths to create", default=1000
 )
 parser.add_argument("--seed", type=int, help="seed for randomisation", default=1)
@@ -27,66 +30,64 @@ if not isinstance(numeric_log_level, int):
     raise ValueError("Invalid log level: %s" % log_level)
 logging.basicConfig(format="%(asctime)s %(message)s", level=numeric_log_level)
 
-data_directory = args.data_directory
-
 width = args.width
 height = width
-seed = args.seed
 logging.info(
-    "using %d x %d grid, seed of %d, saving in %s", width, height, seed, data_directory
+    "using %d x %d grid, seed of %d, max distance %d, saving in %s",
+    width,
+    height,
+    args.seed,
+    args.max_distance,
+    args.data_directory,
 )
+base_name = "{}x{}.paths{}.seed{}.dist{}".format(
+    width, height, args.num_paths, args.seed, args.max_distance
+)
+output_file = "{}/{}.paths.txt".format(args.data_directory, base_name)
+logging.info("base name = {}, output file = {}".format(base_name, output_file))
 
-random.seed(seed)
 
 logging.info("generating paths")
 
 
-def random_ordered_pair(limit):
-    r1 = random.randrange(0, limit)
-    r2 = random.randrange(0, limit)
-    return min(r1, r2), max(r1, r2)
+class Point(object):
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def max_manhattan_distance(self, other):
+        return max(abs(self.x - other.x), abs(self.y - other.y))
 
 
-def generate_paths():
+format_for_index = {}
+point_for_index = {}
+for x in range(0, width):
+    for y in range(0, height):
+        index = (y * width) + x
+        format_for_index[index] = "{},{}".format(x, y)
+        point_for_index[index] = Point(x, y)
+
+range_end = width * height
+
+
+def generate_path_indexes():
+    random.seed(args.seed)
     while True:
-        x_min, x_max = random_ordered_pair(width)
-        y_min, y_max = random_ordered_pair(height)
-        x_diff = x_max - x_min
-        y_diff = y_max - y_min
-        if x_diff > 1 or y_diff > 1:
-            x_mid = random.randrange(x_min, x_max + 1) if x_max - x_min > 0 else x_min
-            y_mid = random.randrange(y_min, y_max + 1) if y_max - y_min > 0 else y_min
-            start = (x_min, y_min)
-            mid = (x_mid, y_mid)
-            end = (x_max, y_max)
-            if start != mid and mid != end:
-                yield [start, mid, end]
+        start_index = random.randrange(0, range_end)
+        end_index = random.randrange(0, range_end)
+        start_point = point_for_index[start_index]
+        end_point = point_for_index[end_index]
+        if start_point.max_manhattan_distance(end_point) <= args.max_distance:
+            yield [start_index, end_index]
 
 
-def filter_length(max_length):
-    def filter(path):
-        [start, _, end] = path
-        x_start, y_start = start
-        x_end, y_end = end
-        x_diff = x_end - x_start
-        y_diff = y_end - y_start
-        return x_diff <= max_length and y_diff <= max_length
-
-    return filter
+indexed_paths = itertools.islice(generate_path_indexes(), args.num_paths)
 
 
-filtered = filter(filter_length(3), generate_paths())
-paths = itertools.islice(filtered, args.num_paths)
-
-
-def format_point(point):
-    x, y = point
-    return "{},{}".format(x, y)
-
-
-with open("{}/paths.txt".format(data_directory), "w") as out:
+with open(output_file, "w") as out:
     with tqdm(total=args.num_paths) as progress:
-        for path in paths:
-            out.write(" ".join(map(format_point, path)))
+        for indexed_path in indexed_paths:
+            formatted_path = map(lambda i: format_for_index[i], indexed_path)
+            out.write(" ".join(formatted_path))
             out.write("\n")
             progress.update(1)
