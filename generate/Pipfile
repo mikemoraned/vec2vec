@@ -9,6 +9,7 @@ verify_ssl = true
 gensim = "==3.8.0"
 black = "*"
 argparse = "*"
+tqdm = "*"
 
 [requires]
 python_version = "3.7"
