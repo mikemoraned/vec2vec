@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { json } from "d3-fetch";
 import { select } from "d3-selection";
 import "./App.css";
 
@@ -23,15 +24,25 @@ function StretchComponent({ stretch, setStretch, setMaximumStretch }) {
   );
 }
 
-function GridComponent({ setMaximumStretch }) {
+function GridComponent({ layoutName, setMaximumStretch }) {
   const svgRef = useRef(null);
+  const [layout, setLayout] = useState(null);
 
   useEffect(() => {
-    if (svgRef.current) {
+    async function fetchData() {
+      const data = await json(`${layoutName}.json`);
+      setLayout(data);
+    }
+    fetchData();
+  }, [layoutName]);
+
+  useEffect(() => {
+    if (svgRef.current && layout != null) {
       const svg = select(svgRef.current);
       console.dir(svg);
+      console.dir(layout);
     }
-  });
+  }, [layout]);
 
   return (
     <div className="GridComponent">
@@ -59,7 +70,10 @@ function App() {
         setStretch={setStretch}
         setMaximumStretch={setMaximumStretch}
       />
-      <GridComponent setMaximumStretch={setMaximumStretch} />
+      <GridComponent
+        layoutName="layout"
+        setMaximumStretch={setMaximumStretch}
+      />
     </div>
   );
 }
