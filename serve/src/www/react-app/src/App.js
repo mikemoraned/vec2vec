@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { select } from "d3-selection";
 import "./App.css";
 
 const MIN_STRETCH = 0.0;
@@ -23,10 +24,19 @@ function StretchComponent({ stretch, setStretch, setMaximumStretch }) {
 }
 
 function GridComponent({ setMaximumStretch }) {
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    if (svgRef.current) {
+      const svg = select(svgRef.current);
+      console.dir(svg);
+    }
+  });
+
   return (
     <div className="GridComponent">
       <svg
-        id="grid"
+        ref={svgRef}
         viewBox="0 0 1000 1000"
         preserveAspectRatio="xMidYMid meet"
         onClick={setMaximumStretch}
