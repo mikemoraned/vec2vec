@@ -4,7 +4,15 @@ import "./App.css";
 function StretchComponent({ stretch, setStretch, setMaximumStretch }) {
   return (
     <div className="StretchComponent">
-      <span>{stretch}</span>
+      <input
+        type="range"
+        value={stretch}
+        min={0.0}
+        max={1.0}
+        step={0.01}
+        onChange={event => setStretch(event.target.value)}
+      />
+      <div>{stretch}</div>
       <button onClick={setMaximumStretch}>Stretch to Grid</button>
     </div>
   );
@@ -21,6 +29,7 @@ function App() {
     <div className="App">
       <StretchComponent
         stretch={stretch}
+        setStretch={setStretch}
         setMaximumStretch={setMaximumStretch}
       />
     </div>
