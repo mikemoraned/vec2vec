@@ -36,19 +36,25 @@ logging.info(
 
 
 class PathPerLine(object):
-    def __init__(self, file):
+    def __init__(self, file, sample_percentage):
         self.file = file
+        self.sample_percentage = sample_percentage
 
     def __iter__(self):
         for line in open(self.file):
-            yield line.split()
+            if random.randint(1, 100) <= self.sample_percentage:
+                yield line.split()
 
 
 logging.info("generating word2vec models")
-model = Word2Vec(
-    PathPerLine(paths_file), min_count=0, workers=cpu_count(), size=args.dimensions
-)
-model_path = "{}/{}.dim{}.model.bin".format(
-    args.data_directory, args.base_name, args.dimensions
-)
-model.wv.save_word2vec_format(model_path, binary=True)
+sample_percentage = 100
+while(sample_percentage > 0):
+    model_path = "{}/{}.dim{}.sample{}.model.bin".format(
+        args.data_directory, args.base_name, args.dimensions, sample_percentage
+    )
+    logging.info("doing {}".format(model_path))
+    model = Word2Vec(
+        PathPerLine(paths_file, sample_percentage), min_count=0, workers=cpu_count(), size=args.dimensions
+    )
+    model.wv.save_word2vec_format(model_path, binary=True)
+    sample_percentage = int(sample_percentage / 2)
