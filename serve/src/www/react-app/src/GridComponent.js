@@ -131,6 +131,7 @@ function GridComponent({ layoutName, stretch, setMaximumStretch }) {
         .attr("stroke", "#fff")
         .attr("stroke-width", 1)
         .selectAll("circle")
+        .data(layout.nodes)
         .join("circle")
         .attr("r", 7)
         .attr("fill", color);
@@ -174,71 +175,6 @@ function GridComponent({ layoutName, stretch, setMaximumStretch }) {
       simulation.alpha(1).restart();
     }
   }, [stretch, simulation, simulationRunning]);
-
-  // useEffect(() => {
-  //   if (svgRef.current && simulation != null) {
-  //     const svg = select(svgRef.current);
-
-  //     const link = svg
-  //       .append("g")
-  //       .attr("stroke", "black")
-  //       .attr("stroke-width", "0.5")
-  //       .attr("fill", "none")
-  //       .attr("marker-mid", "url(#markerArrow)")
-  //       .selectAll("path")
-  //       .data(layout.links)
-  //       .join("path")
-  //       .attr("stroke-opacity", d => {
-  //         const distance = gridDistance(
-  //           d.source.point.x,
-  //           d.source.point.y,
-  //           d.target.point.x,
-  //           d.target.point.y
-  //         );
-  //         return linkOpacityScale(distance);
-  //       });
-
-  //     const node = svg
-  //       .append("g")
-  //       .attr("stroke", "#fff")
-  //       .attr("stroke-width", 1)
-  //       .selectAll("circle")
-  //       .join("circle")
-  //       .attr("r", 7)
-  //       .attr("fill", color);
-
-  //     node.append("title").text(d => d.id);
-
-  //     simulation.on("tick", () => {
-  //       link
-  //         .attr("x1", d => d.source.x)
-  //         .attr("y1", d => d.source.y)
-  //         .attr("x2", d => d.target.x)
-  //         .attr("y2", d => d.target.y);
-  //       link.attr("d", d => {
-  //         const dx = d.target.x - d.source.x,
-  //           dy = d.target.y - d.source.y,
-  //           dr = Math.sqrt(dx * dx + dy * dy);
-  //         return (
-  //           "M" +
-  //           d.source.x +
-  //           "," +
-  //           d.source.y +
-  //           "A" +
-  //           dr +
-  //           "," +
-  //           dr +
-  //           " 0 0,1 " +
-  //           d.target.x +
-  //           "," +
-  //           d.target.y
-  //         );
-  //       });
-
-  //       node.attr("cx", d => d.x).attr("cy", d => d.y);
-  //     });
-  //   }
-  // }, [simulation, layout]);
 
   return (
     <div className="GridComponent">
