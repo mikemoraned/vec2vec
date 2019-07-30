@@ -53,12 +53,9 @@
         Math.pow(Math.abs(from_y - to_y), 2.0)
     );
   };
-  const linkStrokeScale = scaleLinear()
-    .domain([0, gridDistance(0, 0, grid_width, grid_width)])
-    .range([0.5, 40]);
   const linkOpacityScale = scaleLinear()
     .domain([0, gridDistance(0, 0, grid_width, grid_width)])
-    .range([0.4, 0.01]);
+    .range([0.9, 0.01]);
 
   const color = d => {
     return rgb(0, xScale(d.point.x), yScale(d.point.y));
@@ -100,10 +97,13 @@
 
     const link = svg
       .append("g")
-      .attr("stroke", "#999")
-      .selectAll("line")
+      .attr("stroke", "black")
+      .attr("stroke-width", "0.5")
+      .attr("fill", "none")
+      .attr("marker-mid", "url(#markerArrow)")
+      .selectAll("path")
       .data(links)
-      .join("line")
+      .join("path")
       .attr("stroke-opacity", d => {
         const distance = gridDistance(
           d.source.point.x,
@@ -112,25 +112,16 @@
           d.target.point.y
         );
         return linkOpacityScale(distance);
-      })
-      .attr("stroke-width", d => {
-        const distance = gridDistance(
-          d.source.point.x,
-          d.source.point.y,
-          d.target.point.x,
-          d.target.point.y
-        );
-        return linkStrokeScale(distance);
       });
 
     const node = svg
       .append("g")
       .attr("stroke", "#fff")
-      .attr("stroke-width", 1.5)
+      .attr("stroke-width", 1)
       .selectAll("circle")
       .data(nodes.filter(n => !n.grid))
       .join("circle")
-      .attr("r", 5)
+      .attr("r", 7)
       .attr("fill", color);
 
     node.append("title").text(d => d.id);
@@ -141,6 +132,25 @@
         .attr("y1", d => d.source.y)
         .attr("x2", d => d.target.x)
         .attr("y2", d => d.target.y);
+      link.attr("d", d => {
+        const dx = d.target.x - d.source.x,
+          dy = d.target.y - d.source.y,
+          dr = Math.sqrt(dx * dx + dy * dy);
+        return (
+          "M" +
+          d.source.x +
+          "," +
+          d.source.y +
+          "A" +
+          dr +
+          "," +
+          dr +
+          " 0 0,1 " +
+          d.target.x +
+          "," +
+          d.target.y
+        );
+      });
 
       node.attr("cx", d => d.x).attr("cy", d => d.y);
     });
@@ -171,4 +181,16 @@
   id="grid"
   viewBox="0 0 1000 1000"
   preserveAspectRatio="xMidYMid meet"
-  on:click={stretchToGrid} />
+  on:click={stretchToGrid}>
+  <defs>
+    <marker
+      id="markerArrow"
+      markerWidth="13"
+      markerHeight="13"
+      refX="2"
+      refY="6"
+      orient="auto">
+      <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #999;" />
+    </marker>
+  </defs>
+</svg>
