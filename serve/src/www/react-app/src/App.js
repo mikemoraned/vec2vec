@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import "./App.css";
 
+const MIN_STRETCH = 0.0;
+const MAX_STRETCH = 1.0;
+const STRETCH_STEP = 0.01;
+
 function StretchComponent({ stretch, setStretch, setMaximumStretch }) {
   return (
     <div className="StretchComponent">
       <input
         type="range"
         value={stretch}
-        min={0.0}
-        max={1.0}
-        step={0.01}
+        min={MIN_STRETCH}
+        max={MAX_STRETCH}
+        step={STRETCH_STEP}
         onChange={event => setStretch(event.target.value)}
       />
       <div>{stretch}</div>
@@ -18,11 +22,24 @@ function StretchComponent({ stretch, setStretch, setMaximumStretch }) {
   );
 }
 
+function GridComponent({ setMaximumStretch }) {
+  return (
+    <div className="GridComponent">
+      <svg
+        id="grid"
+        viewBox="0 0 1000 1000"
+        preserveAspectRatio="xMidYMid meet"
+        onClick={setMaximumStretch}
+      />
+    </div>
+  );
+}
+
 function App() {
   const [stretch, setStretch] = useState(0.0);
 
   function setMaximumStretch() {
-    setStretch(1.0);
+    setStretch(MAX_STRETCH);
   }
 
   return (
@@ -32,6 +49,7 @@ function App() {
         setStretch={setStretch}
         setMaximumStretch={setMaximumStretch}
       />
+      <GridComponent setMaximumStretch={setMaximumStretch} />
     </div>
   );
 }
