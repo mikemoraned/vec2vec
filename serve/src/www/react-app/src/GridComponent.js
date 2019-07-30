@@ -183,7 +183,20 @@ function GridComponent({ layoutName, stretch, setMaximumStretch }) {
         viewBox="0 0 1000 1000"
         preserveAspectRatio="xMidYMid meet"
         onClick={setMaximumStretch}
-      />
+      >
+        <defs>
+          <marker
+            id="markerArrow"
+            markerWidth="13"
+            markerHeight="13"
+            refX="2"
+            refY="6"
+            orient="auto"
+          >
+            <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
+          </marker>
+        </defs>
+      </svg>
     </div>
   );
 }
