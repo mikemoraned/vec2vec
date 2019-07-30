@@ -12,6 +12,9 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser()
 parser.add_argument("--width", type=int, help="width of grid square", default=10)
 parser.add_argument(
+    "--min_distance", type=int, help="min manhattan distance", required=True
+)
+parser.add_argument(
     "--max_distance", type=int, help="max manhattan distance", required=True
 )
 parser.add_argument(
@@ -33,15 +36,16 @@ logging.basicConfig(format="%(asctime)s %(message)s", level=numeric_log_level)
 width = args.width
 height = width
 logging.info(
-    "using %d x %d grid, seed of %d, max distance %d, saving in %s",
+    "using %d x %d grid, seed of %d, min distance %d, max distance %d, saving in %s",
     width,
     height,
     args.seed,
+    args.min_distance,
     args.max_distance,
     args.data_directory,
 )
-base_name = "{}x{}.paths{}.seed{}.dist{}".format(
-    width, height, args.num_paths, args.seed, args.max_distance
+base_name = "{}x{}.paths{}.seed{}.dist{},{}".format(
+    width, height, args.num_paths, args.seed, args.min_distance, args.max_distance
 )
 output_file = "{}/{}.paths.txt".format(args.data_directory, base_name)
 logging.info("base name = {}, output file = {}".format(base_name, output_file))
@@ -69,25 +73,23 @@ for x in range(0, width):
 
 range_end = width * height
 
+possible_pairs=[]
+with tqdm(total=range_end * range_end) as pairs_progress:
+    for start_index in range(0, range_end):
+        for end_index in range(0, range_end):
+            start_point = point_for_index[start_index]
+            end_point = point_for_index[end_index]
+            manhattan_distance = start_point.max_manhattan_distance(end_point)
+            if args.min_distance <= manhattan_distance and manhattan_distance <= args.max_distance:
+                possible_pairs.append("{} {}".format(format_for_index[start_index], format_for_index[end_index]))
+            pairs_progress.update(1)
 
-def generate_path_indexes():
-    random.seed(args.seed)
-    while True:
-        start_index = random.randrange(0, range_end)
-        end_index = random.randrange(0, range_end)
-        start_point = point_for_index[start_index]
-        end_point = point_for_index[end_index]
-        if start_point.max_manhattan_distance(end_point) <= args.max_distance:
-            yield [start_index, end_index]
-
-
-indexed_paths = itertools.islice(generate_path_indexes(), args.num_paths)
-
+num_possible_pairs = len(possible_pairs)
 
 with open(output_file, "w") as out:
-    with tqdm(total=args.num_paths) as progress:
-        for indexed_path in indexed_paths:
-            formatted_path = map(lambda i: format_for_index[i], indexed_path)
-            out.write(" ".join(formatted_path))
+    with tqdm(total=args.num_paths) as paths_progress:
+        for path_num in range(0, args.num_paths):
+            formatted_path = possible_pairs[random.randrange(0, num_possible_pairs)]
+            out.write(formatted_path)
             out.write("\n")
-            progress.update(1)
+            paths_progress.update(1)
