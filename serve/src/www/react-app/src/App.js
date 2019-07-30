@@ -39,6 +39,7 @@ function App() {
       />
       <GridComponent
         layoutName="layout"
+        stretch={stretch}
         setMaximumStretch={setMaximumStretch}
       />
     </div>
