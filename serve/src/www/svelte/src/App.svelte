@@ -47,6 +47,19 @@
     .domain([0, grid_width])
     .range([0, 255]);
 
+  const gridDistance = (from_x, from_y, to_x, to_y) => {
+    return Math.sqrt(
+      Math.pow(Math.abs(from_x - to_x), 2.0) +
+        Math.pow(Math.abs(from_y - to_y), 2.0)
+    );
+  };
+  const linkStrokeScale = scaleLinear()
+    .domain([0, gridDistance(0, 0, grid_width, grid_width)])
+    .range([0.5, 40]);
+  const linkOpacityScale = scaleLinear()
+    .domain([0, gridDistance(0, 0, grid_width, grid_width)])
+    .range([0.4, 0.01]);
+
   const color = d => {
     return rgb(0, xScale(d.point.x), yScale(d.point.y));
   };
@@ -88,11 +101,27 @@
     const link = svg
       .append("g")
       .attr("stroke", "#999")
-      .attr("stroke-opacity", 0.6)
       .selectAll("line")
       .data(links)
       .join("line")
-      .attr("stroke-width", 1.0);
+      .attr("stroke-opacity", d => {
+        const distance = gridDistance(
+          d.source.point.x,
+          d.source.point.y,
+          d.target.point.x,
+          d.target.point.y
+        );
+        return linkOpacityScale(distance);
+      })
+      .attr("stroke-width", d => {
+        const distance = gridDistance(
+          d.source.point.x,
+          d.source.point.y,
+          d.target.point.x,
+          d.target.point.y
+        );
+        return linkStrokeScale(distance);
+      });
 
     const node = svg
       .append("g")
