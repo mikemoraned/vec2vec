@@ -1,4 +1,4 @@
 [build]
-  base    = "serve/src/www/svelte"
+  base    = "serve/src/www/react-app"
   command = "npm run build"
-  publish = "serve/src/www/svelte/public"
+  publish = "serve/src/www/react-app/build"
