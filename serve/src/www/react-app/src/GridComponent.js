@@ -11,6 +11,7 @@ import {
   forceManyBody,
   forceCenter
 } from "d3-force";
+import { useControlState, setMaximumStretchAction } from "./ControlState.js";
 
 const grid_width = 10;
 const side_length = 1000;
@@ -55,7 +56,9 @@ const color = d => {
   return rgb(0, xScale(d.point.x), yScale(d.point.y));
 };
 
-function GridComponent({ layoutName, stretch, setMaximumStretch }) {
+function GridComponent({ layoutName }) {
+  const [{ stretch }, dispatch] = useControlState();
+
   const [layout, setLayout] = useState(null);
   const [simulation, setSimulation] = useState(null);
   const [simulationRunning, setSimulationRunning] = useState(false);
@@ -177,12 +180,12 @@ function GridComponent({ layoutName, stretch, setMaximumStretch }) {
   }, [stretch, simulation, simulationRunning]);
 
   return (
-    <div className="GridComponent">
+    <div className="GridComponent box">
       <svg
         ref={svgRef}
         viewBox="0 0 1000 1000"
         preserveAspectRatio="xMidYMid meet"
-        onClick={setMaximumStretch}
+        onClick={() => dispatch(setMaximumStretchAction())}
       >
         <defs>
           <marker
