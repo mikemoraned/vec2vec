@@ -14,7 +14,7 @@ import {
 import { useControlState, setMaximumStretchAction } from "./ControlState.js";
 
 const grid_width = 10;
-const side_length = 700;
+const side_length = 500;
 const width = side_length;
 const height = side_length;
 const between_point_distance = side_length / grid_width;
@@ -56,6 +56,17 @@ const color = d => {
   return rgb(0, xScale(d.point.x), yScale(d.point.y));
 };
 
+function layoutProperties(layoutName) {
+  const parts = layoutName.split(".");
+  return parts.map(part => {
+    const match = /^([a-z]+)(.+)$/.exec(part);
+    return {
+      name: match[1],
+      value: match[2]
+    };
+  });
+}
+
 function GridComponent({ layoutName }) {
   const [{ stretch }, dispatch] = useControlState();
 
@@ -67,7 +78,7 @@ function GridComponent({ layoutName }) {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await json(`${layoutName}.json`);
+      const data = await json(`${layoutName}.layout.json`);
       const links = data.links.map(d => Object.create(d));
       const nodes = data.nodes.map(d => Object.create(d));
 
@@ -181,7 +192,7 @@ function GridComponent({ layoutName }) {
 
   return (
     <div className="GridComponent card">
-      <div class="card-image">
+      <div className="card-image">
         <svg
           ref={svgRef}
           viewBox={`0 0 ${side_length} ${side_length}`}
@@ -202,7 +213,20 @@ function GridComponent({ layoutName }) {
           </defs>
         </svg>
       </div>
-      <div class="card-content" />
+      <div className="card-content">
+        <table className="table">
+          <tbody>
+            {layoutProperties(layoutName).map(p => {
+              return (
+                <tr key={p.name}>
+                  <td>{p.name}</td>
+                  <td>{p.value}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
