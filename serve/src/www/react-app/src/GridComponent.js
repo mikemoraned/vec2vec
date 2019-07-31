@@ -56,18 +56,7 @@ const color = d => {
   return rgb(0, xScale(d.point.x), yScale(d.point.y));
 };
 
-function layoutProperties(layoutName) {
-  const parts = layoutName.split(".");
-  return parts.map(part => {
-    const match = /^([a-z]+)(.+)$/.exec(part);
-    return {
-      name: match[1],
-      value: match[2]
-    };
-  });
-}
-
-function GridComponent({ layoutName }) {
+function GridComponent({ name, properties }) {
   const [{ stretch }, dispatch] = useControlState();
 
   const [layout, setLayout] = useState(null);
@@ -78,7 +67,7 @@ function GridComponent({ layoutName }) {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await json(`${layoutName}.layout.json`);
+      const data = await json(`${name}.layout.json`);
       const links = data.links.map(d => Object.create(d));
       const nodes = data.nodes.map(d => Object.create(d));
 
@@ -88,7 +77,7 @@ function GridComponent({ layoutName }) {
       });
     }
     fetchData();
-  }, [layoutName]);
+  }, [name]);
 
   useEffect(() => {
     if (layout != null && simulation == null) {
@@ -216,7 +205,7 @@ function GridComponent({ layoutName }) {
       <div className="card-content">
         <table className="table">
           <tbody>
-            {layoutProperties(layoutName).map(p => {
+            {properties.map(p => {
               return (
                 <tr key={p.name}>
                   <td>{p.name}</td>
