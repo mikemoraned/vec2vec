@@ -15,6 +15,10 @@ function layoutProperties(layoutName) {
 
 function App() {
   const layoutNames = [
+    "size10x10.paths1000000.seed1.dist2,3.dim2.sample12",
+    "size10x10.paths1000000.seed1.dist2,3.dim2.sample25",
+    "size10x10.paths1000000.seed1.dist2,3.dim2.sample50",
+    "size10x10.paths1000000.seed1.dist2,3.dim2.sample100",
     "size10x10.paths1000000.seed1.dist2,3.dim50.sample12",
     "size10x10.paths1000000.seed1.dist2,3.dim50.sample25",
     "size10x10.paths1000000.seed1.dist2,3.dim50.sample50",
