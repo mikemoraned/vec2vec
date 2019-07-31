@@ -25,7 +25,7 @@ if not isinstance(numeric_log_level, int):
     raise ValueError("Invalid log level: %s" % log_level)
 logging.basicConfig(format="%(asctime)s %(message)s", level=numeric_log_level)
 
-paths_file = "{}.paths.txt".format(args.base_name)
+paths_file = "{}/{}.paths.txt".format(args.data_directory, args.base_name)
 logging.info(
     "base_name %s, paths file %s, dimensions %d, saving in %s",
     args.base_name,
@@ -48,13 +48,16 @@ class PathPerLine(object):
 
 logging.info("generating word2vec models")
 sample_percentage = 100
-while(sample_percentage > 0):
+while sample_percentage > 0:
     model_path = "{}/{}.dim{}.sample{}.model.bin".format(
         args.data_directory, args.base_name, args.dimensions, sample_percentage
     )
     logging.info("doing {}".format(model_path))
     model = Word2Vec(
-        PathPerLine(paths_file, sample_percentage), min_count=0, workers=cpu_count(), size=args.dimensions
+        PathPerLine(paths_file, sample_percentage),
+        min_count=0,
+        workers=cpu_count(),
+        size=args.dimensions,
     )
     model.wv.save_word2vec_format(model_path, binary=True)
     sample_percentage = int(sample_percentage / 2)

@@ -15,6 +15,10 @@ function layoutProperties(layoutName) {
 
 function App() {
   const layoutNames = [
+    "size10x10.paths1000000.seed1.dist2,3.dim50.sample12",
+    "size10x10.paths1000000.seed1.dist2,3.dim50.sample25",
+    "size10x10.paths1000000.seed1.dist2,3.dim50.sample50",
+    "size10x10.paths1000000.seed1.dist2,3.dim50.sample100",
     "size10x10.paths1000000.seed1.dist2,3.dim100.sample12",
     "size10x10.paths1000000.seed1.dist2,3.dim100.sample25",
     "size10x10.paths1000000.seed1.dist2,3.dim100.sample50",
@@ -57,16 +61,20 @@ function App() {
         <div className="column is-narrow">
           <Controls staticProperties={toNameValuePairs(sharedProperties)} />
         </div>
-        {layoutsWithUniqueProperties.map(layout => {
-          return (
-            <div className="column" key={layout.name}>
-              <GridComponent
-                name={layout.name}
-                properties={toNameValuePairs(layout.properties)}
-              />
-            </div>
-          );
-        })}
+        <div className="column">
+          <div className="columns is-multiline">
+            {layoutsWithUniqueProperties.map(layout => {
+              return (
+                <div className="column is-one-quarter" key={layout.name}>
+                  <GridComponent
+                    name={layout.name}
+                    properties={toNameValuePairs(layout.properties)}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </ControlStateProvider>
     </div>
   );
