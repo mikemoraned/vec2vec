@@ -1,8 +1,8 @@
 import React from "react";
 import GridComponent from "./GridComponent.js";
 import "./App.scss";
-import { ControlStateProvider } from "./ControlState.js";
-import StretchControl from "./StretchControl.js";
+import { ControlStateProvider, toNameValuePairs } from "./ControlState.js";
+import Controls from "./StretchControl.js";
 
 function layoutProperties(layoutName) {
   const parts = layoutName.split(".");
@@ -11,15 +11,6 @@ function layoutProperties(layoutName) {
     p[match[1]] = match[2];
     return p;
   }, {});
-}
-
-function toNameValuePairs(properties) {
-  return Object.keys(properties).map(k => {
-    return {
-      name: k,
-      value: properties[k]
-    };
-  });
 }
 
 function App() {
@@ -63,19 +54,7 @@ function App() {
     <div className="App columns">
       <ControlStateProvider>
         <div className="column is-narrow">
-          <StretchControl />
-          <table className="table">
-            <tbody>
-              {toNameValuePairs(sharedProperties).map(p => {
-                return (
-                  <tr key={p.name}>
-                    <td>{p.name}</td>
-                    <td>{p.value}</td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+          <Controls staticProperties={toNameValuePairs(sharedProperties)} />
         </div>
         {layoutsWithUniqueProperties.map(layout => {
           return (

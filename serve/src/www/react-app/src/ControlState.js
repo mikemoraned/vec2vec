@@ -38,3 +38,12 @@ export function setMaximumStretchAction() {
 export function useControlState() {
   return useContext(ControlStateContext);
 }
+
+export function toNameValuePairs(properties) {
+  return Object.keys(properties).map(k => {
+    return {
+      name: k,
+      value: properties[k]
+    };
+  });
+}
