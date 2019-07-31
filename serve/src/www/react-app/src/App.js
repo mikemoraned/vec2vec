@@ -62,10 +62,8 @@ function App() {
   return (
     <div className="App columns">
       <ControlStateProvider>
-        <div className="column is-2">
+        <div className="column is-narrow">
           <StretchControl />
-        </div>
-        <div className="column">
           <table className="table">
             <tbody>
               {toNameValuePairs(sharedProperties).map(p => {
