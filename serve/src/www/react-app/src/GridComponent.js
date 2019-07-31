@@ -180,7 +180,7 @@ function GridComponent({ layoutName }) {
   }, [stretch, simulation, simulationRunning]);
 
   return (
-    <div className="GridComponent">
+    <div className="GridComponent box">
       <svg
         ref={svgRef}
         viewBox="0 0 1000 1000"

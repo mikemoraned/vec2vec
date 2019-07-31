@@ -13,6 +13,7 @@ function StretchControl() {
 
   return (
     <div className="StretchControl">
+      <div>{stretch}</div>
       <input
         type="range"
         value={stretch}
@@ -21,8 +22,10 @@ function StretchControl() {
         step={STRETCH_STEP}
         onChange={event => dispatch(setStretchAction(event.target.value))}
       />
-      <div>{stretch}</div>
-      <button onClick={() => dispatch(setMaximumStretchAction())}>
+      <button
+        className="button"
+        onClick={() => dispatch(setMaximumStretchAction())}
+      >
         Stretch to Grid
       </button>
     </div>
