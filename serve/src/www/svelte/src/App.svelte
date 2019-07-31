@@ -18,11 +18,7 @@
 
   let simulation = forceSimulation([]);
 
-  const grid_width = 10;
-  const side_length = 1000;
-  const width = side_length;
-  const height = side_length;
-  const between_point_distance = side_length / grid_width;
+  
 
   const xStrength = stretch => {
     return forceX()
