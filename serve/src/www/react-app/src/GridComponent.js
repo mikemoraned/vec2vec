@@ -14,7 +14,7 @@ import {
 import { useControlState, setMaximumStretchAction } from "./ControlState.js";
 
 const grid_width = 10;
-const side_length = 1000;
+const side_length = 700;
 const width = side_length;
 const height = side_length;
 const between_point_distance = side_length / grid_width;
@@ -180,26 +180,29 @@ function GridComponent({ layoutName }) {
   }, [stretch, simulation, simulationRunning]);
 
   return (
-    <div className="GridComponent box">
-      <svg
-        ref={svgRef}
-        viewBox="0 0 1000 1000"
-        preserveAspectRatio="xMidYMid meet"
-        onClick={() => dispatch(setMaximumStretchAction())}
-      >
-        <defs>
-          <marker
-            id="markerArrow"
-            markerWidth="13"
-            markerHeight="13"
-            refX="2"
-            refY="6"
-            orient="auto"
-          >
-            <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
-          </marker>
-        </defs>
-      </svg>
+    <div className="GridComponent card">
+      <div class="card-image">
+        <svg
+          ref={svgRef}
+          viewBox={`0 0 ${side_length} ${side_length}`}
+          preserveAspectRatio="xMidYMid meet"
+          onClick={() => dispatch(setMaximumStretchAction())}
+        >
+          <defs>
+            <marker
+              id="markerArrow"
+              markerWidth="13"
+              markerHeight="13"
+              refX="2"
+              refY="6"
+              orient="auto"
+            >
+              <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <div class="card-content" />
     </div>
   );
 }

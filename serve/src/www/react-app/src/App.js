@@ -5,15 +5,21 @@ import { ControlStateProvider } from "./ControlState.js";
 import StretchControl from "./StretchControl.js";
 
 function App() {
+  const layouts = ["layout", "layout", "layout", "layout"];
+
   return (
     <div className="App columns">
       <ControlStateProvider>
         <div class="column is-2">
           <StretchControl />
         </div>
-        <div class="column">
-          <GridComponent layoutName="layout" />
-        </div>
+        {layouts.map(layout => {
+          return (
+            <div class="column">
+              <GridComponent layoutName="layout" />
+            </div>
+          );
+        })}
       </ControlStateProvider>
     </div>
   );
