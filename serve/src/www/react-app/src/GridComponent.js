@@ -14,7 +14,7 @@ import {
 import { useControlState, setMaximumStretchAction } from "./ControlState.js";
 
 const grid_width = 10;
-const side_length = 1000;
+const side_length = 500;
 const width = side_length;
 const height = side_length;
 const between_point_distance = side_length / grid_width;
@@ -56,7 +56,7 @@ const color = d => {
   return rgb(0, xScale(d.point.x), yScale(d.point.y));
 };
 
-function GridComponent({ layoutName }) {
+function GridComponent({ name, properties }) {
   const [{ stretch }, dispatch] = useControlState();
 
   const [layout, setLayout] = useState(null);
@@ -67,7 +67,7 @@ function GridComponent({ layoutName }) {
 
   useEffect(() => {
     async function fetchData() {
-      const data = await json(`${layoutName}.json`);
+      const data = await json(`${name}.layout.json`);
       const links = data.links.map(d => Object.create(d));
       const nodes = data.nodes.map(d => Object.create(d));
 
@@ -77,7 +77,7 @@ function GridComponent({ layoutName }) {
       });
     }
     fetchData();
-  }, [layoutName]);
+  }, [name]);
 
   useEffect(() => {
     if (layout != null && simulation == null) {
@@ -180,26 +180,42 @@ function GridComponent({ layoutName }) {
   }, [stretch, simulation, simulationRunning]);
 
   return (
-    <div className="GridComponent box">
-      <svg
-        ref={svgRef}
-        viewBox="0 0 1000 1000"
-        preserveAspectRatio="xMidYMid meet"
-        onClick={() => dispatch(setMaximumStretchAction())}
-      >
-        <defs>
-          <marker
-            id="markerArrow"
-            markerWidth="13"
-            markerHeight="13"
-            refX="2"
-            refY="6"
-            orient="auto"
-          >
-            <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
-          </marker>
-        </defs>
-      </svg>
+    <div className="GridComponent card">
+      <div className="card-image">
+        <svg
+          ref={svgRef}
+          viewBox={`0 0 ${side_length} ${side_length}`}
+          preserveAspectRatio="xMidYMid meet"
+          onClick={() => dispatch(setMaximumStretchAction())}
+        >
+          <defs>
+            <marker
+              id="markerArrow"
+              markerWidth="13"
+              markerHeight="13"
+              refX="2"
+              refY="6"
+              orient="auto"
+            >
+              <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
+            </marker>
+          </defs>
+        </svg>
+      </div>
+      <div className="card-content">
+        <table className="table">
+          <tbody>
+            {properties.map(p => {
+              return (
+                <tr key={p.name}>
+                  <td>{p.name}</td>
+                  <td>{p.value}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
