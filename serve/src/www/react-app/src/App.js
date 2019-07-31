@@ -46,6 +46,18 @@ function App() {
     });
     return shared;
   }, allProperties[0]);
+  const layoutsWithUniqueProperties = layouts.map(l => {
+    const filtered = {};
+    Object.keys(l.properties).forEach(k => {
+      if (!sharedProperties[k]) {
+        filtered[k] = l.properties[k];
+      }
+    });
+    return {
+      ...l,
+      properties: filtered
+    };
+  });
 
   return (
     <div className="App columns">
@@ -67,7 +79,7 @@ function App() {
             </tbody>
           </table>
         </div>
-        {layouts.map(layout => {
+        {layoutsWithUniqueProperties.map(layout => {
           return (
             <div className="column" key={layout.name}>
               <GridComponent
