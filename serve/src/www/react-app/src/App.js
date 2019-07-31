@@ -6,11 +6,18 @@ import StretchControl from "./StretchControl.js";
 
 function layoutProperties(layoutName) {
   const parts = layoutName.split(".");
-  return parts.map(part => {
+  return parts.reduce((p, part) => {
     const match = /^([a-z]+)(.+)$/.exec(part);
+    p[match[1]] = match[2];
+    return p;
+  }, {});
+}
+
+function toNameValuePairs(properties) {
+  return Object.keys(properties).map(k => {
     return {
-      name: match[1],
-      value: match[2]
+      name: k,
+      value: properties[k]
     };
   });
 }
@@ -29,18 +36,43 @@ function App() {
     };
   });
 
+  const allProperties = layouts.map(l => l.properties);
+  const sharedProperties = allProperties.reduce((s, p) => {
+    const shared = {};
+    Object.keys(p).forEach(k => {
+      if (s[k] && s[k] === p[k]) {
+        shared[k] = p[k];
+      }
+    });
+    return shared;
+  }, allProperties[0]);
+
   return (
     <div className="App columns">
       <ControlStateProvider>
         <div className="column is-2">
           <StretchControl />
         </div>
+        <div className="column">
+          <table className="table">
+            <tbody>
+              {toNameValuePairs(sharedProperties).map(p => {
+                return (
+                  <tr key={p.name}>
+                    <td>{p.name}</td>
+                    <td>{p.value}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
         {layouts.map(layout => {
           return (
             <div className="column" key={layout.name}>
               <GridComponent
                 name={layout.name}
-                properties={layout.properties}
+                properties={toNameValuePairs(layout.properties)}
               />
             </div>
           );
