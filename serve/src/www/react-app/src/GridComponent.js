@@ -66,6 +66,7 @@ function GridComponent({ name, properties }) {
   const svgRef = useRef(null);
 
   useEffect(() => {
+    console.time(`${name}_load`);
     async function fetchData() {
       const data = await json(`${name}.layout.json`);
       const links = data.links.map(d => Object.create(d));
@@ -77,9 +78,11 @@ function GridComponent({ name, properties }) {
       });
     }
     fetchData();
+    console.timeEnd(`${name}_load`);
   }, [name]);
 
   useEffect(() => {
+    console.time(`${name}_createSim`);
     if (layout != null && simulation == null) {
       const s = forceSimulation(layout.nodes)
         .force(
@@ -101,9 +104,11 @@ function GridComponent({ name, properties }) {
         setSimulationRunning(true);
       });
     }
-  }, [simulation, stretch, layout]);
+    console.timeEnd(`${name}_createSim`);
+  }, [simulation, stretch, layout, name]);
 
   useEffect(() => {
+    console.time(`${name}_renderSim`);
     if (svgRef.current && simulation != null && simulationRunning) {
       const svg = select(svgRef.current);
       console.dir(svg);
@@ -170,7 +175,8 @@ function GridComponent({ name, properties }) {
         node.attr("cx", d => d.x).attr("cy", d => d.y);
       });
     }
-  }, [simulation, simulationRunning, layout]);
+    console.time(`${name}_renderSim`);
+  }, [simulation, simulationRunning, layout, name]);
 
   useEffect(() => {
     if (simulationRunning) {
