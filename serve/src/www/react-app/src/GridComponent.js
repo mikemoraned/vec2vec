@@ -56,6 +56,134 @@ const color = d => {
   return rgb(0, xScale(d.point.x), yScale(d.point.y));
 };
 
+async function fetchData(name, setLayout) {
+  console.time(`${name}_load`);
+
+  const data = await json(`${name}.layout.json`);
+  const links = data.links.map(d => Object.create(d));
+  const nodes = data.nodes.map(d => Object.create(d));
+
+  setLayout({
+    nodes,
+    links
+  });
+
+  console.timeEnd(`${name}_load`);
+}
+
+function createSimulation(
+  name,
+  layout,
+  stretch,
+  simulation,
+  setSimulation,
+  setSimulationRunning
+) {
+  console.time(`${name}_createSim`);
+  if (layout != null && simulation == null) {
+    const s = forceSimulation(layout.nodes)
+      .force(
+        "link",
+        forceLink(layout.links)
+          .id(d => d.id)
+          .distance(link => {
+            return between_point_distance * (1.0 - link.similarity);
+          })
+      )
+      .force("charge", forceManyBody())
+      .force("x", xStrength(stretch))
+      .force("y", yStrength(stretch))
+      .force("center", forceCenter(width / 2, height / 2));
+
+    setSimulation(s);
+
+    s.on("tick", () => {
+      setSimulationRunning(true);
+    });
+  }
+  console.timeEnd(`${name}_createSim`);
+}
+
+function updateSimulation(name, stretch, simulation, simulationRunning) {
+  console.time(`${name}_updateSim`);
+  if (simulationRunning) {
+    simulation.force("x", xStrength(stretch)).force("y", yStrength(stretch));
+    simulation.alpha(1).restart();
+  }
+  console.timeEnd(`${name}_updateSim`);
+}
+
+function renderSimulation(name, layout, simulation, simulationRunning, svgRef) {
+  console.time(`${name}_renderSim`);
+  if (svgRef.current && simulation != null && simulationRunning) {
+    const svg = select(svgRef.current);
+    console.dir(svg);
+    console.dir(simulation);
+    console.dir(simulationRunning);
+
+    const link = svg
+      .append("g")
+      .attr("stroke", "black")
+      .attr("stroke-width", "0.5")
+      .attr("fill", "none")
+      .attr("marker-mid", "url(#markerArrow)")
+      .selectAll("path")
+      .data(layout.links)
+      .join("path")
+      .attr("stroke-opacity", d => {
+        const distance = gridDistance(
+          d.source.point.x,
+          d.source.point.y,
+          d.target.point.x,
+          d.target.point.y
+        );
+        return linkOpacityScale(distance);
+      });
+
+    const node = svg
+      .append("g")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1)
+      .selectAll("circle")
+      .data(layout.nodes)
+      .join("circle")
+      .attr("r", 7)
+      .attr("fill", color);
+
+    node.append("title").text(d => d.id);
+
+    simulation.on("tick", () => {
+      link
+        .attr("x1", d => d.source.x)
+        .attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x)
+        .attr("y2", d => d.target.y);
+      link.attr("d", d => {
+        const dx = d.target.x - d.source.x,
+          dy = d.target.y - d.source.y,
+          dr = Math.sqrt(dx * dx + dy * dy);
+        return (
+          "M" +
+          d.source.x +
+          "," +
+          d.source.y +
+          "A" +
+          dr +
+          "," +
+          dr +
+          " 0 0,1 " +
+          d.target.x +
+          "," +
+          d.target.y
+        );
+      });
+
+      node.attr("cx", d => d.x).attr("cy", d => d.y);
+    });
+  }
+  console.time(`${name}_renderSim`);
+}
+
 function GridComponent({ name, properties }) {
   const [{ stretch }, dispatch] = useControlState();
 
@@ -66,124 +194,27 @@ function GridComponent({ name, properties }) {
   const svgRef = useRef(null);
 
   useEffect(() => {
-    console.time(`${name}_load`);
-    async function fetchData() {
-      const data = await json(`${name}.layout.json`);
-      const links = data.links.map(d => Object.create(d));
-      const nodes = data.nodes.map(d => Object.create(d));
-
-      setLayout({
-        nodes,
-        links
-      });
-    }
-    fetchData();
-    console.timeEnd(`${name}_load`);
+    fetchData(name, setLayout);
   }, [name]);
 
   useEffect(() => {
-    console.time(`${name}_createSim`);
-    if (layout != null && simulation == null) {
-      const s = forceSimulation(layout.nodes)
-        .force(
-          "link",
-          forceLink(layout.links)
-            .id(d => d.id)
-            .distance(link => {
-              return between_point_distance * (1.0 - link.similarity);
-            })
-        )
-        .force("charge", forceManyBody())
-        .force("x", xStrength(stretch))
-        .force("y", yStrength(stretch))
-        .force("center", forceCenter(width / 2, height / 2));
-
-      setSimulation(s);
-
-      s.on("tick", () => {
-        setSimulationRunning(true);
-      });
-    }
-    console.timeEnd(`${name}_createSim`);
+    createSimulation(
+      name,
+      layout,
+      stretch,
+      simulation,
+      setSimulation,
+      setSimulationRunning
+    );
   }, [simulation, stretch, layout, name]);
 
   useEffect(() => {
-    console.time(`${name}_renderSim`);
-    if (svgRef.current && simulation != null && simulationRunning) {
-      const svg = select(svgRef.current);
-      console.dir(svg);
-      console.dir(simulation);
-      console.dir(simulationRunning);
-
-      const link = svg
-        .append("g")
-        .attr("stroke", "black")
-        .attr("stroke-width", "0.5")
-        .attr("fill", "none")
-        .attr("marker-mid", "url(#markerArrow)")
-        .selectAll("path")
-        .data(layout.links)
-        .join("path")
-        .attr("stroke-opacity", d => {
-          const distance = gridDistance(
-            d.source.point.x,
-            d.source.point.y,
-            d.target.point.x,
-            d.target.point.y
-          );
-          return linkOpacityScale(distance);
-        });
-
-      const node = svg
-        .append("g")
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 1)
-        .selectAll("circle")
-        .data(layout.nodes)
-        .join("circle")
-        .attr("r", 7)
-        .attr("fill", color);
-
-      node.append("title").text(d => d.id);
-
-      simulation.on("tick", () => {
-        link
-          .attr("x1", d => d.source.x)
-          .attr("y1", d => d.source.y)
-          .attr("x2", d => d.target.x)
-          .attr("y2", d => d.target.y);
-        link.attr("d", d => {
-          const dx = d.target.x - d.source.x,
-            dy = d.target.y - d.source.y,
-            dr = Math.sqrt(dx * dx + dy * dy);
-          return (
-            "M" +
-            d.source.x +
-            "," +
-            d.source.y +
-            "A" +
-            dr +
-            "," +
-            dr +
-            " 0 0,1 " +
-            d.target.x +
-            "," +
-            d.target.y
-          );
-        });
-
-        node.attr("cx", d => d.x).attr("cy", d => d.y);
-      });
-    }
-    console.time(`${name}_renderSim`);
+    renderSimulation(name, layout, simulation, simulationRunning, svgRef);
   }, [simulation, simulationRunning, layout, name]);
 
   useEffect(() => {
-    if (simulationRunning) {
-      simulation.force("x", xStrength(stretch)).force("y", yStrength(stretch));
-      simulation.alpha(1).restart();
-    }
-  }, [stretch, simulation, simulationRunning]);
+    updateSimulation(name, stretch, simulation, simulationRunning);
+  }, [name, stretch, simulation, simulationRunning]);
 
   return (
     <div className="GridComponent card">
