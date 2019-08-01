@@ -191,8 +191,6 @@ function GridComponent({ name, properties }) {
   const [simulation, setSimulation] = useState(null);
   const [simulationRunning, setSimulationRunning] = useState(false);
 
-  const svgRef = useRef(null);
-
   useEffect(() => {
     fetchData(name, setLayout);
   }, [name]);
@@ -209,35 +207,18 @@ function GridComponent({ name, properties }) {
   }, [simulation, stretch, layout, name]);
 
   useEffect(() => {
-    renderSimulation(name, layout, simulation, simulationRunning, svgRef);
-  }, [simulation, simulationRunning, layout, name]);
-
-  useEffect(() => {
     updateSimulation(name, stretch, simulation, simulationRunning);
   }, [name, stretch, simulation, simulationRunning]);
 
   return (
     <div className="GridComponent card">
       <div className="card-image">
-        <svg
-          ref={svgRef}
-          viewBox={`0 0 ${side_length} ${side_length}`}
-          preserveAspectRatio="xMidYMid meet"
-          onClick={() => dispatch(setMaximumStretchAction())}
-        >
-          <defs>
-            <marker
-              id="markerArrow"
-              markerWidth="13"
-              markerHeight="13"
-              refX="2"
-              refY="6"
-              orient="auto"
-            >
-              <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
-            </marker>
-          </defs>
-        </svg>
+        <SVGDisplay
+          name={name}
+          layout={layout}
+          simulation={simulation}
+          simulationRunning={simulationRunning}
+        />
       </div>
       <div className="card-content">
         <table className="table">
@@ -254,6 +235,38 @@ function GridComponent({ name, properties }) {
         </table>
       </div>
     </div>
+  );
+}
+
+function SVGDisplay({ name, layout, simulation, simulationRunning }) {
+  const [state, dispatch] = useControlState();
+
+  const svgRef = useRef(null);
+
+  useEffect(() => {
+    renderSimulation(name, layout, simulation, simulationRunning, svgRef);
+  }, [simulation, simulationRunning, layout, name]);
+
+  return (
+    <svg
+      ref={svgRef}
+      viewBox={`0 0 ${side_length} ${side_length}`}
+      preserveAspectRatio="xMidYMid meet"
+      onClick={() => dispatch(setMaximumStretchAction())}
+    >
+      <defs>
+        <marker
+          id="markerArrow"
+          markerWidth="13"
+          markerHeight="13"
+          refX="2"
+          refY="6"
+          orient="auto"
+        >
+          <path d="M2,2 L2,11 L10,6 L2,2" style={{ fill: "#999" }} />
+        </marker>
+      </defs>
+    </svg>
   );
 }
 
