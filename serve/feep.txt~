@@ -1,0 +1,16 @@
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim50.sample50.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim50.sample50.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim50.sample25.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim50.sample25.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim50.sample12.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim50.sample12.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim50.sample100.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim50.sample100.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim50.sample100.model.bin --layout ./src/www/react-app/public/10x10.paths1000000.seed1.dist2,3.dim100.sample25.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim2.sample50.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim2.sample50.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim2.sample25.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim2.sample25.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim2.sample12.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim2.sample12.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim2.sample12.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim2.sample12.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim2.sample100.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim2.sample100.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample50.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim100.sample50.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample50.model.bin --layout ./src/www/react-app/public/10x10.paths1000000.seed1.dist2,3.dim100.sample50.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample25.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim100.sample25.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample25.model.bin --layout ./src/www/react-app/public/10x10.paths1000000.seed1.dist2,3.dim100.sample25.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample12.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim100.sample12.layout.json
+cargo run --release -- --model ./data/10x10.paths1000000.seed1.dist2,3.dim100.sample100.model.bin --layout ./src/www/react-app/public/size10x10.paths1000000.seed1.dist2,3.dim100.sample100.layout.json

@@ -49,8 +49,8 @@ function StaticProperty({ property }) {
 }
 
 function Controls({ staticProperties }) {
-  const controls = [<StretchControl />].concat(
-    staticProperties.map(p => <StaticProperty property={p} />)
+  const controls = [<StretchControl key="stretch" />].concat(
+    staticProperties.map(p => <StaticProperty key={p.name} property={p} />)
   );
 
   return (
@@ -59,7 +59,7 @@ function Controls({ staticProperties }) {
         <tr>
           <th>name</th>
           <th>value</th>
-          <th colspan="2">control</th>
+          <th colSpan="2">control</th>
         </tr>
       </thead>
       <tbody>{controls}</tbody>
