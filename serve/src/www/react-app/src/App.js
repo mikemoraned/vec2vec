@@ -16,17 +16,49 @@ function layoutProperties(layoutName) {
 function App() {
   const layoutNames = [
     "size10x10.paths1000000.seed1.dist2,3.dim2.sample12",
-    "size10x10.paths1000000.seed1.dist2,3.dim2.sample25",
-    "size10x10.paths1000000.seed1.dist2,3.dim2.sample50",
+    // "size10x10.paths1000000.seed1.dist2,3.dim2.sample25",
+    // "size10x10.paths1000000.seed1.dist2,3.dim2.sample50",
     "size10x10.paths1000000.seed1.dist2,3.dim2.sample100",
+
     "size10x10.paths1000000.seed1.dist2,3.dim50.sample12",
-    "size10x10.paths1000000.seed1.dist2,3.dim50.sample25",
-    "size10x10.paths1000000.seed1.dist2,3.dim50.sample50",
+    // "size10x10.paths1000000.seed1.dist2,3.dim50.sample25",
+    // "size10x10.paths1000000.seed1.dist2,3.dim50.sample50",
     "size10x10.paths1000000.seed1.dist2,3.dim50.sample100",
+
     "size10x10.paths1000000.seed1.dist2,3.dim100.sample12",
-    "size10x10.paths1000000.seed1.dist2,3.dim100.sample25",
-    "size10x10.paths1000000.seed1.dist2,3.dim100.sample50",
-    "size10x10.paths1000000.seed1.dist2,3.dim100.sample100"
+    // "size10x10.paths1000000.seed1.dist2,3.dim100.sample25",
+    // "size10x10.paths1000000.seed1.dist2,3.dim100.sample50",
+    "size10x10.paths1000000.seed1.dist2,3.dim100.sample100",
+
+    "size10x10.paths10000000.seed1.dist2,3.dim2.sample12",
+    // "size10x10.paths10000000.seed1.dist2,3.dim2.sample25",
+    // "size10x10.paths10000000.seed1.dist2,3.dim2.sample50",
+    "size10x10.paths10000000.seed1.dist2,3.dim2.sample100",
+
+    "size10x10.paths10000000.seed1.dist2,3.dim50.sample12",
+    // "size10x10.paths10000000.seed1.dist2,3.dim50.sample25",
+    // "size10x10.paths10000000.seed1.dist2,3.dim50.sample50",
+    "size10x10.paths10000000.seed1.dist2,3.dim50.sample100",
+
+    "size10x10.paths10000000.seed1.dist2,3.dim100.sample12",
+    // "size10x10.paths10000000.seed1.dist2,3.dim100.sample25",
+    // "size10x10.paths10000000.seed1.dist2,3.dim100.sample50",
+    "size10x10.paths10000000.seed1.dist2,3.dim100.sample100",
+
+    "size10x10.paths100000000.seed1.dist2,3.dim2.sample12",
+    // "size10x10.paths100000000.seed1.dist2,3.dim2.sample25",
+    // "size10x10.paths100000000.seed1.dist2,3.dim2.sample50",
+    "size10x10.paths100000000.seed1.dist2,3.dim2.sample100",
+
+    "size10x10.paths100000000.seed1.dist2,3.dim50.sample12",
+    // "size10x10.paths100000000.seed1.dist2,3.dim50.sample25",
+    // "size10x10.paths100000000.seed1.dist2,3.dim50.sample50",
+    "size10x10.paths100000000.seed1.dist2,3.dim50.sample100",
+
+    "size10x10.paths100000000.seed1.dist2,3.dim100.sample12",
+    // "size10x10.paths100000000.seed1.dist2,3.dim100.sample25",
+    // "size10x10.paths100000000.seed1.dist2,3.dim100.sample50",
+    "size10x10.paths100000000.seed1.dist2,3.dim100.sample100"
   ];
 
   const layouts = layoutNames.map(name => {
