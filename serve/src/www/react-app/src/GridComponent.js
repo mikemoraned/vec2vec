@@ -294,6 +294,75 @@ function canvasRenderSimulation(
       context.fill();
       context.closePath();
 
+      const boundingBox = layout.nodes.reduce(
+        (b, d) => {
+          b.tl.x = Math.min(b.tl.x, d.x);
+          b.tl.y = Math.min(b.tl.y, d.y);
+          b.br.x = Math.max(b.br.x, d.x);
+          b.br.y = Math.max(b.br.y, d.y);
+          return b;
+        },
+        {
+          tl: { x: layout.nodes[0].x, y: layout.nodes[0].y },
+          br: { x: layout.nodes[0].x, y: layout.nodes[0].y }
+        }
+      );
+
+      const margin = 20;
+      const boundingBoxWithMargin = {
+        tl: {
+          x: boundingBox.tl.x - margin,
+          y: boundingBox.tl.y - margin
+        },
+        br: {
+          x: boundingBox.br.x + margin,
+          y: boundingBox.br.y + margin
+        }
+      };
+
+      console.dir(boundingBox);
+
+      // context.beginPath();
+      // context.rect(
+      //   boundingBox.tl.x,
+      //   boundingBox.tl.y,
+      //   boundingBox.br.x - boundingBox.tl.x,
+      //   boundingBox.br.y - boundingBox.tl.y
+      // );
+      // context.fillStyle = "red";
+      // context.fill();
+      // context.closePath();
+
+      context.save();
+      context.translate(-boundingBox.tl.x, -boundingBox.tl.y);
+      const scale = Math.max(
+        width / (boundingBoxWithMargin.br.x - boundingBoxWithMargin.tl.x),
+        height / (boundingBoxWithMargin.br.y - boundingBoxWithMargin.tl.y)
+      );
+      context.scale(scale, scale);
+
+      // context.beginPath();
+      // context.rect(
+      //   boundingBoxWithMargin.tl.x,
+      //   boundingBoxWithMargin.tl.y,
+      //   boundingBoxWithMargin.br.x - boundingBoxWithMargin.tl.x,
+      //   boundingBoxWithMargin.br.y - boundingBoxWithMargin.tl.y
+      // );
+      // context.fillStyle = "blue";
+      // context.fill();
+      // context.closePath();
+
+      // context.beginPath();
+      // context.rect(
+      //   boundingBox.tl.x,
+      //   boundingBox.tl.y,
+      //   boundingBox.br.x - boundingBox.tl.x,
+      //   boundingBox.br.y - boundingBox.tl.y
+      // );
+      // context.fillStyle = "red";
+      // context.fill();
+      // context.closePath();
+
       context.lineWidth = 0.5;
       layout.links.forEach(d => {
         context.beginPath();
@@ -324,6 +393,8 @@ function canvasRenderSimulation(
         context.fillStyle = color(d);
         context.fill();
       });
+
+      context.restore();
     });
   }
   console.timeEnd(`${name}_canvas_renderSim`);
