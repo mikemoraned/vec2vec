@@ -35,7 +35,7 @@ Based on above, my answer seems to be: *maybe* i.e. it seems to be learning some
 
 Note that I was temporarily fooled by allowing the manhattan distance to be 1 i.e. points right next to each other. This produced nice grids, though still not perfect. I change the minimum distance to be 2 so that it would be forced to learn local structure of space through samples of larger leaps through the space.
 
-## Implementation
+## Implementation
 
 This is a first implementation, done on holiday for fun, so is bit hacky and likely has some mistakes.
 
