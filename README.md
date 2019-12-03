@@ -1,6 +1,8 @@
 # vec2vec
 vectors beget vectors
 
+(inspired by https://pydata.org/london2019/schedule/presentation/55/goofing-off-with-fun-big-data/)
+
 ## Idea
 
 This was a play-around with the idea: 
