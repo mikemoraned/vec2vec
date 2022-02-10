@@ -9,7 +9,7 @@
     "d3-force": "^2.0.1",
     "d3-scale": "^3.0.0",
     "d3-selection": "^1.4.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
